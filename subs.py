@@ -12,7 +12,7 @@ REPO_API_URL = "https://api.github.com/repos/one-pace/one-pace-public-subtitles/
 #RAW_ASS_BASE_URL = "https://cdn.jsdelivr.net/gh/one-pace/one-pace-public-subtitles@main/"
 RAW_ASS_BASE_URL = "https://raw.githubusercontent.com/one-pace/one-pace-public-subtitles/main/"
 
-CDN_SRT_BASE_URL = "https://cdn.jsdelivr.net/gh/6ip/onepace-streams@main/meta/subs/"
+CDN_SRT_BASE_URL = "https://6ip.github.io/onepace-premium-subs/meta/subs/"
 
 OUTPUT_JSON = "meta/subtitles.json"
 OUTPUT_SUBS_DIR = "meta/subs"
