@@ -130,6 +130,28 @@
             "lang": "spa"
         }
     ],
+    "fan_1": [
+        {
+            "id": "fan_1_ar",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/fan_1_ar.vtt",
+            "lang": "ara"
+        },
+        {
+            "id": "fan_1_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/fan_1_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "fan_1_fr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/fan_1_fr.vtt",
+            "lang": "fre"
+        },
+        {
+            "id": "fan_1_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/fan_1_de.vtt",
+            "lang": "ger"
+        }
+    ],
     "RO_1": [
         {
             "id": "RO_1_alternate_ar",
