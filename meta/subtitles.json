@@ -2276,14 +2276,49 @@
             "lang": "eng"
         },
         {
+            "id": "AR_8_fi",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/08/AR_8_fi.vtt",
+            "lang": "fin"
+        },
+        {
             "id": "AR_8_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/08/AR_8_fr.vtt",
             "lang": "fre"
         },
         {
+            "id": "AR_8_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/08/AR_8_de.vtt",
+            "lang": "ger"
+        },
+        {
+            "id": "AR_8_he",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/08/AR_8_he.vtt",
+            "lang": "heb"
+        },
+        {
+            "id": "AR_8_it",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/08/AR_8_it.vtt",
+            "lang": "ita"
+        },
+        {
+            "id": "AR_8_pl",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/08/AR_8_pl.vtt",
+            "lang": "pol"
+        },
+        {
+            "id": "AR_8_ru",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/08/AR_8_ru.vtt",
+            "lang": "rus"
+        },
+        {
             "id": "AR_8_es",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/08/AR_8_es.vtt",
             "lang": "spa"
+        },
+        {
+            "id": "AR_8_tr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/08/AR_8_tr.vtt",
+            "lang": "tur"
         }
     ],
     "AR_9": [
@@ -2293,14 +2328,49 @@
             "lang": "eng"
         },
         {
+            "id": "AR_9_fi",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/09/AR_9_fi.vtt",
+            "lang": "fin"
+        },
+        {
             "id": "AR_9_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/09/AR_9_fr.vtt",
             "lang": "fre"
         },
         {
+            "id": "AR_9_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/09/AR_9_de.vtt",
+            "lang": "ger"
+        },
+        {
+            "id": "AR_9_he",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/09/AR_9_he.vtt",
+            "lang": "heb"
+        },
+        {
+            "id": "AR_9_it",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/09/AR_9_it.vtt",
+            "lang": "ita"
+        },
+        {
+            "id": "AR_9_pl",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/09/AR_9_pl.vtt",
+            "lang": "pol"
+        },
+        {
+            "id": "AR_9_ru",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/09/AR_9_ru.vtt",
+            "lang": "rus"
+        },
+        {
             "id": "AR_9_es",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/09/AR_9_es.vtt",
             "lang": "spa"
+        },
+        {
+            "id": "AR_9_tr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/09/AR_9_tr.vtt",
+            "lang": "tur"
         }
     ],
     "AR_10": [
@@ -2310,14 +2380,84 @@
             "lang": "eng"
         },
         {
+            "id": "AR_10_extended_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_extended_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "AR_10_extended_fi",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_extended_fi.vtt",
+            "lang": "fin"
+        },
+        {
+            "id": "AR_10_fi",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_fi.vtt",
+            "lang": "fin"
+        },
+        {
+            "id": "AR_10_extended_fr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_extended_fr.vtt",
+            "lang": "fre"
+        },
+        {
             "id": "AR_10_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_fr.vtt",
             "lang": "fre"
         },
         {
+            "id": "AR_10_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_de.vtt",
+            "lang": "ger"
+        },
+        {
+            "id": "AR_10_extended_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_extended_de.vtt",
+            "lang": "ger"
+        },
+        {
+            "id": "AR_10_extended_it",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_extended_it.vtt",
+            "lang": "ita"
+        },
+        {
+            "id": "AR_10_it",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_it.vtt",
+            "lang": "ita"
+        },
+        {
+            "id": "AR_10_extended_pl",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_extended_pl.vtt",
+            "lang": "pol"
+        },
+        {
+            "id": "AR_10_pl",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_pl.vtt",
+            "lang": "pol"
+        },
+        {
+            "id": "AR_10_extended_ru",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_extended_ru.vtt",
+            "lang": "rus"
+        },
+        {
+            "id": "AR_10_ru",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_ru.vtt",
+            "lang": "rus"
+        },
+        {
             "id": "AR_10_es",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_es.vtt",
             "lang": "spa"
+        },
+        {
+            "id": "AR_10_extended_tr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_extended_tr.vtt",
+            "lang": "tur"
+        },
+        {
+            "id": "AR_10_tr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/10/AR_10_tr.vtt",
+            "lang": "tur"
         }
     ],
     "LO_1": [
@@ -2393,9 +2533,19 @@
             "lang": "ger"
         },
         {
+            "id": "RM_1_he",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/01/RM_1_he.vtt",
+            "lang": "heb"
+        },
+        {
             "id": "RM_1_it",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/01/RM_1_it.vtt",
             "lang": "ita"
+        },
+        {
+            "id": "RM_1_ru",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/01/RM_1_ru.vtt",
+            "lang": "rus"
         },
         {
             "id": "RM_1_es",
@@ -2415,9 +2565,24 @@
             "lang": "ara"
         },
         {
+            "id": "RM_2_extended_ar",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_extended_ar.vtt",
+            "lang": "ara"
+        },
+        {
             "id": "RM_2_en",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_en.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "RM_2_extended_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_extended_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "RM_2_extended_fr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_extended_fr.vtt",
+            "lang": "fre"
         },
         {
             "id": "RM_2_fr",
@@ -2430,14 +2595,39 @@
             "lang": "ger"
         },
         {
+            "id": "RM_2_extended_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_extended_de.vtt",
+            "lang": "ger"
+        },
+        {
+            "id": "RM_2_he",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_he.vtt",
+            "lang": "heb"
+        },
+        {
+            "id": "RM_2_extended_it",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_extended_it.vtt",
+            "lang": "ita"
+        },
+        {
             "id": "RM_2_it",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_it.vtt",
             "lang": "ita"
         },
         {
+            "id": "RM_2_ru",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_ru.vtt",
+            "lang": "rus"
+        },
+        {
             "id": "RM_2_es",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_es.vtt",
             "lang": "spa"
+        },
+        {
+            "id": "RM_2_extended_tr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_extended_tr.vtt",
+            "lang": "tur"
         },
         {
             "id": "RM_2_tr",
@@ -10235,6 +10425,50 @@
             "lang": "tur"
         }
     ],
+    "WA_58": [
+        {
+            "id": "WA_58_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/58/WA_58_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "WA_58_fr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/58/WA_58_fr.vtt",
+            "lang": "fre"
+        },
+        {
+            "id": "WA_58_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/58/WA_58_de.vtt",
+            "lang": "ger"
+        },
+        {
+            "id": "WA_58_tr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/58/WA_58_tr.vtt",
+            "lang": "tur"
+        }
+    ],
+    "WA_59": [
+        {
+            "id": "WA_59_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/59/WA_59_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "WA_59_fr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/59/WA_59_fr.vtt",
+            "lang": "fre"
+        },
+        {
+            "id": "WA_59_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/59/WA_59_de.vtt",
+            "lang": "ger"
+        },
+        {
+            "id": "WA_59_tr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/59/WA_59_tr.vtt",
+            "lang": "tur"
+        }
+    ],
     "EH_1": [
         {
             "id": "EH_1_ar",
@@ -10752,6 +10986,48 @@
         {
             "id": "EH_20_de",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/33%20Egghead/20/EH_20_de.vtt",
+            "lang": "ger"
+        }
+    ],
+    "EH_21": [
+        {
+            "id": "EH_21_ar",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/33%20Egghead/21/EH_21_ar.vtt",
+            "lang": "ara"
+        },
+        {
+            "id": "EH_21_extended_ar",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/33%20Egghead/21/EH_21_extended_ar.vtt",
+            "lang": "ara"
+        },
+        {
+            "id": "EH_21_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/33%20Egghead/21/EH_21_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "EH_21_extended_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/33%20Egghead/21/EH_21_extended_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "EH_21_extended_fr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/33%20Egghead/21/EH_21_extended_fr.vtt",
+            "lang": "fre"
+        },
+        {
+            "id": "EH_21_fr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/33%20Egghead/21/EH_21_fr.vtt",
+            "lang": "fre"
+        },
+        {
+            "id": "EH_21_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/33%20Egghead/21/EH_21_de.vtt",
+            "lang": "ger"
+        },
+        {
+            "id": "EH_21_extended_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/33%20Egghead/21/EH_21_extended_de.vtt",
             "lang": "ger"
         }
     ]
