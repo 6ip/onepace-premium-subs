@@ -136,78 +136,79 @@ def _sort_and_dedup_cluster(cluster: list, lang_code: str) -> list:
             unique_parts.append(x)
     return unique_parts
 
-def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list:
-    ass_content = re.sub(r'(\{[^}]*\\(?:alpha|[1-4]a)&HFF&[^}]*\})[^{]+(\{[^}]*\\(?:alpha|[1-4]a)&H00&[^}]*\})', r'\1\2', ass_content)
-    subs = pysubs2.SSAFile.from_string(ass_content)
-    raw_dialogues = []
-    sync_ms = None
+def _is_op_ed_garbage(text: str) -> bool:
+    """Drop a reconstructed line that is clearly a failed char-by-char rebuild:
+    a Latin vowel-soup run (consonants got filtered out) or <2 real characters.
+    Kept deliberately conservative so it never drops legitimate non-Latin lyrics."""
+    if re.search(r'[AaEeIiOoUuYy]{8,}', text):
+        return True
+    if len(re.findall(r'[^\W_]', text)) < 2:
+        return True
+    return False
 
-    # 1. First pass: find the sync time
+def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list:
+    # Strip invisible typesetter spacers ({...alphaFF...}word{...alpha00...}) on a SINGLE line.
+    # The \n exclusions keep this from crossing line boundaries and eating real title-card
+    # text that uses fade-in animations (e.g. \1a&HFF&\t(...,\1a&H00&)).
+    ass_content = re.sub(r'(\{[^}\n]*\\(?:alpha|[1-4]a)&HFF&[^}\n]*\})[^{\n]+(\{[^}\n]*\\(?:alpha|[1-4]a)&H00&[^}\n]*\})', r'\1\2', ass_content)
+    subs = pysubs2.SSAFile.from_string(ass_content)
+
+    sync_ms = None
     for line in subs:
         if line.name.lower() == "sync":
             sync_ms = line.start
             break
 
-    # 2. Second pass: process lines
+    # --- 1. Collect candidate items ---
+    # OP/ED themes come either as full-line lyrics OR as karaoke "char-by-char" animation
+    # (each character is its own \pos-positioned line). We keep BOTH, including positioned
+    # space-characters (empty visible text), so that sorting a row by x-position rebuilds
+    # the original line - spaces included.
+    raw = []
     for line in subs:
         name = line.name.lower()
         effect = line.effect.lower()
         style = line.style.lower()
         text_raw = line.text
 
-        # Skip sync lines in this loop, or scene ends
         if name == "sync":
             continue
-        
-        clean_text_pre = line.plaintext.lower()
-        if "scene ends" in clean_text_pre or name in ["op", "ed", "ending"]:
+        pre = line.plaintext.lower()
+        if "scene ends" in pre or name in ["op", "ed", "ending"]:
             continue
 
-        # --- 1. FILTERS ---
+        # --- Structural filters (karaoke layers / drawings / effector templates) ---
         if _KARAOKE_PATTERN.search(style):
             continue
         if re.search(r'\\p[1-9]\d*', text_raw):
             continue
-
         if not line.is_comment:
-            if 'translation' in style and len(line.plaintext.strip()) <= 1:
-                continue
             if r"\k" in text_raw.lower() or name in ["lead-in", "hi-light", "verse", "karaoke", "mask", "glow", "shape", "gradient", "dust", "petals", "border clip", "move", "circle", "cross"]:
                 continue
             if lang_code != "ara" and ("fx" in effect or "effector" in effect or "kara effector" in text_raw.lower()):
                 continue
+        if "code" in effect or "template" in effect or "fxgroup" in text_raw.lower() or "_g." in text_raw.lower() or "retime" in text_raw.lower():
+            continue
 
-        # --- EXTRACT X POS (From raw text containing tags) ---
+        # --- Position ---
         x_pos = 0.0
-        pos_match = _X_POS_PATTERN.search(text_raw)
-        if pos_match:
-            try:
-                x_pos = float(pos_match.group(1))
-            except ValueError:
-                pass
+        y_pos = 1000.0
+        pos_x = _X_POS_PATTERN.search(text_raw)
+        pos_y = _Y_POS_PATTERN.search(text_raw)
+        if pos_x:
+            try: x_pos = float(pos_x.group(1))
+            except ValueError: pass
+        if pos_y:
+            try: y_pos = float(pos_y.group(1))
+            except ValueError: pass
 
-        # --- 2. CLEAN TEXT ---
-        clean_text = line.plaintext.replace(r"\h", " ").replace("\\h", " ")
-        
-        # \N in OP/ED files is Aegisub visual layout, not intentional line breaks
-        clean_text = clean_text.replace("\n", " ")
-        clean_text = re.sub(r'[\u200e\u200f\u202a\u202b\u202c\u202d\u202e]', '', clean_text)
+        # --- Clean text ---
+        clean_text = line.plaintext.replace(r"\h", " ").replace("\\h", " ").replace("\n", " ")
+        clean_text = re.sub(r'[‎‏‪‫‬‭‮]', '', clean_text)
+        # A positioned line whose visible text is empty is a char-by-char SPACE marker.
+        is_space = (pos_x is not None) and (clean_text.strip() == "")
 
-        test_text = re.sub(r'[\u0640\u064B-\u065F\u0670]', '', clean_text)
-        if not re.search(r'[^\W_]', test_text):
-            continue
-
-        clean_no_marks = test_text.strip().lower()
-        if len(clean_no_marks) == 1:
-            valid_singles = "aioyeuàôو"
-            if clean_no_marks not in valid_singles and not clean_no_marks.isdigit():
-                continue
-            if clean_no_marks.isdigit() and ("fx" in effect or "kara" in style or "title" in style or "sign" in style or name in ["op", "ed"]):
-                continue
-
-        if "code" in effect or "template" in effect or "fxgroup" in clean_text.lower() or "_g." in clean_text.lower() or "retime" in clean_text.lower():
-            continue
-
+        # Per-line noise filters (style names, op/ed labels, divider rows)
         clean_lower = clean_text.strip().lower()
         if clean_lower == style or clean_lower == "roger monologue":
             continue
@@ -218,86 +219,78 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
         if clean_lower.strip(' -=_') in ["ending", "opening", "op", "ed", "dialogue", "credits", "title", "signs"]:
             continue
 
-        if clean_text == "":
-            clean_text = " "
+        # Keep real text, or a positioned space-marker (needed for reconstruction).
+        if not is_space:
+            test_text = re.sub(r'[ـً-ٰٟ]', '', clean_text)
+            if not re.search(r'[^\W_]', test_text):
+                continue
 
-        if lang_code == "ara" and clean_text != " " and not re.search(r'[\u0600-\u06FF]', clean_text):
-            continue
-
-        if re.search(r'[\u0600-\u06FF]', clean_text):
-            clean_text = clean_text.strip()
-            if lang_code == "ara":
-                clean_text = fix_rtl_visual_typing(clean_text)
-
-        raw_dialogues.append({
-            "raw_start": line.start,
-            "raw_end": line.end,
-            "text": clean_text,
-            "style": style,
-            "x_pos": x_pos
+        raw.append({
+            "raw_start": line.start, "raw_end": line.end,
+            "text": clean_text, "style": style,
+            "x_pos": x_pos, "y_pos": y_pos, "is_space": is_space,
         })
-        
-    if not raw_dialogues:
+
+    if not raw:
         return []
-        
-    deduped = []
-    seen = set()
-    for d in raw_dialogues:
-        identifier = (d["raw_start"], d["raw_end"], d["text"], d["style"])
-        if identifier not in seen:
-            seen.add(identifier)
-            deduped.append(d)
-    raw_dialogues = deduped
 
-    if sync_ms is not None:
-        base_ms = sync_ms
-    else:
-        base_ms = min(d["raw_start"] for d in raw_dialogues)
+    base_ms = sync_ms if sync_ms is not None else min(d["raw_start"] for d in raw)
+    for d in raw:
+        d["start_ms"] = (d["raw_start"] - base_ms) + offset_ms
+        d["end_ms"] = (d["raw_end"] - base_ms) + offset_ms
 
-    dialogues = []
-    for d in raw_dialogues:
-        dialogues.append({
-            "start_ms": (d["raw_start"] - base_ms) + offset_ms,
-            "end_ms": (d["raw_end"] - base_ms) + offset_ms,
-            "text": d["text"],
-            "style": d["style"],
-            "x_pos": d["x_pos"]
-        })
-
-    dialogues.sort(key=lambda x: (x["start_ms"], x["end_ms"]))
-    
+    # --- 2. Cluster into rows: same style, same time window, same vertical line (y) ---
     active_clusters = []
-    for d in dialogues:
+    for d in sorted(raw, key=lambda z: (z["start_ms"], z["x_pos"])):
         placed = False
         for cluster in active_clusters:
             prev = cluster[0]
-            if d["style"] == prev["style"] and abs(d["start_ms"] - prev["start_ms"]) < 1500 and abs(d["end_ms"] - prev["end_ms"]) < 1500:
+            if (d["style"] == prev["style"]
+                    and abs(d["start_ms"] - prev["start_ms"]) < 1500
+                    and abs(d["end_ms"] - prev["end_ms"]) < 1500
+                    and abs(d["y_pos"] - prev["y_pos"]) < 5):
                 cluster.append(d)
                 placed = True
                 break
         if not placed:
             active_clusters.append([d])
-            
+
+    # --- 3. Rebuild each row by x-position; space-markers become spaces ---
     clustered_dialogues = []
     for cluster in active_clusters:
-        unique_parts = _sort_and_dedup_cluster(cluster, lang_code)
+        # Sort by x (RTL-aware) and drop ONLY true overlapping layers (same glyph at
+        # near-identical x, e.g. border+fill). The 4px threshold is deliberately tight so
+        # legitimate adjacent repeats ("ll", "ss") survive — a 20px threshold would eat them.
+        cluster.sort(key=lambda z: z["x_pos"], reverse=(lang_code == "ara"))
+        unique_parts = []
+        seen_parts = []
+        for x in cluster:
+            is_dup = False
+            for seen_text, seen_x in seen_parts:
+                if x["text"] == seen_text and (abs(x["x_pos"] - seen_x) < 4.0 or len(x["text"].strip()) > 3):
+                    is_dup = True
+                    break
+            if not is_dup:
+                seen_parts.append((x["text"], x["x_pos"]))
+                unique_parts.append(x)
+        merged_text = "".join(" " if x["is_space"] else x["text"] for x in unique_parts)
+        merged_text = re.sub(r'[ \t]+', ' ', merged_text).strip()
+        if not merged_text or _is_op_ed_garbage(merged_text):
+            continue
+        # Arabic tracks keep only lines containing standard Arabic letters — this drops the
+        # English/romaji reference lyrics and presentation-form (pre-shaped) artefacts that
+        # the Arabic subtitle should not display.
+        if lang_code == "ara" and not re.search(r'[؀-ۿ]', merged_text):
+            continue
+        clustered_dialogues.append({
+            "start_ms": min(x["start_ms"] for x in cluster),
+            "end_ms": max(x["end_ms"] for x in cluster),
+            "text": merged_text,
+        })
 
-        parts = [x["text"] for x in unique_parts]
-        valid_parts = [p for p in parts if p.strip()]
-        if valid_parts:
-            avg_len = sum(len(p) for p in valid_parts) / len(valid_parts)
-            separator = "" if avg_len <= 1.5 else " "
-            merged_text = separator.join(parts)
-            merged_text = re.sub(r'[ \t]+', ' ', merged_text).strip()
-
-            clustered_dialogues.append({
-                "start_ms": min(x["start_ms"] for x in cluster),
-                "end_ms": max(x["end_ms"] for x in cluster),
-                "text": merged_text
-            })
-
+    # --- 4. Dedup + Arabic RTL normalisation ---
     final_dialogues = []
-    for d in clustered_dialogues:
+    for d in sorted(clustered_dialogues, key=lambda z: z["start_ms"]):
         if not d["text"]: continue
         is_dup = False
         clean_d = re.sub(r'[^\w]', '', d["text"])
@@ -309,19 +302,21 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
                 f["start_ms"] = min(f["start_ms"], d["start_ms"])
                 break
         if not is_dup:
-            if re.search(r'[\u0600-\u06FF]', d["text"]):
-                clean_d_text = d["text"].replace("\u202B", "").replace("\u202C", "").strip()
+            if re.search(r'[؀-ۿ]', d["text"]):
+                clean_d_text = d["text"].replace("‫", "").replace("‬", "").strip()
                 if lang_code == "ara":
                     d["text"] = fix_rtl_visual_typing(clean_d_text)
                 else:
-                    d["text"] = f"\u202B{clean_d_text}\u202C"
+                    d["text"] = f"‫{clean_d_text}‬"
             final_dialogues.append(d)
 
     return final_dialogues
 
-
 def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list = None, lang_code: str = "eng") -> str:
-    ass_content = re.sub(r'(\{[^}]*\\(?:alpha|[1-4]a)&HFF&[^}]*\})[^{]+(\{[^}]*\\(?:alpha|[1-4]a)&H00&[^}]*\})', r'\1\2', ass_content)
+    # Strip invisible typesetter spacers ({...alphaFF...}word{...alpha00...}) on a SINGLE line.
+    # The \n exclusions keep this from crossing line boundaries and eating real title-card
+    # text that uses fade-in animations (e.g. \1a&HFF&\t(...,\1a&H00&)).
+    ass_content = re.sub(r'(\{[^}\n]*\\(?:alpha|[1-4]a)&HFF&[^}\n]*\})[^{\n]+(\{[^}\n]*\\(?:alpha|[1-4]a)&H00&[^}\n]*\})', r'\1\2', ass_content)
     subs = pysubs2.SSAFile.from_string(ass_content)
     
     op_start_ms = None  
