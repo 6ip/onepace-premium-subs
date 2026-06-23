@@ -212,6 +212,9 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
         clean_lower = clean_text.strip().lower()
         if clean_lower == style or clean_lower == "roger monologue":
             continue
+        # Effect-template marker lines (e.g. "VORONOI START", "EFFECT VORONOI END")
+        if "voronoi" in clean_lower:
+            continue
         if re.fullmatch(r"(op|ed)[ -][a-z]+", clean_lower) or re.fullmatch(r"[a-z]+[ -](op|ed)", clean_lower):
             continue
         if re.search(r'^[-=]{3,}.*[-=]{3,}$', clean_lower) or re.fullmatch(r'[-=\s]+', clean_lower):
@@ -266,12 +269,15 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
         seen_parts = []
         for x in cluster:
             is_dup = False
+            xl = x["text"].lower()
             for seen_text, seen_x in seen_parts:
-                if x["text"] == seen_text and (abs(x["x_pos"] - seen_x) < 4.0 or len(x["text"].strip()) > 3):
+                # Case-insensitive: a line shown in normal case AND ALL-CAPS (emphasis
+                # animation) is one lyric, not two — keep the first (normal) occurrence.
+                if xl == seen_text and (abs(x["x_pos"] - seen_x) < 4.0 or len(x["text"].strip()) > 3):
                     is_dup = True
                     break
             if not is_dup:
-                seen_parts.append((x["text"], x["x_pos"]))
+                seen_parts.append((xl, x["x_pos"]))
                 unique_parts.append(x)
         # Tiles can be single characters (char-by-char: word boundaries come from positioned
         # space-markers) OR whole words (word-by-word: each tile is a word, so join with a
@@ -625,15 +631,23 @@ def get_op_ed_paths(arc_key: str, ep_num: int, lang_code: str, rules: list):
 
 # --- In-Memory Cache for Themes ---
 _OP_ED_CACHE = {}
+# Case-insensitive index of every .ass path in the repo tree (lowercase -> real path).
+# sub.properties occasionally has the wrong case (e.g. "We can ar.ass" vs the real
+# "We Can ar.ass"); GitHub raw is case-sensitive, so we correct the case before fetching.
+_ASS_PATH_INDEX = {}
 
 def fetch_op_ed(path: str):
     """Fetches the OP/ED template directly into memory and caches it."""
     if not path: return None
-    
+
+    # Correct the case against the real repo tree (no-op if the path is already right
+    # or if the file genuinely doesn't exist, which stays a real 404).
+    path = _ASS_PATH_INDEX.get(path.lower(), path)
+
     # 1. Check if we already downloaded this theme into RAM
     if path in _OP_ED_CACHE:
         return _OP_ED_CACHE[path]
-        
+
     parts = path.split('/')
     filename = parts[-1]
     
@@ -673,6 +687,15 @@ def main():
     except Exception as e:
         print(f"[-] Failed to fetch from GitHub API: {e}")
         return
+
+    # Build a case-insensitive index of every .ass path (stored as sub.properties sees
+    # them, i.e. without the leading "main/") so fetch_op_ed can correct wrong-case paths.
+    for item in tree_data.get("tree", []):
+        p = item.get("path", "")
+        if p.endswith(".ass") and p.startswith("main/"):
+            rel = p[len("main/"):]
+            _ASS_PATH_INDEX[rel.lower()] = rel
+
     print("[?] Fetching sub.properties for OP/ED mapping...")
     try:
         prop_req = urllib.request.Request(RAW_ASS_BASE_URL + "main/sub.properties", headers={'User-Agent': 'Mozilla/5.0'})
