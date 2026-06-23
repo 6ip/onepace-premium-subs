@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -91,8 +91,7 @@ Somewhere in the North Blue,
 
 22
 00:01:51.050 --> 00:01:56.010
-<b>North Blue</b>
-<b>The Kingdom of Lvneel</b>
+<b>North Blue The Kingdom of Lvneel</b>
 
 23
 00:01:53.510 --> 00:01:56.010

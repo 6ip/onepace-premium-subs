@@ -273,7 +273,16 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
             if not is_dup:
                 seen_parts.append((x["text"], x["x_pos"]))
                 unique_parts.append(x)
-        merged_text = "".join(" " if x["is_space"] else x["text"] for x in unique_parts)
+        # Tiles can be single characters (char-by-char: word boundaries come from positioned
+        # space-markers) OR whole words (word-by-word: each tile is a word, so join with a
+        # space). Decide by the average tile length, like the original converter did.
+        parts = [" " if x["is_space"] else x["text"] for x in unique_parts]
+        real_parts = [p for p in parts if p.strip()]
+        if not real_parts:
+            continue
+        avg_len = sum(len(p) for p in real_parts) / len(real_parts)
+        separator = "" if avg_len <= 1.5 else " "
+        merged_text = separator.join(parts)
         merged_text = re.sub(r'[ \t]+', ' ', merged_text).strip()
         if not merged_text or _is_op_ed_garbage(merged_text):
             continue
@@ -511,7 +520,7 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
         "::cue(c.colora8c7fa) { color: #a8c7fa; }",
         "",
         "1",
-        "00:00:01.000 --> 00:00:07.000 line:5% align:middle",
+        "00:00:01.000 --> 00:00:07.000 line:5% align:center",
         "<b><c.color9CD5FF>One Pace Premium</c></b>",
         "Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>",
         ""

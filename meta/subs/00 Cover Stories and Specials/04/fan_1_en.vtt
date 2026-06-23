@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -309,7 +309,7 @@ behind his disappearance two years ago!
 72
 00:03:20.510 --> 00:03:39.490
 <b>Tracking down the vanished</b>
-<b>genius cyborg shipwright!</b>
+<b>shipwright! genius cyborg shipwright!</b>
 <b>Shipwright Monthly
 The Franky Special</b>
 

@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -326,7 +326,7 @@ Vous êtes qui ?
 
 75
 00:06:31.820 --> 00:06:33.680
-Non ! T'es qui, toi  ?
+Non ! T'es qui, toi ?
 
 76
 00:06:33.780 --> 00:06:35.740

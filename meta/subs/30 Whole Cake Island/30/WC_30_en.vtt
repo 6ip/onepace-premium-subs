@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -1271,9 +1271,9 @@ What the hell is happening down there?!
 
 298
 00:28:46.820 --> 00:28:51.500
-Nostra Castello: "Our Castle" in Italian
 <b>The Nostra Castello
 At Sea</b>
+Nostra Castello: "Our Castle" in Italian
 
 299
 00:28:51.500 --> 00:28:54.960

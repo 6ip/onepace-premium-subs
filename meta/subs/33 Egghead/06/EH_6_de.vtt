@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -18,12 +18,12 @@ Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 Das Ende eines Traums, der Rand des Meeres Das Ende eines Traums, der Rand des Meeres...
 
 4
-00:00:15.770 --> 00:00:17.750
-Jeder hat verschiedene Ziele im Auge Jeder hat verschiedene Ziele im Auge JEDER HAT VERSCHIEDENE ZIELE IM AUGE
+00:00:15.770 --> 00:00:18.530
+Jeder hat verschiedene Ziele im Auge
 
 5
-00:00:15.790 --> 00:00:18.530
-Jeder hat verschiedene Ziele im Auge
+00:00:16.370 --> 00:00:17.750
+Jeder hat verschiedene Ziele im Auge JEDER HAT VERSCHIEDENE ZIELE IM AUGE
 
 6
 00:00:18.530 --> 00:00:21.310
@@ -31,47 +31,47 @@ Aber zuerst müssen wir es schaffen,
 
 7
 00:00:21.310 --> 00:00:25.660
-uns als strahlende Legende einen Namen zu machen uns als strahlende Legende einen Namen zu machen
+uns als strahlende Legende einen Namen zu machen
 
 8
 00:00:26.930 --> 00:00:29.250
-Funken fliegen! No Limit! Hier fängt es an! Funken fliegen! No Limit! Hier fängt es an!
+Funken fliegen! No Limit! Hier fängt es an!
 
 9
 00:00:29.250 --> 00:00:30.530
 ONE PIECE!!
 
 10
-00:00:30.890 --> 00:00:33.510
-VORONOI START VORONOI END All of us! Ich frage euch, ihr Reisenden: All of us! Hört mir zu, ihr Reisenden:
+00:00:30.890 --> 00:00:33.470
+All of us! Hört mir zu, ihr Reisenden:
 
 11
+00:00:30.890 --> 00:00:33.510
+VORONOI START VORONOI END All of us! Ich frage euch, ihr Reisenden:
+
+12
 00:00:33.510 --> 00:00:37.100
 Sind eure Träume noch unbefleckt?
 
-12
+13
 00:00:38.740 --> 00:00:45.300
 Schlaflose Zellen werden gekitzelt und platzen
 
-13
+14
 00:00:45.410 --> 00:00:52.030
 All of us! Noch sind wir mitten im Abenteuer All of us! Noch sind wir mitten im Abenteuer.
 
-14
-00:00:52.030 --> 00:00:54.620
-All of us! Hört mir zu, ihr Reisenden: All of us! Hört mir zu, ihr Reisenden:
-
 15
+00:00:52.030 --> 00:00:54.620
+All of us! Hört mir zu, ihr Reisenden:
+
+16
 00:00:53.620 --> 00:00:55.150
 All of us! Hört mir zu, ihr Reisenden: So etwas wie einen sinnlosen Kampf gibt es nicht
 
-16
+17
 00:00:54.680 --> 00:00:58.200
 So etwas wie einen sinnlosen Kampf gibt es nicht
-
-17
-00:00:54.740 --> 00:00:58.050
-So etwas wie einen sinnlosen Kampf gibt es nicht. So etwas wie einen sinnlosen Kampf gibt es nicht
 
 18
 00:00:59.890 --> 00:01:02.580
@@ -83,7 +83,7 @@ von selbst einen Sinn zu ergeben,
 
 20
 00:01:06.510 --> 00:01:12.980
-werden die Fäden der Zeit wieder zusammengewoben werden die Fäden der Zeit wieder zusammengewoben
+werden die Fäden der Zeit wieder zusammengewoben
 
 21
 00:01:13.070 --> 00:01:18.680
@@ -270,8 +270,8 @@ Krieg dich mal wieder ein.
 
 66
 00:03:48.250 --> 00:03:50.710
-Ich sagte doch, dass es nur eine Hypothese ist.
 Ich hab nichts gehört! Ich muss es vergessen!
+Ich sagte doch, dass es nur eine Hypothese ist.
 
 67
 00:03:52.500 --> 00:03:55.170
@@ -1352,341 +1352,62 @@ Wir sind zu hoch geflogen!
 Helft mir! Quasar!
 
 332
-00:19:21.350 --> 00:19:21.390
+00:19:21.350 --> 00:19:22.470
 <b>Klügster Kopf der Welt</b>
 
 333
-00:19:21.390 --> 00:19:21.430
-<b>Klügster Kopf der Welt</b>
-
-334
-00:19:21.430 --> 00:19:21.470
-<b>Klügster Kopf der Welt</b>
-
-335
-00:19:21.470 --> 00:19:21.520
-<b>Klügster Kopf der Welt</b>
-
-336
-00:19:21.520 --> 00:19:21.560
-<b>Klügster Kopf der Welt</b>
-
-337
-00:19:21.560 --> 00:19:21.600
-<b>Klügster Kopf der Welt</b>
-
-338
-00:19:21.600 --> 00:19:22.470
-<b>Klügster Kopf der Welt</b>
-
-339
 00:19:24.480 --> 00:19:28.900
 <b>Klügster Kopf der Welt</b>
 
-340
-00:19:25.100 --> 00:19:25.140
+334
+00:19:25.100 --> 00:19:28.900
 <b>Leiter des SSGs
 (Sonderwissenschaftstrupp der Marine)</b>
 
-341
-00:19:25.140 --> 00:19:25.190
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
+335
+00:19:35.330 --> 00:19:40.410
+Wie weit mag ich wohl gerannt sein
 
-342
-00:19:25.190 --> 00:19:25.230
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
+336
+00:19:41.270 --> 00:19:47.770
+Ohne es zu bemerken zählte ich die Narben
 
-343
-00:19:25.230 --> 00:19:25.270
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
+337
+00:19:48.280 --> 00:19:55.190
+Eine Schatzkarte war die ganze Zeit über in meinem Kopf
 
-344
-00:19:25.270 --> 00:19:25.310
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
+338
+00:19:55.280 --> 00:20:01.480
+Immerzu war ich auf der Suche nach der Zukunft
 
-345
-00:19:25.310 --> 00:19:25.350
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-346
-00:19:25.350 --> 00:19:25.390
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-347
-00:19:25.390 --> 00:19:25.440
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-348
-00:19:25.440 --> 00:19:25.480
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-349
-00:19:25.480 --> 00:19:25.520
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-350
-00:19:25.520 --> 00:19:25.560
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-351
-00:19:25.560 --> 00:19:25.600
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-352
-00:19:25.600 --> 00:19:25.640
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-353
-00:19:25.640 --> 00:19:25.690
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-354
-00:19:25.690 --> 00:19:25.730
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-355
-00:19:25.730 --> 00:19:25.770
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-356
-00:19:25.770 --> 00:19:25.810
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-357
-00:19:25.810 --> 00:19:25.850
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-358
-00:19:25.850 --> 00:19:25.890
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-359
-00:19:25.890 --> 00:19:25.940
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-360
-00:19:25.940 --> 00:19:25.980
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-361
-00:19:25.980 --> 00:19:26.020
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-362
-00:19:26.020 --> 00:19:26.060
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-363
-00:19:26.060 --> 00:19:26.100
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-364
-00:19:26.100 --> 00:19:26.140
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-365
-00:19:26.140 --> 00:19:26.190
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-366
-00:19:26.190 --> 00:19:26.230
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-367
-00:19:26.230 --> 00:19:26.270
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-368
-00:19:26.270 --> 00:19:26.310
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-369
-00:19:26.310 --> 00:19:26.350
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-370
-00:19:26.350 --> 00:19:26.400
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-371
-00:19:26.400 --> 00:19:26.440
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-372
-00:19:26.440 --> 00:19:26.480
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-373
-00:19:26.480 --> 00:19:26.520
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-374
-00:19:26.520 --> 00:19:26.560
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-375
-00:19:26.560 --> 00:19:26.600
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-376
-00:19:26.600 --> 00:19:26.650
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-377
-00:19:26.650 --> 00:19:26.690
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-378
-00:19:26.690 --> 00:19:26.730
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-379
-00:19:26.730 --> 00:19:26.770
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-380
-00:19:26.770 --> 00:19:26.810
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-381
-00:19:26.810 --> 00:19:26.850
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-382
-00:19:26.850 --> 00:19:26.900
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-383
-00:19:26.900 --> 00:19:26.940
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-384
-00:19:26.940 --> 00:19:26.980
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-385
-00:19:26.980 --> 00:19:27.020
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-386
-00:19:27.020 --> 00:19:27.060
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-387
-00:19:27.060 --> 00:19:27.100
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-388
-00:19:27.100 --> 00:19:27.150
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-389
-00:19:27.150 --> 00:19:27.190
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-390
-00:19:27.190 --> 00:19:27.230
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-391
-00:19:27.230 --> 00:19:28.900
-<b>Leiter des SSGs
-(Sonderwissenschaftstrupp der Marine)</b>
-
-392
-00:19:35.330 --> 00:19:40.420
-Wie weit mag ich wohl gerannt sein?
-
-393
-00:19:41.270 --> 00:19:47.780
-Ohne es zu bemerken, zählte ich die Narben.
-
-394
-00:19:48.280 --> 00:19:55.200
-Eine Schatzkarte war die ganze Zeit über in meinem Kopf.
-
-395
-00:19:55.280 --> 00:20:01.490
-Immerzu war ich auf der Suche nach der Zukunft.
-
-396
+339
 00:20:01.630 --> 00:20:08.400
 Das wahre Versprechen
 
-397
-00:20:08.360 --> 00:20:15.510
-liegt viel tiefer in meinem Herzen verborgen.
+340
+00:20:08.360 --> 00:20:15.500
+liegt viel tiefer in meinem Herzen verborgen
 
-398
-00:20:15.640 --> 00:20:24.620
-Ein Traum, den niemand einholen kann,
+341
+00:20:15.640 --> 00:20:24.610
+Ein Traum den niemand einholen kann
 
-399
-00:20:24.800 --> 00:20:30.380
-ist alles, woran ich mich festhalte.
+342
+00:20:24.800 --> 00:20:30.370
+ist alles woran ich mich festhalte
 
-400
+343
 00:20:30.490 --> 00:20:37.400
 Du lächelst wie die Sonne und für dich
 
-401
-00:20:37.560 --> 00:20:44.590
-werde ich dasselbe Lied singen wie an jenem Tag.
+344
+00:20:37.560 --> 00:20:44.580
+werde ich dasselbe Lied singen wie an jenem Tag
 
-402
-00:20:44.570 --> 00:20:51.640
-Ich will diesen Wunsch nicht vergessen, auch wenn ich erwachsen bin,
+345
+00:20:44.570 --> 00:20:51.630
+Ich will diesen Wunsch nicht vergessen auch wenn ich erwachsen bin
 
-403
-00:20:51.540 --> 00:20:58.750
-bis er dich endlich erreicht hat.
+346
+00:20:51.540 --> 00:20:58.740
+bis er dich endlich erreicht hat

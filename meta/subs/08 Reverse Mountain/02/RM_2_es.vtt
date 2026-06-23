@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -487,7 +487,7 @@ Vámonos.
 116
 00:06:49.470 --> 00:06:51.600
 quién sabe si podremos
-  llegar a la salida!
+ llegar a la salida!
 
 117
 00:06:51.600 --> 00:06:53.140
@@ -885,25 +885,25 @@ Oigan, ¿quiénes son estos tipos?
 ¡Detente!
 
 211
-00:11:59.410 --> 00:12:00.570
-¡Oye!
-
-212
 00:11:59.410 --> 00:12:02.830
 Son unos delincuentes
  de un pueblo cercano.
+
+212
+00:11:59.410 --> 00:12:00.570
+¡Oye!
 
 213
 00:12:00.570 --> 00:12:02.830
 Luffy, detente.
 
 214
-00:12:02.830 --> 00:12:05.080
-¿Qué quieres hacer?
-
-215
 00:12:02.830 --> 00:12:05.620
 Quieren la carne de la ballena.
+
+215
+00:12:02.830 --> 00:12:05.080
+¿Qué quieres hacer?
 
 216
 00:12:05.620 --> 00:12:11.590
@@ -1544,6 +1544,7 @@ Será que le divierte escalar montañas.
 
 366
 00:21:24.810 --> 00:21:28.230
+Arreglo floral.
 Mola
 Shi
 Chibukai
@@ -1782,7 +1783,6 @@ Si no hacemos algo...
 
 423
 00:24:37.750 --> 00:24:41.540
-Nutria misteriosa
 Buitre misterioso
 
 
@@ -1791,6 +1791,7 @@ Buitre misterioso
 
 
 Miss Friday
+Nutria misteriosa
 
 424
 00:24:38.620 --> 00:24:39.710

@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -457,11 +457,6 @@ el lugar de la ejecución-gyaban!
 ¡Sí!
 
 106
-00:07:02.460 --> 00:07:07.140
-Al sur de la Isla Gyojin, 
-frente a la Asamblea Cultural Gyojin.
-
-107
 00:07:02.460 --> 00:07:07.180
 PLAZA
 GYONCORDE
@@ -471,6 +466,11 @@ ASAMBLEA
 CULTURAL GYOJIN
 ENTRADA 
 DE LA ISLA
+
+107
+00:07:02.460 --> 00:07:07.140
+Al sur de la Isla Gyojin, 
+frente a la Asamblea Cultural Gyojin.
 
 108
 00:07:09.380 --> 00:07:12.780
@@ -684,10 +684,6 @@ tras la ejecución de la familia de Neptune,
 ¡Adelante, en marcha hacia la plaza!
 
 156
-00:10:40.700 --> 00:10:43.520
-¿Cuánto falta para que lleguemos a la Plaza Gyoncorde?
-
-157
 00:10:40.700 --> 00:10:45.860
 PLAZA
 GYONCORDE
@@ -699,6 +695,10 @@ A LA PLAZA
 GYONCORDE
 ENTRADA 
 DE LA ISLA
+
+157
+00:10:40.700 --> 00:10:43.520
+¿Cuánto falta para que lleguemos a la Plaza Gyoncorde?
 
 158
 00:10:43.520 --> 00:10:45.740
@@ -1365,6 +1365,7 @@ convertir en calamar seco-hi!
 
 314
 00:22:21.060 --> 00:22:23.300
+Disparo de agua.
 Mola
 Shi
 Chibukai
@@ -1492,124 +1493,129 @@ Príncipe...
 traicionados por los humanos?
 
 344
-00:25:55.500 --> 00:25:57.140
-Mola
-Shi
+00:25:55.500 --> 00:25:59.780
 Chibukai
-Fansub!
 
 345
-00:25:57.580 --> 00:25:59.780
-Mola
-Shi
-Chibukai
-Fansub!
+00:25:55.500 --> 00:25:57.140
+Combate sirena.
 
 346
-00:26:00.100 --> 00:26:02.420
+00:25:55.500 --> 00:26:02.420
 Mola
 Shi
-Chibukai
 Fansub!
 
 347
-00:26:02.820 --> 00:26:04.820
-Mola
-Shi
-Chibukai
-Fansub!
+00:25:57.580 --> 00:25:59.780
+Lanza de agua del tiempo.
 
 348
+00:26:00.100 --> 00:26:04.820
+Chibukai
+
+349
+00:26:00.100 --> 00:26:02.420
+Todos los tesoros del mundo.
+
+350
+00:26:02.820 --> 00:26:04.820
+Puerta del Palacio Ryugu.
+Mola
+Shi
+Fansub!
+
+351
 00:26:09.610 --> 00:26:15.620
 ¡V-Vencieron a las bestias marinas!
 
-349
+352
 00:26:15.620 --> 00:26:19.820
 Ustedes, que no albergan más 
 que odio y ansias de venganza,
 
-350
+353
 00:26:19.820 --> 00:26:24.980
 no matarán al Rey ni echarán al pueblo de su tierra, mucho menos se apoderarán del Reino Ryugu.
 
-351
+354
 00:26:24.980 --> 00:26:28.020
 ¡Nosotros lo impediremos!
 
-352
+355
 00:26:34.260 --> 00:26:37.940
 ¡Qué poderosos! ¡Demuestren quiénes son los tres guerreros más fuertes del Reino Ryugu!
 
-353
+356
 00:26:40.920 --> 00:26:43.190
 No perderemos.
 
-354
+357
 00:26:43.190 --> 00:26:47.620
 Hemos recibido poderes divinos.
 
-355
+358
 00:26:47.620 --> 00:26:53.580
 Un poder que nos permitirá crear 
 un reino de verdad para los gyojin.
 
-356
+359
 00:26:53.580 --> 00:26:59.460
 ¡Los derrotaremos y avanzaremos hacia un futuro donde prevalezca la amistad con los humanos!
 
-357
+360
 00:26:59.460 --> 00:27:02.900
 ¡Porque si ganan ustedes, 
 tendrán que pasar siglos...
 
-358
+361
 00:27:02.900 --> 00:27:05.980
 ...para que surja otra oportunidad de convivencia entre humanos y gyojin!
 
-359
+362
 00:27:06.640 --> 00:27:08.970
 Digan lo que quieran.
 
-360
+363
 00:27:08.970 --> 00:27:11.700
 Al fin y al cabo, este país...
 
-361
+364
 00:27:12.520 --> 00:27:14.780
 ...será de quien gane, ¿no?
 
-362
+365
 00:27:47.500 --> 00:27:49.060
 Hay algo extraño en ellos.
 
-363
+366
 00:27:54.020 --> 00:27:54.940
 ¡Aquí vienen!
 
-364
+367
 00:27:56.020 --> 00:27:57.610
 ¡¿Q-Qué es esto?!
 
-365
+368
 00:27:59.120 --> 00:28:00.340
 Demasiado lento.
 
-366
+369
 00:28:16.100 --> 00:28:17.060
 ¡Dosun!
 
-367
+370
 00:28:21.780 --> 00:28:25.060
 ¡Calamar!
 
-368
+371
 00:28:34.180 --> 00:28:36.260
 ¡Rápido, Megalo!
 
-369
+372
 00:28:38.060 --> 00:28:40.740
 Padre... espero que estés bien...
 
-370
+373
 00:28:40.740 --> 00:28:43.940
 ¡Lo estará! ¡Nosotros venceremos!

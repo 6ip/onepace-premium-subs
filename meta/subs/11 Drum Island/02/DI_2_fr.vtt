@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -776,7 +776,7 @@ Je dois vite... guérir.
 
 172
 00:10:23.250 --> 00:10:25.720
-Il le faut...  pour Vivi...
+Il le faut... pour Vivi...
 
 173
 00:10:30.290 --> 00:10:32.190

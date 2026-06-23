@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -1011,14 +1011,14 @@ Aquí el Grove 46.
 ¡Identifico a cuatro capitanes!
 
 245
-00:16:01.510 --> 00:16:06.060
-Albion, el Malherido, cuya cabeza 
-vale 92 millones de bellies.
-
-246
 00:16:01.510 --> 00:16:06.050
 ALBION, EL MALHERIDO
 RECOMPENSA: 92 MILLONES DE BELLIES
+
+246
+00:16:01.510 --> 00:16:06.060
+Albion, el Malherido, cuya cabeza 
+vale 92 millones de bellies.
 
 247
 00:16:06.080 --> 00:16:10.790

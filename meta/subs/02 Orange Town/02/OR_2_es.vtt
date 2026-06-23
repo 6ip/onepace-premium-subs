@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -128,8 +128,8 @@ Ahí estás, Mohji.
 
 30
 00:02:01.560 --> 00:02:06.270
+Vicecapitán de los Piratas Buggy
 Mohji, el Domador de Bestias
-Alcalde de la aldea
 
 31
 00:02:02.760 --> 00:02:06.270
@@ -242,8 +242,8 @@ Soy el alcalde de este pueblo.
 
 58
 00:04:00.510 --> 00:04:06.390
+Alcalde de la aldea
 Boodle
-Primer Oficial de los Piratas Buggy
 
 59
 00:04:03.230 --> 00:04:06.390
@@ -1417,8 +1417,8 @@ Así que por eso pudo
 
 340
 00:22:34.830 --> 00:22:40.550
+Primer Oficial de los Piratas Buggy
 Cabaji, el Acróbata
-Edición
 
 341
 00:22:35.230 --> 00:22:38.330

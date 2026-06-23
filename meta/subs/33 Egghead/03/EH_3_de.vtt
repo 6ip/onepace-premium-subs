@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -18,12 +18,12 @@ Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 Das Ende eines Traums, der Rand des Meeres Das Ende eines Traums, der Rand des Meeres...
 
 4
-00:00:15.770 --> 00:00:17.750
-Jeder hat verschiedene Ziele im Auge Jeder hat verschiedene Ziele im Auge JEDER HAT VERSCHIEDENE ZIELE IM AUGE
+00:00:15.770 --> 00:00:18.530
+Jeder hat verschiedene Ziele im Auge
 
 5
-00:00:15.790 --> 00:00:18.530
-Jeder hat verschiedene Ziele im Auge
+00:00:16.370 --> 00:00:17.750
+Jeder hat verschiedene Ziele im Auge JEDER HAT VERSCHIEDENE ZIELE IM AUGE
 
 6
 00:00:18.530 --> 00:00:21.310
@@ -31,47 +31,47 @@ Aber zuerst müssen wir es schaffen,
 
 7
 00:00:21.310 --> 00:00:25.660
-uns als strahlende Legende einen Namen zu machen uns als strahlende Legende einen Namen zu machen
+uns als strahlende Legende einen Namen zu machen
 
 8
 00:00:26.930 --> 00:00:29.250
-Funken fliegen! No Limit! Hier fängt es an! Funken fliegen! No Limit! Hier fängt es an!
+Funken fliegen! No Limit! Hier fängt es an!
 
 9
 00:00:29.250 --> 00:00:30.530
 ONE PIECE!!
 
 10
-00:00:30.890 --> 00:00:33.510
-VORONOI START VORONOI END All of us! Ich frage euch, ihr Reisenden: All of us! Hört mir zu, ihr Reisenden:
+00:00:30.890 --> 00:00:33.470
+All of us! Hört mir zu, ihr Reisenden:
 
 11
+00:00:30.890 --> 00:00:33.510
+VORONOI START VORONOI END All of us! Ich frage euch, ihr Reisenden:
+
+12
 00:00:33.510 --> 00:00:37.100
 Sind eure Träume noch unbefleckt?
 
-12
+13
 00:00:38.740 --> 00:00:45.300
 Schlaflose Zellen werden gekitzelt und platzen
 
-13
+14
 00:00:45.410 --> 00:00:52.030
 All of us! Noch sind wir mitten im Abenteuer All of us! Noch sind wir mitten im Abenteuer.
 
-14
-00:00:52.030 --> 00:00:54.620
-All of us! Hört mir zu, ihr Reisenden: All of us! Hört mir zu, ihr Reisenden:
-
 15
+00:00:52.030 --> 00:00:54.620
+All of us! Hört mir zu, ihr Reisenden:
+
+16
 00:00:53.620 --> 00:00:55.150
 All of us! Hört mir zu, ihr Reisenden: So etwas wie einen sinnlosen Kampf gibt es nicht
 
-16
+17
 00:00:54.680 --> 00:00:58.200
 So etwas wie einen sinnlosen Kampf gibt es nicht
-
-17
-00:00:54.740 --> 00:00:58.050
-So etwas wie einen sinnlosen Kampf gibt es nicht. So etwas wie einen sinnlosen Kampf gibt es nicht
 
 18
 00:00:59.890 --> 00:01:02.580
@@ -83,7 +83,7 @@ von selbst einen Sinn zu ergeben,
 
 20
 00:01:06.510 --> 00:01:12.980
-werden die Fäden der Zeit wieder zusammengewoben werden die Fäden der Zeit wieder zusammengewoben
+werden die Fäden der Zeit wieder zusammengewoben
 
 21
 00:01:13.070 --> 00:01:18.680
@@ -321,13 +321,11 @@ Ihr habt sicher bereits alle den Zeitungsartikel gelesen.
 MtBX7'Q5ovkD"yFfrtHO"sGNU
 cUANCGkxJI;g.o8PLE1lnUIy;1;vl;InxaH
 h'kHfP5qi.3Oy"vbSwBivnixrGFbLe9Zz2oA"idq
-!p;kVp'9ObnGtLA6934!yZdypH.5NO.oWZayooIFGh4;!</b>
-<b>hj"WN75Rl8e:CLTxO.
+!p;kVp'9ObnGtLA6934!yZdypH.5NO.oWZayooIFGh4;! hj"WN75Rl8e:CLTxO.
 AKX3nin116rq2yGw7P?"aeXNR
 sr3NnnScJgvMkmPkvlPve7MeOnT!yFQ8AO:
 StXRlWvMiccXBY;BCL32Rh1x:JqhLmv'FEwSSW,t
-fkc:?PcliSzhmxOiv3:pNF?i:W.8N8GYxLTY;s6''t;'r</b>
-<b>GENERALSTABSCHEF DER REVOLUTIONSARMEE
+fkc:?PcliSzhmxOiv3:pNF?i:W.8N8GYxLTY;s6''t;'r GENERALSTABSCHEF DER REVOLUTIONSARMEE
 
 TÖTET KÖNIG COBRA AUS ALABASTA</b>
 
@@ -412,8 +410,7 @@ werdet ihr alle aufgespießt und hingerichtet!
 97
 00:05:44.070 --> 00:05:48.410
 <b>Prinzessin Komane
-Königreich Lulusia</b>
-<b>König Seki
+Königreich Lulusia König Seki
 Königreich Lulusia</b>
 
 98
@@ -851,7 +848,7 @@ Dieses Dummbrot!
 00:14:23.760 --> 00:14:26.680
 <b>Jewelry Bonney „der Vielfraß“
 Schlimmste Generation</b>
-<b>Kopfgeld:    320 Millionen</b>
+<b>Kopfgeld: 320 Millionen</b>
 
 204
 00:14:27.140 --> 00:14:28.890
@@ -1028,885 +1025,713 @@ Hasenschrauben-...
 Propeller!
 
 247
-00:17:14.260 --> 00:17:14.350
+00:17:14.260 --> 00:17:18.430
 <b>HASENSCHRAUBEN-PROPELLER</b>
 
 248
-00:17:14.300 --> 00:17:14.350
+00:17:14.300 --> 00:17:18.430
 <b>SCHIFFSBODEN-</b>
 
 249
-00:17:14.350 --> 00:17:14.390
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-250
-00:17:14.390 --> 00:17:14.430
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-251
-00:17:14.430 --> 00:17:14.470
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-252
-00:17:14.470 --> 00:17:14.510
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-253
-00:17:14.510 --> 00:17:14.560
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-254
-00:17:14.560 --> 00:17:14.600
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-255
-00:17:14.600 --> 00:17:14.640
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-256
-00:17:14.640 --> 00:17:14.680
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-257
-00:17:14.680 --> 00:17:14.720
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-258
-00:17:14.720 --> 00:17:14.760
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-259
-00:17:14.760 --> 00:17:14.810
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-260
-00:17:14.810 --> 00:17:14.850
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-261
-00:17:14.850 --> 00:17:14.890
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-262
-00:17:14.890 --> 00:17:14.930
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-263
-00:17:14.930 --> 00:17:14.970
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-264
-00:17:14.970 --> 00:17:15.010
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-265
-00:17:15.010 --> 00:17:15.060
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-266
-00:17:15.060 --> 00:17:15.100
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-267
-00:17:15.100 --> 00:17:15.140
-<b>SCHIFFSBODEN-</b>
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-268
-00:17:15.140 --> 00:17:15.180
-<b>SCHIFFSBODEN-</b>
-
-269
-00:17:15.140 --> 00:17:18.430
-<b>HASENSCHRAUBEN-PROPELLER</b>
-
-270
-00:17:15.180 --> 00:17:16.810
-<b>SCHIFFSBODEN-</b>
-
-271
-00:17:15.180 --> 00:17:18.430
-<b>SCHIFFSBODEN-</b>
-
-272
-00:17:16.810 --> 00:17:16.850
-<b>SCHIFFSBODEN-</b>
-
-273
-00:17:16.850 --> 00:17:16.930
-<b>SCHIFFSBODEN-</b>
-
-274
-00:17:16.930 --> 00:17:16.970
-<b>SCHIFFSBODEN-</b>
-
-275
-00:17:16.970 --> 00:17:17.060
-<b>SCHIFFSBODEN-</b>
-
-276
-00:17:17.060 --> 00:17:17.100
-<b>SCHIFFSBODEN-</b>
-
-277
-00:17:17.100 --> 00:17:17.180
-<b>SCHIFFSBODEN-</b>
-
-278
-00:17:17.180 --> 00:17:17.220
-<b>SCHIFFSBODEN-</b>
-
-279
-00:17:17.220 --> 00:17:17.310
-<b>SCHIFFSBODEN-</b>
-
-280
-00:17:17.310 --> 00:17:17.350
-<b>SCHIFFSBODEN-</b>
-
-281
-00:17:17.350 --> 00:17:17.430
-<b>SCHIFFSBODEN-</b>
-
-282
-00:17:17.430 --> 00:17:17.470
-<b>SCHIFFSBODEN-</b>
-
-283
-00:17:17.470 --> 00:17:17.520
-<b>SCHIFFSBODEN-</b>
-
-284
-00:17:17.520 --> 00:17:17.600
-<b>SCHIFFSBODEN-</b>
-
-285
-00:17:17.600 --> 00:17:17.640
-<b>SCHIFFSBODEN-</b>
-
-286
-00:17:17.640 --> 00:17:18.430
-<b>SCHIFFSBODEN-</b>
-
-287
 00:17:20.940 --> 00:17:22.480
 Alles klar!
 
-288
+250
 00:17:22.480 --> 00:17:24.770
 Retten wir Luffy und die anderen!
 
-289
+251
 00:17:38.370 --> 00:17:40.750
 Luffy! Chopper!
 
-290
+252
 00:17:40.750 --> 00:17:42.580
 Wo steckt ihr?!
 
-291
+253
 00:17:49.840 --> 00:17:51.470
 Franky! Bring uns hier weg!
 
-292
+254
 00:17:51.470 --> 00:17:53.930
 Da kommen Torpedos!
 
-293
+255
 00:18:00.640 --> 00:18:02.600
 Robin! Nami!
 
-294
+256
 00:18:03.440 --> 00:18:04.400
 Mist!
 
-295
+257
 00:18:04.400 --> 00:18:07.770
 Wir werden kentern!
 
-296
+258
 00:18:24.580 --> 00:18:27.090
 Was war das für eine Explosion?
 
-297
+259
 00:18:31.050 --> 00:18:33.180
 Luffy! Chopper!
 
-298
+260
 00:18:33.180 --> 00:18:35.590
 Ich bin da! Gleich seid ihr gerettet!
 
-299
+261
 00:18:43.690 --> 00:18:46.560
 Hey, ihr drei! Macht mir jetzt nicht schlapp!
 
-300
+262
 00:18:46.560 --> 00:18:48.020
 Wir tauchen auf!
 
-301
+263
 00:18:54.780 --> 00:18:56.530
 Die Strömung ist unglaublich!
 
-302
+264
 00:18:56.530 --> 00:18:58.240
 Dagegen kommt kein Ruder an!
 
-303
+265
 00:19:00.910 --> 00:19:02.950
 Danke, Jinbe.
 
-304
+266
 00:19:02.950 --> 00:19:05.750
 Schön, dass es euch allen gut geht.
 
-305
+267
 00:19:08.290 --> 00:19:11.420
 Die Sunny kommt uns gleich abholen.
 
-306
+268
 00:19:27.310 --> 00:19:29.310
 Was ist, Jinbe?
 
-307
+269
 00:19:30.570 --> 00:19:32.610
 Haltet euch gut fest!
 
-308
+270
 00:19:34.820 --> 00:19:37.240
 Wir fliehen auf den Meeresgrund!
 
-309
+271
 00:19:37.240 --> 00:19:40.280
 Holt ganz tief Luft, Leute!
 
-310
+272
 00:19:47.460 --> 00:19:49.130
 Es geht los!
 
-311
+273
 00:20:10.230 --> 00:20:11.270
 Mist.
 
-312
+274
 00:20:11.270 --> 00:20:12.860
 Die Strömung ist zu stark.
 
-313
+275
 00:20:12.860 --> 00:20:14.230
 Wir können nicht auftauchen.
 
-314
+276
 00:20:14.940 --> 00:20:16.990
 So helft mir doch!
 
-315
+277
 00:20:16.990 --> 00:20:20.240
 Warum bin ich im Meer?! Was ist hier los?!
 
-316
+278
 00:20:20.700 --> 00:20:22.700
 Halte durch, Robin!
 
-317
+279
 00:20:23.330 --> 00:20:24.830
 Nami!
 
-318
+280
 00:21:18.300 --> 00:21:21.220
 Au Backe. Wenn nichts passiert,
 werden wir alle noch...
 
-319
+281
 00:21:22.720 --> 00:21:24.510
 ...draufgehen.
 
-320
+282
 00:21:39.030 --> 00:21:41.740
 <b>Auf einer
 nahegelegenen Insel</b>
 <b>Marinebasis G-14</b>
 
-321
+283
 00:21:39.530 --> 00:21:41.740
 Okay, Kinder!
 
-322
+284
 00:21:41.740 --> 00:21:45.200
 <b>Kapitänin Tashigi
 Marine Hauptquartier</b>
 
-323
+285
 00:21:42.240 --> 00:21:44.240
 Es ist Zeit für eure Medikamente!
 
-324
+286
 00:21:45.700 --> 00:21:47.330
 Jeder hat einen Becher.
 
-325
+287
 00:21:47.330 --> 00:21:48.410
 Trinkt brav aus.
 
-326
+288
 00:21:50.540 --> 00:21:53.830
 Ich trink das nur für dich, Tashigi!
 
-327
+289
 00:21:54.960 --> 00:21:56.170
 Fein. Lieb von dir.
 
-328
+290
 00:21:56.170 --> 00:22:00.380
 Leute, trinkt alles brav aus.
 
-329
+291
 00:21:58.710 --> 00:22:00.380
 Das schmeckt komisch.
 
-330
+292
 00:22:00.380 --> 00:22:02.130
 Ich will die Plörre nicht!
 
-331
+293
 00:22:02.470 --> 00:22:04.260
 Sei so lieb und trink es trotzdem.
 
-332
+294
 00:22:05.930 --> 00:22:08.180
 Muss ich wirklich alles trinken?
 
-333
+295
 00:22:08.180 --> 00:22:11.140
 Ja, nur so kriegst du deine
 ursprüngliche Größe zurück.
 
-334
+296
 00:22:11.140 --> 00:22:14.270
 Ich trink zwei Becher, damit ich schneller wieder normal werde!
 
-335
+297
 00:22:14.650 --> 00:22:15.730
 Tashigi!
 
-336
+298
 00:22:16.360 --> 00:22:18.440
 Ich glaube, ich bin schon sehr doll geschrumpft.
 
-337
+299
 00:22:19.570 --> 00:22:21.400
 Ja. Du hast dich prächtig verändert, Mocha.
 
-338
+300
 00:22:21.780 --> 00:22:23.860
 Ich will schnell wieder nach Hause.
 
-339
+301
 00:22:23.860 --> 00:22:26.780
 Ja, hab noch ein bisschen Geduld.
 
-340
+302
 00:22:26.780 --> 00:22:27.870
 Lasst uns gemeinsam hier durchhalten.
 
-341
+303
 00:22:27.870 --> 00:22:29.450
 Tashigi!
 
-342
+304
 00:22:30.330 --> 00:22:31.750
 Vizeadmiralin Doll!
 
-343
+305
 00:22:32.120 --> 00:22:33.960
 Hast du ’ne Minute?
 
-344
+306
 00:22:37.250 --> 00:22:41.460
 <b>Vizeadmiralin Doll
 Kommandantin der Marinebasis G-14</b>
 
-345
+307
 00:22:37.340 --> 00:22:41.460
 Könntest du etwas gegen diesen Rotzlöffel Helmeppo unternehmen?
 
-346
+308
 00:22:41.970 --> 00:22:44.930
 Nun ja, da kann ich nichts tun.
 
-347
+309
 00:22:44.930 --> 00:22:47.390
 Es ist ungewiss,
 ob sein bester Freund wohlauf ist.
 
-348
+310
 00:22:47.760 --> 00:22:51.770
 Kapitän Koby ist auch für mich ein wichtiger Kamerad.
 
-349
+311
 00:22:51.770 --> 00:22:54.520
 Ich flehe euch an, Leute!
 
-350
+312
 00:22:54.520 --> 00:22:57.770
 Wir sind doch Waffenbrüder! Gebt euch ’nen Ruck!
 
-351
+313
 00:22:58.520 --> 00:23:04.700
 <b>Fregattenkapitänin Hibari
 Marine Hauptquartier
-(SWORD)</b>
-<b>Korvettenkapitän Helmeppo
+(SWORD) Korvettenkapitän Helmeppo
 Marine Hauptquartier
 (SWORD)</b>
 
-352
+314
 00:22:58.650 --> 00:23:01.230
 Auch ich bitte euch darum!
 
-353
+315
 00:23:01.230 --> 00:23:04.700
 Koby war immer so gut zu mir!
 
-354
+316
 00:23:04.700 --> 00:23:07.950
 <b>Konteradmiral Prince Grus
 Marine Hauptquartier
 (SWORD)</b>
 
-355
+317
 00:23:05.160 --> 00:23:07.950
 Begleite uns doch bitte auf die Pirateninsel!
 
-356
+318
 00:23:07.950 --> 00:23:09.370
 Prince!
 
-357
+319
 00:23:12.040 --> 00:23:13.200
 Bitte!
 
-358
+320
 00:23:13.200 --> 00:23:15.750
 Wir allein können ihn unmöglich retten!
 
-359
+321
 00:23:16.630 --> 00:23:18.340
 Prince!
 
-360
+322
 00:23:18.340 --> 00:23:20.170
 Ich flehe dich an!
 
-361
+323
 00:23:20.710 --> 00:23:21.840
 Bitte!
 
-362
+324
 00:23:21.840 --> 00:23:24.880
 Ich rühre mich nicht vom Fleck,
 bis du uns hilfst!
 
-363
+325
 00:23:25.510 --> 00:23:29.350
 Das ist die Pirateninsel,
 auf die Koby entführt wurde!
 
-364
+326
 00:23:29.350 --> 00:23:31.640
 Es ist das Versteck von Kaiser Blackbeard!
 
-365
+327
 00:23:34.770 --> 00:23:36.270
 Das wisst ihr doch.
 
-366
+328
 00:23:37.020 --> 00:23:40.270
 Kommt man auch nur in die Nähe dieser Insel,
 
-367
+329
 00:23:40.570 --> 00:23:44.490
 schwärmen blutrünstige Piraten wie die Bienen aus ihren Löchern!
 
-368
+330
 00:23:47.610 --> 00:23:50.330
 Deshalb trägt sie den Beinamen "Bienenstock"!
 
-369
+331
 00:23:51.080 --> 00:23:53.160
 Die Insel Egghead ist hier in der Nähe!
 
-370
+332
 00:23:55.120 --> 00:23:57.620
 Lass uns die Seraphim mitnehmen!
 
-371
+333
 00:23:57.620 --> 00:23:59.380
 Die Seraphim?!
 
-372
+334
 00:23:59.380 --> 00:24:00.840
 Habt ihr den Verstand verloren?!
 
-373
+335
 00:24:01.630 --> 00:24:03.460
 Denkt doch mal vernünftig nach!
 
-374
+336
 00:24:05.920 --> 00:24:09.680
 Wir können Drake auch jetzt noch nicht kontaktieren.
 
-375
+337
 00:24:10.300 --> 00:24:12.100
 Uns sind die Hände gebunden!
 
-376
+338
 00:24:16.730 --> 00:24:18.230
 Kriegt das in euren Schädel.
 
-377
+339
 00:24:20.560 --> 00:24:23.020
 Koby!
 
-378
+340
 00:24:27.530 --> 00:24:29.280
 Was?!
 
-379
+341
 00:24:28.780 --> 00:24:31.490
 <b>Luffy’s Gruppe</b>
 
-380
+342
 00:24:29.280 --> 00:24:31.490
 Ihr wisst nicht, wer ich bin?!
 
-381
+343
 00:24:31.490 --> 00:24:33.330
 Nope, keinen Plan.
 
-382
+344
 00:24:33.740 --> 00:24:38.540
 Ich gehöre auch zur Schlimmsten Generation und steh mit dir auf einer Stufe!
 
-383
+345
 00:24:38.540 --> 00:24:41.670
 Ach so, musst ja ’ne echt schlimme Braut sein.
 
-384
+346
 00:24:42.540 --> 00:24:44.130
 Du Riesenvollhorst!
 
-385
+347
 00:24:46.800 --> 00:24:50.300
 Ich war vor zwei Jahren auch auf dem Sabaody-Archipel.
 
-386
+348
 00:24:51.680 --> 00:24:53.680
 Ich bin Bonney!
 
-387
+349
 00:24:53.680 --> 00:24:55.600
 Ich bin dein Feind! Vergiss das nicht!
 
-388
+350
 00:24:56.600 --> 00:24:59.060
 Allerdings hast du mich gerettet.
 
-389
+351
 00:25:00.190 --> 00:25:01.480
 Danke dafür.
 
-390
+352
 00:25:02.110 --> 00:25:04.230
 War doch kein Ding, Boggey!
 
-391
+353
 00:25:04.650 --> 00:25:05.980
 Ich heiße Bonney!
 
-392
+354
 00:25:06.820 --> 00:25:08.070
 Was soll das?!
 
-393
+355
 00:25:11.110 --> 00:25:12.700
 Das ist voll kalt!
 
-394
+356
 00:25:13.620 --> 00:25:16.080
 Mit meinem Bambushut bin ich unbesiegbar!
 
-395
+357
 00:25:17.120 --> 00:25:19.160
 Mich besiegst du nicht, Chopper!
 
-396
+358
 00:25:20.670 --> 00:25:22.250
 Der Kerl soll ein Kaiser der Meere sein?
 
-397
+359
 00:25:22.710 --> 00:25:25.090
 „Ritter der Meere“ Jinbe gehört auch zu seiner Bande.
 
-398
+360
 00:25:25.920 --> 00:25:28.550
 Ach ja, was war eigentlich mit deinem Steckbrief?
 
-399
+361
 00:25:28.550 --> 00:25:31.510
 Hattest du nicht weiße Haare?
 
-400
+362
 00:25:31.510 --> 00:25:33.470
 In der Zeitung wurde viel Wirbel darum gemacht.
 
-401
+363
 00:25:33.470 --> 00:25:35.390
 Ach, nun...
 
-402
+364
 00:25:37.890 --> 00:25:40.270
 So sehe ich aus, wenn ich frei bin.
 
-403
+365
 00:25:40.270 --> 00:25:42.190
 Was soll das heißen?
 
-404
+366
 00:25:42.190 --> 00:25:45.190
 Was ist mit deinen Kameraden?
 
-405
+367
 00:25:46.570 --> 00:25:48.320
 Die kommen schon klar.
 
-406
+368
 00:25:49.900 --> 00:25:53.490
 Was ist mit deinem Schiff und deinen Kameraden passiert?
 
-407
+369
 00:25:55.330 --> 00:25:57.080
 Ich bin allein hergekommen.
 
-408
+370
 00:25:58.040 --> 00:26:01.540
 Das Eisenmonster hat mein Schiff gefressen.
 
-409
+371
 00:26:01.540 --> 00:26:03.500
 Ich könnte echt kotzen.
 
-410
+372
 00:26:03.500 --> 00:26:05.750
 Schwierige Lage für dich.
 
-411
+373
 00:26:06.130 --> 00:26:09.460
 Ja. Und außerdem bin ich hungrig.
 
-412
+374
 00:26:11.470 --> 00:26:13.840
 Geht mir auch so.
 
-413
+375
 00:26:13.840 --> 00:26:15.850
 Suchen wir ’nen Fresstempel.
 
-414
+376
 00:26:15.850 --> 00:26:17.350
 Ich will auch was futtern.
 
-415
+377
 00:26:17.350 --> 00:26:19.560
 Sag mal, Luffy. Hast du Kohle dabei?
 
-416
+378
 00:26:20.520 --> 00:26:22.600
 Hey, ihr Dummköpfe!
 
-417
+379
 00:26:22.600 --> 00:26:24.150
 Hier gibt’s keinen Fresstempel!
 
-418
+380
 00:26:26.980 --> 00:26:28.940
 Diese Insel gehört der Regierung.
 
-419
+381
 00:26:31.400 --> 00:26:32.740
 Ich sag euch, wo wir sind.
 
-420
+382
 00:26:33.740 --> 00:26:36.700
 Der Name der Insel lautet Egghead!
 
-421
+383
 00:26:37.200 --> 00:26:42.710
 Sie beherbergt das Labor von Dr. Vegapunk und soll „500 Jahre in der Zukunft“ liegen!
 
-422
+384
 00:26:44.210 --> 00:26:45.750
 Vegapunk!
 
-423
+385
 00:26:45.750 --> 00:26:47.170
 Den Namen kenn ich!
 
-424
+386
 00:26:50.420 --> 00:26:52.260
 Ich hab mit dem Kerl...
 
-425
+387
 00:26:53.050 --> 00:26:54.880
 ...ein Hühnchen zu rupfen.
 
-426
+388
 00:27:10.360 --> 00:27:12.280
 Geht’s euch gut, Freunde?!
 
-427
+389
 00:27:15.410 --> 00:27:18.620
 Ist die Sunny unversehrt?
 
-428
+390
 00:27:27.290 --> 00:27:29.540
 Ein... Ein...
 
-429
+391
 00:27:29.540 --> 00:27:32.590
 – Ein Riesenroboter!
 – Ein Riesenroboter!
 
-430
+392
 00:27:32.960 --> 00:27:34.550
 Wer steuert ihn?
 
-431
+393
 00:27:47.730 --> 00:27:49.310
 Da kommt jemand raus!
 
-432
+394
 00:27:50.270 --> 00:27:52.150
 Gar nicht gut.
 
-433
+395
 00:27:53.030 --> 00:27:54.940
 Ich hab’s wieder vergeigt.
 
-434
+396
 00:27:57.030 --> 00:28:00.370
 Warum kann ich die Triebe der Lebewesen nicht kontrollieren?
 
-435
+397
 00:28:02.290 --> 00:28:03.790
 So eine Pleite.
 
-436
+398
 00:28:03.790 --> 00:28:07.670
 Keine Ahnung, wer du bist, aber danke!
 
-437
+399
 00:28:07.670 --> 00:28:09.000
 Du hast uns gerettet!
 
-438
+400
 00:28:09.000 --> 00:28:13.250
 Ich hab dem Mecha-Hai nur befohlen,
 
-439
+401
 00:28:18.470 --> 00:28:21.680
 dass er aufklären, berichten und schießen soll.
 
-440
+402
 00:28:22.060 --> 00:28:25.350
 Wenn er sie frisst,
 sind Geld und Güter verloren.
 
-441
+403
 00:28:26.020 --> 00:28:28.350
 Das muss ein Programmierfehler sein.
 
-442
+404
 00:28:36.530 --> 00:28:40.990
 Wer hat was davon gesagt,
 dass ich euch rette, Piratenpack?!
 
-443
+405
 00:28:40.990 --> 00:28:45.660
 Ich bin der geniale Wissenschaftler,
 der für die Regierung arbeitet!
 
-444
+406
 00:28:49.500 --> 00:28:52.000
 Ich bin Dr. Vegapunk!
 
-445
+407
 00:28:54.050 --> 00:28:57.800
 – Was?!
 – Was?!
 
-446
-00:29:00.500 --> 00:29:05.590
-Wie weit mag ich wohl gerannt sein?
+408
+00:29:00.500 --> 00:29:05.580
+Wie weit mag ich wohl gerannt sein
 
-447
-00:29:06.440 --> 00:29:12.950
-Ohne es zu bemerken, zählte ich die Narben.
+409
+00:29:06.440 --> 00:29:12.940
+Ohne es zu bemerken zählte ich die Narben
 
-448
-00:29:13.450 --> 00:29:20.370
-Eine Schatzkarte war die ganze Zeit über in meinem Kopf.
+410
+00:29:13.450 --> 00:29:20.360
+Eine Schatzkarte war die ganze Zeit über in meinem Kopf
 
-449
-00:29:20.450 --> 00:29:26.660
-Immerzu war ich auf der Suche nach der Zukunft.
+411
+00:29:20.450 --> 00:29:26.650
+Immerzu war ich auf der Suche nach der Zukunft
 
-450
+412
 00:29:26.800 --> 00:29:33.570
 Das wahre Versprechen
 
-451
-00:29:33.530 --> 00:29:40.680
-liegt viel tiefer in meinem Herzen verborgen.
+413
+00:29:33.530 --> 00:29:40.670
+liegt viel tiefer in meinem Herzen verborgen
 
-452
-00:29:40.810 --> 00:29:49.790
-Ein Traum, den niemand einholen kann,
+414
+00:29:40.810 --> 00:29:49.780
+Ein Traum den niemand einholen kann
 
-453
-00:29:49.970 --> 00:29:55.550
-ist alles, woran ich mich festhalte.
+415
+00:29:49.970 --> 00:29:55.540
+ist alles woran ich mich festhalte
 
-454
+416
 00:29:55.660 --> 00:30:02.570
 Du lächelst wie die Sonne und für dich
 
-455
-00:30:02.730 --> 00:30:09.760
-werde ich dasselbe Lied singen wie an jenem Tag.
+417
+00:30:02.730 --> 00:30:09.750
+werde ich dasselbe Lied singen wie an jenem Tag
 
-456
-00:30:09.740 --> 00:30:16.810
-Ich will diesen Wunsch nicht vergessen, auch wenn ich erwachsen bin,
+418
+00:30:09.740 --> 00:30:16.800
+Ich will diesen Wunsch nicht vergessen auch wenn ich erwachsen bin
 
-457
-00:30:16.710 --> 00:30:23.920
-bis er dich endlich erreicht hat.
+419
+00:30:16.710 --> 00:30:23.910
+bis er dich endlich erreicht hat

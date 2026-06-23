@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -973,7 +973,7 @@ Oui !
 
 231
 00:17:38.420 --> 00:17:41.420
-<b>En Mer  –  Le Sunny</b>
+<b>En Mer – Le Sunny</b>
 
 232
 00:17:43.630 --> 00:17:48.890
@@ -1257,7 +1257,7 @@ vient d'arriver en renfort !
 
 297
 00:22:03.830 --> 00:22:07.580
-<b>Smoothie  –  Générale Sucrée</b>
+<b>Smoothie – Générale Sucrée</b>
 <b>14ᵉ fille de la famille Charlotte</b>
 
 298
@@ -1267,10 +1267,8 @@ elle est accompagnée de ses sœurs !
 
 299
 00:22:11.010 --> 00:22:16.430
-<b>Cannelle</b>
-<b>Citron</b>
-<b>16ᵉ fille de la famille Charlotte</b>
-<b>15ᵉ fille de la famille Charlotte</b>
+<b>Cannelle Citron</b>
+<b>16ᵉ fille de la famille Charlotte 15ᵉ fille de la famille Charlotte</b>
 
 300
 00:22:12.310 --> 00:22:16.430

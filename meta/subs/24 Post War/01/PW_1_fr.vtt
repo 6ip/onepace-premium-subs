@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -502,12 +502,12 @@ Hourra !
 On est sauvés !
 
 115
-00:07:39.240 --> 00:07:41.020
-West Blue.
-
-116
 00:07:39.240 --> 00:07:41.910
 <b>West Blue</b>
+
+116
+00:07:39.240 --> 00:07:41.020
+West Blue.
 
 117
 00:07:41.910 --> 00:07:44.530
@@ -538,12 +538,12 @@ Je fais aussi des rabais !
 La Marine a gagné !
 
 124
-00:07:55.090 --> 00:07:56.360
-North Blue.
-
-125
 00:07:55.090 --> 00:07:57.780
 <b>North Blue</b>
+
+125
+00:07:55.090 --> 00:07:56.360
+North Blue.
 
 126
 00:07:58.360 --> 00:08:00.960

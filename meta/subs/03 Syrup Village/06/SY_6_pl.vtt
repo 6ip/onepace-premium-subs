@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -876,12 +876,12 @@ ale dotrzymuję danego słowa.
 Tam są!
 
 205
-00:13:27.830 --> 00:13:31.790
-Tam są! Tam są! Stój!
-
-206
 00:13:27.830 --> 00:13:29.910
 Aua! Au, au, au!
+
+206
+00:13:27.830 --> 00:13:31.790
+Tam są! Tam są! Stój!
 
 207
 00:13:29.910 --> 00:13:31.790

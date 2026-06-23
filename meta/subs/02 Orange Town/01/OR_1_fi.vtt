@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -1622,13 +1622,13 @@ mutta paha haava silti!
 Taisin voittaa!
 
 384
+00:23:30.640 --> 00:23:33.020
+Mahtihomma, kapteeni!
+
+385
 00:23:30.640 --> 00:23:36.600
 – Buggy! Buggy! Buggy!
 – Buggy! Buggy! Buggy!
-
-385
-00:23:30.640 --> 00:23:33.020
-Mahtihomma, kapteeni!
 
 386
 00:23:33.890 --> 00:23:36.600
@@ -1886,7 +1886,7 @@ Aikaan kun viel koko seikkailu edessäpäin on
 
 448
 00:28:23.510 --> 00:28:30.510
-Vie mut takaisin! En tahdo unohtaa
+Vie mut takaisin En tahdo unohtaa
 
 449
 00:28:30.610 --> 00:28:36.380

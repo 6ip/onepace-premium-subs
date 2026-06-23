@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -1639,12 +1639,10 @@ Les quatre océans du monde
 
 374
 00:23:20.710 --> 00:23:33.680
-<b>EAST BLUE</b>
-<b>NORTH BLUE</b>
+<b>EAST BLUE NORTH BLUE</b>
 <b>MARIE JOIE</b>
 <b>NOUVEAU MONDE</b>
-<b>SOUTH BLUE</b>
-<b>WEST BLUE</b>
+<b>SOUTH BLUE WEST BLUE</b>
 
 375
 00:23:22.320 --> 00:23:24.590

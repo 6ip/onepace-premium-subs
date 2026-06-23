@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -1606,8 +1606,8 @@ Where have they gone?
 
 378
 00:29:05.600 --> 00:29:08.310
-<b>The guy with the cool eyebrows</b>
-<b>woke up first...</b>
+<b>The guy with the cool eyebrows
+woke up first... woke up first...</b>
 
 379
 00:29:06.390 --> 00:29:08.640
@@ -1619,7 +1619,6 @@ and made Usopp get up too.
 
 381
 00:29:08.850 --> 00:29:10.810
-<b>and he woke up the liar</b>
 <b>and he woke up the liar
 with the long nose.</b>
 

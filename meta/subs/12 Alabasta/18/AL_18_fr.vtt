@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -1358,12 +1358,12 @@ Arrêtez de vous battre !
 Arrêtez de vous battre !
 
 310
-00:23:31.140 --> 00:23:32.080
-Vivi...
-
-311
 00:23:31.140 --> 00:23:35.260
 Arrêtez de vous battre !
+
+311
+00:23:31.140 --> 00:23:32.080
+Vivi...
 
 312
 00:23:35.800 --> 00:23:39.400
@@ -1393,8 +1393,7 @@ Arrêtez de vous battre !
 
 318
 00:23:55.200 --> 00:23:56.460
-Je vous en conjure !
-L'idiote...
+Je vous en conjure ! L'idiote...
 
 319
 00:23:57.040 --> 00:23:59.790

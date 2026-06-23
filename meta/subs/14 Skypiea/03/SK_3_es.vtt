@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -54,7 +54,7 @@ Como Skypiea es el país de Dios,
 12
 00:02:06.870 --> 00:02:11.260
 es gobernada por el
-  todopoderoso Dios Enel.
+ todopoderoso Dios Enel.
 
 13
 00:02:11.260 --> 00:02:13.430
@@ -1264,13 +1264,13 @@ Al fin y al cabo, los principantes no debemos hacer imposibles, ¿verdad?
 ¡Oye, Luffy!
 
 299
-00:18:37.330 --> 00:18:39.520
-¡Claro que no, Luffy!
-
-300
 00:18:37.330 --> 00:18:40.430
 Nami está intentando engañarlos
  para que crean que fue un accidente.
+
+300
+00:18:37.330 --> 00:18:39.520
+¡Claro que no, Luffy!
 
 301
 00:18:39.520 --> 00:18:41.770
@@ -1604,6 +1604,7 @@ Su brazo...
 
 380
 00:22:24.530 --> 00:22:27.490
+Fuegos artificiales.
 Mola
 Shi
 Chibukai

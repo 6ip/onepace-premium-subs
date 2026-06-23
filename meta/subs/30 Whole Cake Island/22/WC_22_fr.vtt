@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -418,7 +418,7 @@ Allez, viens ma puce.
 
 98
 00:12:34.460 --> 00:12:38.470
-<b>Charlotte Linlin  –  Une humaine de 5 ans</b>
+<b>Charlotte Linlin – Une humaine de 5 ans</b>
 
 99
 00:12:35.770 --> 00:12:38.300
@@ -1158,10 +1158,8 @@ J'aime ta détermination, Rydin !
 
 266
 00:23:06.330 --> 00:23:13.800
-<b>Jarl "à la Barbe en cime"</b>
-<b>Jorl "Barbecade"</b>
-<b>Âge 345 ans)</b>
-<b>(Âge 344 ans)</b>
+<b>Jarl "à la Barbe en cime" Jorl "Barbecade"</b>
+<b>Âge 345 ans) (Âge 344 ans)</b>
 
 267
 00:23:06.930 --> 00:23:09.400
@@ -1344,7 +1342,7 @@ C'est trop bon ! J'adore ! Semla !
 
 308
 00:25:28.270 --> 00:25:32.280
-<b>Jeûne  –  3ᵉ jour</b>
+<b>Jeûne – 3ᵉ jour</b>
 
 309
 00:25:29.240 --> 00:25:32.680
@@ -1367,7 +1365,7 @@ pour nous réchauffer de ses doux rayons.
 
 313
 00:25:43.050 --> 00:25:45.290
-<b>Jeûne  –  4ᵉ jour</b>
+<b>Jeûne – 4ᵉ jour</b>
 
 314
 00:25:45.590 --> 00:25:47.550
@@ -1389,7 +1387,7 @@ Je veux bien faire un effort.
 
 318
 00:26:03.370 --> 00:26:05.880
-<b>Jeûne  –  5ᵉ jour</b>
+<b>Jeûne – 5ᵉ jour</b>
 
 319
 00:26:07.050 --> 00:26:08.700
@@ -1423,7 +1421,7 @@ Linlin adorait mère Carmel.
 
 326
 00:26:24.130 --> 00:26:26.630
-<b>Jeûne  –  6ᵉ jour</b>
+<b>Jeûne – 6ᵉ jour</b>
 
 327
 00:26:27.600 --> 00:26:30.470
@@ -1439,7 +1437,7 @@ Je veux en remanger...
 
 330
 00:26:43.180 --> 00:26:45.700
-<b>Jeûne  –  7ᵉ jour</b>
+<b>Jeûne – 7ᵉ jour</b>
 
 331
 00:26:49.100 --> 00:26:50.120

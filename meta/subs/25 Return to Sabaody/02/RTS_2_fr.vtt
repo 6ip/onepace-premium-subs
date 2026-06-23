@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -1152,7 +1152,7 @@ Quatre capitaines identifiés.
 266
 00:16:01.510 --> 00:16:06.040
 <b>Albion l'Écorché
-Prime :  92 Millions de Berrys</b>
+Prime : 92 Millions de Berrys</b>
 
 267
 00:16:02.040 --> 00:16:04.340
@@ -1166,7 +1166,7 @@ Albion l'Écorché.
 269
 00:16:06.080 --> 00:16:10.780
 <b>Lip "Service" Doughty
-Prime :  88 Millions de Berrys</b>
+Prime : 88 Millions de Berrys</b>
 
 270
 00:16:06.880 --> 00:16:08.610
@@ -1184,7 +1184,7 @@ sont des gros morceaux :
 273
 00:16:15.320 --> 00:16:22.560
 <b>Caribou la Tignasse Humide
-Prime :  210 Millions de Berrys</b>
+Prime : 210 Millions de Berrys</b>
 
 274
 00:16:15.950 --> 00:16:18.160
@@ -1199,7 +1199,7 @@ dont la prime atteint 210 Millions.
 276
 00:16:22.630 --> 00:16:30.200
 <b>Coribou L'Arroseur Sanguinaire
-Prime :  190 Millions de Berrys</b>
+Prime : 190 Millions de Berrys</b>
 
 277
 00:16:23.260 --> 00:16:25.330
@@ -1214,7 +1214,7 @@ mis à prix 190 Millions :
 Coribou l'Arroseur sanguinaire.
 
 280
-00:16:37.680 --> 00:16:41.350
+00:16:37.680 --> 00:16:44.880
 Une autre ! Une autre !
 
 281
@@ -1223,1033 +1223,1025 @@ Une autre ! Une autre !
 Concert du Sabaodome</b>
 
 282
-00:16:41.550 --> 00:16:44.880
-Une autre ! Une autre !
-
-283
 00:16:44.880 --> 00:16:49.590
 Une autre ! Une autre ! Une autre !
 
-284
+283
 00:16:49.590 --> 00:16:52.820
 Vraiment ? La Marine ?
 
-285
+284
 00:16:53.460 --> 00:16:54.560
 Je vois.
 
-286
+285
 00:16:54.760 --> 00:16:56.460
 Ne poussez pas !
 
-287
+286
 00:16:56.460 --> 00:16:58.730
 Soul King, revenez vite !
 
-288
+287
 00:16:58.960 --> 00:17:01.230
 Je dois encore rester un peu.
 
-289
+288
 00:17:01.430 --> 00:17:04.700
 Pour mes fans,
 je leur dois une dernière chanson.
 
-290
+289
 00:17:10.240 --> 00:17:13.850
 Ils réclament à cor et à cri.
 J'y retourne.
 
-291
+290
 00:17:31.060 --> 00:17:33.930
 Merci d'avoir attendu,
 everybody !
 
-292
+291
 00:17:39.470 --> 00:17:42.540
 Stop !
 Nous interrompons ce concert !
 
-293
+292
 00:17:42.770 --> 00:17:44.740
 La Marine ?
 Pourquoi ils sont là ?
 
-294
+293
 00:17:45.310 --> 00:17:47.880
 Capitaine en second
 des pirates du Rumbar,
 
-295
+294
 00:17:48.010 --> 00:17:50.180
 alias Brook le fredonneur.
 
-296
+295
 00:17:50.180 --> 00:17:52.680
 Mise à prix : 33 Millions de Berrys !
 
-297
+296
 00:17:52.850 --> 00:17:56.490
 Tout porte à croire
 qu'il s'agit bien de toi.
 
-298
+297
 00:17:57.320 --> 00:18:03.190
 Et on vient d'apprendre que tu es
 un des hommes du Chapeau de paille.
 
-299
+298
 00:18:03.730 --> 00:18:05.660
 Brook le Soul King.
 
-300
+299
 00:18:05.860 --> 00:18:08.000
 Ou plutôt, Brook le pirate !
 
-301
+300
 00:18:08.170 --> 00:18:10.400
 Tu es en état d'arrestation.
 
-302
+301
 00:18:13.340 --> 00:18:15.770
 C'est pas possible !
 Le grand Brook ?
 
-303
+302
 00:18:15.770 --> 00:18:17.880
 Le Soul King est un hors-la-loi ?
 
-304
+303
 00:18:18.080 --> 00:18:19.540
 Un pirate ?
 
-305
+304
 00:18:19.540 --> 00:18:22.680
 Mais tout le monde sait
 que le Chapeau de paille est mort.
 
-306
+305
 00:18:23.410 --> 00:18:26.380
 C'est fini, Brook.
 Abandonne.
 
-307
+306
 00:18:26.580 --> 00:18:29.150
 Je m'en doutais, c'était bien vous.
 
-308
+307
 00:18:29.720 --> 00:18:31.060
 Mes chers managers.
 
-309
+308
 00:18:31.190 --> 00:18:35.090
 Dans la loge, quand tu nous as dit
 que tu comptais faire tes adieux,
 
-310
+309
 00:18:35.090 --> 00:18:36.960
 ça nous a fait un choc.
 
-311
+310
 00:18:37.130 --> 00:18:39.130
 Tu es au sommet de ta carrière,
 
-312
+311
 00:18:39.330 --> 00:18:41.930
 on aurait pu gagner gros sur ton dos.
 
-313
+312
 00:18:42.430 --> 00:18:44.000
 Et toi, tu nous trahis !
 
-314
+313
 00:18:44.000 --> 00:18:47.470
 Maintenant,
 on est juste bons pour fermer boutique.
 
-315
+314
 00:18:50.740 --> 00:18:54.110
 Mais tu vas sombrer avec nous,
 le Soul King.
 
-316
+315
 00:18:57.250 --> 00:18:59.550
 <b>Grove N°17
 Lieu de mouillage du Thousand Sunny</b>
 
-317
+316
 00:18:57.850 --> 00:18:59.550
 Trop classe !
 
-318
+317
 00:19:00.690 --> 00:19:05.660
 T'as vu ça ?
 C'est de la bombe, ce corps !
 
-319
+318
 00:19:13.970 --> 00:19:15.600
 T'es devenu un robot !
 
-320
+319
 00:19:15.600 --> 00:19:18.240
 T'as un rayon laser ?
 T'envoies des missiles ?
 
-321
+320
 00:19:18.240 --> 00:19:20.070
 Tu peux fusionner ?
 
-322
+321
 00:19:20.070 --> 00:19:23.570
 Portant sur ses épaules
 les rêves et le cœur des hommes,
 
-323
+322
 00:19:23.910 --> 00:19:26.880
 il est prêt à passer à l'action !
 
-324
+323
 00:19:26.880 --> 00:19:28.350
 Son nom est...
 
-325
+324
 00:19:30.450 --> 00:19:32.520
 Armored M-O-I.
 
-326
+325
 00:19:34.150 --> 00:19:36.550
 Robot ! Robot !
 
-327
+326
 00:19:36.550 --> 00:19:39.490
 Du calme, Chopper !
 Tu vas mourir d'excitation !
 
-328
+327
 00:19:42.730 --> 00:19:44.360
 Par contre, Franky...
 
-329
+328
 00:19:44.360 --> 00:19:47.900
 Avec tes mains, tu ne peux plus
 faire de travail de précision.
 
-330
+329
 00:19:50.740 --> 00:19:51.900
 De quoi tu parles ?
 
-331
+330
 00:19:52.170 --> 00:19:54.270
 Y a des mini mains qui sortent !
 
-332
+331
 00:19:54.410 --> 00:19:56.110
 Des mains dans les mains !
 
-333
+332
 00:19:58.140 --> 00:19:59.480
 Robin !
 
-334
+333
 00:20:00.610 --> 00:20:01.510
 Nami !
 
-335
+334
 00:20:02.510 --> 00:20:04.080
 Ça a l'air d'aller.
 
-336
+335
 00:20:06.680 --> 00:20:09.720
 Qu'est-ce qu'il a encore fait
 avec son corps ?
 
-337
+336
 00:20:10.890 --> 00:20:12.960
 Aucune idée.
 Ça me dépasse complètement.
 
-338
+337
 00:20:15.090 --> 00:20:16.490
 C'est ça, le revêtement ?
 
-339
+338
 00:20:16.830 --> 00:20:19.230
 Presse mon nez un coup pour voir.
 
-340
+339
 00:20:19.460 --> 00:20:20.230
 Ton nez ?
 
-341
+340
 00:20:20.470 --> 00:20:21.930
 Ouais, assez longtemps.
 
-342
+341
 00:20:21.930 --> 00:20:23.670
 Au moins trois secondes.
 
-343
+342
 00:20:24.340 --> 00:20:27.210
 "Appuyer trois secondes, merci !"
 
-344
+343
 00:20:27.510 --> 00:20:29.610
 Il a répété,
 mais avec une voix de robot !
 
-345
+344
 00:20:30.240 --> 00:20:32.380
 Suspense !
 
-346
+345
 00:20:32.380 --> 00:20:34.680
 Un, deux, trois !
 
-347
+346
 00:20:35.950 --> 00:20:37.420
 La vache, les cheveux !
 
-348
+347
 00:20:37.420 --> 00:20:39.850
 Les cheveux !
 
-349
+348
 00:20:41.020 --> 00:20:42.290
 Tu peux changer de coupe ?
 
-350
+349
 00:20:44.160 --> 00:20:45.320
 Eh ouais, au choix.
 
+350
+00:20:45.320 --> 00:20:48.060
+Ouaouh !
+
 351
-00:20:45.320 --> 00:20:46.590
-Ouaouh !
-
-352
-00:20:46.590 --> 00:20:48.060
-Ouaouh !
-
-353
 00:20:48.260 --> 00:20:51.400
 Tiens, mais c'est Nami !
 Ça va bien ?
 
-354
+352
 00:20:51.730 --> 00:20:53.260
 Ouais, ouais.
 
-355
+353
 00:20:53.660 --> 00:20:56.100
 Il a fait quoi, pendant deux ans ?
 
-356
+354
 00:20:56.230 --> 00:20:58.870
 Montre-moi tes armes, s'il te plaît !
 
-357
+355
 00:21:02.910 --> 00:21:04.240
 Rigole pas !
 
-358
+356
 00:21:04.240 --> 00:21:07.550
 Je garde le grand show
 pour quand Luffy sera là. Mecha.
 
-359
+357
 00:21:07.810 --> 00:21:09.310
 Il bouge comme un robot !
 
-360
+358
 00:21:09.310 --> 00:21:11.020
 Il a dit "mecha" à la fin !
 
-361
+359
 00:21:13.950 --> 00:21:14.950
 Salut à tous.
 
-362
+360
 00:21:16.020 --> 00:21:17.920
 Monsieur Rayleigh ! Shakky !
 
-363
+361
 00:21:18.290 --> 00:21:21.490
 Pardon de troubler vos retrouvailles,
 après deux ans,
 
-364
+362
 00:21:21.690 --> 00:21:25.060
 mais on dirait bien que les choses
 vont se corser, ici.
 
-365
+363
 00:21:25.060 --> 00:21:26.730
 Brook le pirate.
 
-366
+364
 00:21:27.270 --> 00:21:31.100
 Pose ton instrument
 et lève les mains en l'air !
 
-367
+365
 00:21:32.340 --> 00:21:33.440
 Musiciens.
 
-368
+366
 00:21:34.410 --> 00:21:36.570
 Choristes, danseuses.
 
-369
+367
 00:21:36.810 --> 00:21:40.440
 Je vous demanderai de m'accompagner
 une dernière fois.
 
-370
+368
 00:21:44.280 --> 00:21:46.080
 Faites-moi confiance.
 
-371
+369
 00:21:46.280 --> 00:21:49.020
 Rien ne peut arrêter ma musique.
 
-372
+370
 00:21:50.120 --> 00:21:51.660
 T'as perdu la boule ?
 
-373
+371
 00:21:51.790 --> 00:21:54.030
 Tu es fini, Brook.
 
-374
+372
 00:21:54.330 --> 00:21:58.000
 Manager,
 merci pour ces deux dernières années.
 
-375
+373
 00:21:59.430 --> 00:22:02.970
 Et merci de m'avoir conduit
 jusqu'à cet archipel.
 
-376
+374
 00:22:03.770 --> 00:22:08.940
 Pour nous, suite à notre sévère défaite,
 ce lieu est source d'amers souvenirs.
 
-377
+375
 00:22:09.110 --> 00:22:11.440
 Mais c'est aussi ici
 que tout recommence.
 
-378
+376
 00:22:12.410 --> 00:22:14.180
 Je suis musicien.
 
-379
+377
 00:22:14.350 --> 00:22:18.720
 Au cours de nos aventures,
 c'est à moi d'animer l'atmosphère.
 
-380
+378
 00:22:19.980 --> 00:22:23.020
 Luffy au chapeau de paille serait mort ?
 
-381
+379
 00:22:23.220 --> 00:22:24.720
 Et puis quoi, encore ?
 
-382
+380
 00:22:25.390 --> 00:22:27.830
 Clamez-le dans le monde entier.
 
-383
+381
 00:22:28.490 --> 00:22:31.260
 Le pirate Luffy au chapeau de paille
 
-384
+382
 00:22:31.530 --> 00:22:33.160
 est bel et bien vivant !
 
-385
+383
 00:22:37.970 --> 00:22:41.610
 Un jour, il régnera sur les mers
 du monde entier.
 
-386
+384
 00:22:42.210 --> 00:22:45.310
 La rédaction, vous m'entendez ?
 On a un scoop !
 
-387
+385
 00:22:45.510 --> 00:22:49.380
 Et son départ
 doit être célébré en fanfare !
 
-388
+386
 00:22:49.380 --> 00:22:50.980
 Oh, baby!
 
-389
+387
 00:22:52.650 --> 00:22:54.020
 Le Soul King.
 
-390
+388
 00:22:54.420 --> 00:22:56.890
 Aimez-moi jusqu'à l'os !
 
-391
+389
 00:22:56.890 --> 00:22:58.620
 Yeah!
 
-392
+390
 00:23:00.290 --> 00:23:03.460
 Je dédie cette chanson
 à mes chers compagnons.
 
-393
+391
 00:23:03.860 --> 00:23:06.660
 Mon dernier morceau de soul.
 Profitez-en.
 
-394
+392
 00:23:06.830 --> 00:23:07.630
 Yeah!
 
-395
+393
 00:23:08.730 --> 00:23:12.100
 Luffy,
 levons l'ancre pour le Nouveau Monde.
 
-396
+394
 00:23:12.340 --> 00:23:14.670
 Pauvre idiot, le concert est annulé !
 
-397
+395
 00:23:14.940 --> 00:23:15.810
 Silence, soldat !
 
-398
+396
 00:23:18.580 --> 00:23:20.750
 Laissez-nous entendre encore un morceau.
 
-399
+397
 00:23:20.750 --> 00:23:22.150
 Laissez-le chanter !
 
-400
+398
 00:23:22.550 --> 00:23:26.220
 Ouais ! Quelle importance,
 si le Soul King est un pirate ?
 
-401
+399
 00:23:26.420 --> 00:23:29.620
 La musique est une précieuse alliée,
 la preuve !
 
-402
+400
 00:23:36.330 --> 00:23:37.830
 "New World".
 
-403
+401
 00:23:42.870 --> 00:23:47.040
 <b>Archipel Sabaody - Grove N°46</b>
 
-404
+402
 00:23:44.700 --> 00:23:47.040
 Ici le Grove 46.
 
-405
+403
 00:23:47.140 --> 00:23:51.540
 <b>Lieu de rendez-vous
 de l'équipage au chapeau de paille</b>
 
-406
+404
 00:23:47.810 --> 00:23:51.540
 Il doit y avoir plus de cent pirates
 rassemblés ici.
 
-407
+405
 00:23:54.480 --> 00:23:58.580
 S'ils sont tous ralliés
 au Chapeau de paille, c'est la cata...
 
-408
+406
 00:24:03.190 --> 00:24:05.320
 Qu'y a-t-il ? Réponds !
 
-409
+407
 00:24:08.030 --> 00:24:10.190
 Merde !
 Vite, les renforts !
 
-410
+408
 00:24:11.630 --> 00:24:14.170
 Eh bien, eh bien...
 
-411
+409
 00:24:14.570 --> 00:24:19.470
 Regardez qui voilà !
 Un petit gars de la Marine.
 
-412
+410
 00:24:19.970 --> 00:24:21.640
 Et ça ?
 
-413
+411
 00:24:21.940 --> 00:24:25.340
 Qu'est-ce que ça peut bien
 vouloir dire ?
 
-414
+412
 00:24:30.820 --> 00:24:34.490
 Ah ! Je sais !
 
-415
+413
 00:24:35.750 --> 00:24:40.660
 Tu n'étais pas en train
 de contacter la Marine, par hasard ?
 
-416
+414
 00:24:42.330 --> 00:24:43.630
 De quoi ?
 
-417
+415
 00:24:44.360 --> 00:24:46.430
 C'est une saleté de soldat ?
 
-418
+416
 00:24:47.130 --> 00:24:48.730
 Non, je n'ai pas appelé.
 
-419
+417
 00:24:48.900 --> 00:24:50.670
 J'allais le faire, mais...
 
-420
+418
 00:24:50.940 --> 00:24:55.240
 Faut pas prévenir tes petits copains,
 ce n'est pas bien du tout.
 
-421
+419
 00:24:55.740 --> 00:24:59.710
 S'ils débarquent ici,
 on va repeindre la place en rouge.
 
-422
+420
 00:25:00.010 --> 00:25:03.310
 Rouge sang,
 si tu vois ce que je veux dire.
 
-423
+421
 00:25:03.610 --> 00:25:06.350
 J'ai pas raison, Coribou ?
 
-424
+422
 00:25:07.120 --> 00:25:09.750
 Pardon, frangin ! J'suis désolé !
 
-425
+423
 00:25:09.750 --> 00:25:12.960
 Je suis ici,
 espèce de gros nigaud.
 
-426
+424
 00:25:14.560 --> 00:25:15.730
 Désolé.
 
-427
+425
 00:25:16.090 --> 00:25:20.200
 Toujours pas !
 T'es vraiment débile.
 
-428
+426
 00:25:20.430 --> 00:25:22.630
 Caribou, le tueur de soldats...
 
-429
+427
 00:25:48.490 --> 00:25:51.830
 Allons, pas de blague.
 
-430
+428
 00:25:52.260 --> 00:25:53.560
 Et voilà...
 
-431
+429
 00:25:53.700 --> 00:25:54.700
 Fidèle à son surnom.
 
-432
+430
 00:25:57.870 --> 00:26:01.540
 Dieux du Ciel, j'implore votre pardon !
 
-433
+431
 00:26:02.370 --> 00:26:08.180
 Pour ce pauvre fou,
 qui a osé pointer une arme sur moi.
 
-434
+432
 00:26:08.380 --> 00:26:11.420
 Je vous en prie,
 soyez cléments avec lui.
 
-435
+433
 00:26:11.820 --> 00:26:14.890
 Pardon, les petits dieux.
 Pardon, pardon.
 
-436
+434
 00:26:16.120 --> 00:26:18.220
 Inhume-le, Coribou.
 
-437
+435
 00:26:18.460 --> 00:26:23.430
 Enterre-moi vivant
 ce gros pécheur de soldat.
 
-438
+436
 00:26:23.430 --> 00:26:26.130
 Ouais ! Et hop ! On creuse !
 
-439
+437
 00:26:26.130 --> 00:26:29.630
 Attendez, m'enterrez pas...
 
-440
+438
 00:26:29.800 --> 00:26:31.870
 J'ai pas appelé mes chefs !
 
-441
+439
 00:26:31.870 --> 00:26:33.800
 Ça suffit, Caribou.
 
-442
+440
 00:26:36.610 --> 00:26:41.610
 C'est juste un troufion,
 balance-le un peu plus loin.
 
-443
+441
 00:26:43.150 --> 00:26:45.820
 C'est le capitaine Luffy
 au chapeau de paille !
 
-444
+442
 00:26:48.050 --> 00:26:50.620
 Les gars, regardez autour de vous.
 
-445
+443
 00:26:50.820 --> 00:26:52.690
 Vous ne vous connaissez pas encore,
 
-446
+444
 00:26:52.690 --> 00:26:55.730
 mais vous êtes mes hommes,
 maintenant !
 
-447
+445
 00:26:56.530 --> 00:26:59.230
 Vous êtes les pirates
 au chapeau de paille !
 
-448
+446
 00:27:02.330 --> 00:27:05.740
 Et quand je serai le Roi des Pirates,
 
-449
+447
 00:27:05.900 --> 00:27:08.110
 vous ferez partie de l'équipage du Roi !
 
-450
+448
 00:27:09.640 --> 00:27:11.840
 Dans les aventures qui nous attendent,
 
-451
+449
 00:27:11.980 --> 00:27:15.210
 vous serez mes bras et mes jambes,
 
-452
+450
 00:27:15.210 --> 00:27:17.480
 soyez prêts à mourir pour moi !
 
-453
+451
 00:27:19.150 --> 00:27:20.920
 Je crois rêver !
 
-454
+452
 00:27:20.920 --> 00:27:23.320
 Il s'en est pris aux trois piliers
 du Gouvernement Mondial :
 
-455
+453
 00:27:23.320 --> 00:27:27.020
 Enies Lobby, Impel Down
 et le QG de la Marine
 
-456
+454
 00:27:27.320 --> 00:27:33.230
 Aucun pirate n'avait jamais
 fait ça avant lui !
 
-457
+455
 00:27:33.600 --> 00:27:37.900
 Il a toutes ses chances
 pour devenir Roi des Pirates !
 
-458
+456
 00:27:38.070 --> 00:27:40.200
 On mise sur le bon canasson !
 
-459
+457
 00:27:43.910 --> 00:27:46.440
 Eh ben, y a du monde.
 
-460
+458
 00:27:46.610 --> 00:27:47.780
 C'est là ?
 
-461
+459
 00:27:48.210 --> 00:27:50.850
 J'ai hâte de voir les autres !
 
-462
+460
 00:27:55.550 --> 00:27:57.860
 Vos gueules !
 
-463
+461
 00:27:59.720 --> 00:28:03.590
 Si je vous ai rassemblés ici,
 c'est pour une bonne raison.
 
-464
+462
 00:28:03.760 --> 00:28:07.900
 Votre super chef adoré,
 c'est-à-dire moi,
 
-465
+463
 00:28:07.900 --> 00:28:09.970
 s'est fait insulter par des péquenots !
 
-466
+464
 00:28:13.740 --> 00:28:17.010
 Ils sont quelque part dans l'archipel.
 
-467
+465
 00:28:17.010 --> 00:28:18.810
 Trouvez-les-moi
 
-468
+466
 00:28:18.980 --> 00:28:21.480
 et ramenez-les ici
 par la peau des fesses !
 
-469
+467
 00:28:22.410 --> 00:28:24.620
 On te fait ça tout de suite, capitaine !
 
-470
+468
 00:28:24.850 --> 00:28:27.250
 Ils vont le payer, ces cons !
 
-471
+469
 00:28:28.990 --> 00:28:31.960
 Mais vous avez sacrément changé,
 en deux ans.
 
-472
+470
 00:28:32.720 --> 00:28:34.690
 Vous avez perdu votre langue ?
 
-473
+471
 00:28:35.790 --> 00:28:41.000
 Je crois bien que ce fichu moustachu
 connaît les vrais chapeaux de paille.
 
-474
+472
 00:28:41.000 --> 00:28:42.400
 C'est qui, ce type ?
 
-475
+473
 00:28:42.400 --> 00:28:46.470
 J'en sais rien, mais bouclons-la.
 Ça évitera qu'il nous démasque.
 
-476
+474
 00:28:46.470 --> 00:28:49.310
 On le livre au capitaine, et basta.
 
-477
+475
 00:28:49.610 --> 00:28:50.410
 Ça marche.
 
-478
+476
 00:28:50.670 --> 00:28:53.780
 Et puis aussi,
 depuis quand vous êtes potes ?
 
-479
+477
 00:28:55.680 --> 00:28:57.510
 Faut dire, ça fait deux ans.
 
-480
+478
 00:28:59.280 --> 00:29:01.150
 Vous avez même changé de tronche.
 
-481
+479
 00:29:01.150 --> 00:29:02.620
 Vous êtes déguisés aussi ?
 
-482
+480
 00:29:08.030 --> 00:29:09.990
 Attendez, je vous dis !
 
-483
+481
 00:29:11.160 --> 00:29:12.230
 La Marine ?
 
-484
+482
 00:29:12.400 --> 00:29:16.830
 Oui, ils pensent que les faux
 chapeaux de paille sont les vrais.
 
-485
+483
 00:29:16.830 --> 00:29:18.600
 Ils débarquent en masse.
 
-486
+484
 00:29:19.100 --> 00:29:22.610
 On les a mis sur écoute,
 c'est pour ça qu'on sait.
 
-487
+485
 00:29:22.840 --> 00:29:24.340
 On a prévenu Brook aussi,
 
-488
+486
 00:29:24.340 --> 00:29:28.150
 grâce à l'escargophone
 de la salle de concert.
 
-489
+487
 00:29:28.510 --> 00:29:30.780
 Il ne devrait pas tarder.
 
-490
+488
 00:29:30.780 --> 00:29:34.150
 Ah ouais ?
 Il abandonne les paillettes ?
 
-491
+489
 00:29:34.150 --> 00:29:36.720
 Y a pas à tortiller,
 il a du ventre, ce squelette.
 
-492
+490
 00:29:36.720 --> 00:29:39.520
 Nami, tu es la navigatrice.
 
-493
+491
 00:29:39.690 --> 00:29:43.130
 Je vais t'expliquer le maniement
 d'un navire à revêtement, écoute bien.
 
-494
+492
 00:29:43.360 --> 00:29:44.300
 Très bien.
 
-495
+493
 00:29:45.100 --> 00:29:45.960
 Je suis prête.
 
-496
+494
 00:29:46.500 --> 00:29:48.270
 Qu'est-ce que j'entends !
 
-497
+495
 00:29:48.270 --> 00:29:50.200
 Ça devient sérieux, là !
 
-498
+496
 00:29:50.200 --> 00:29:53.270
 Mais tu sais, Rayleigh !
 Luffy n'est toujours pas là !
 
-499
+497
 00:29:53.670 --> 00:29:55.040
 Pas de souci.
 
-500
+498
 00:29:55.410 --> 00:29:57.040
 Capitaine !
 
-501
+499
 00:29:57.880 --> 00:30:00.240
 Appelle-moi chef, triple buse.
 
-502
+500
 00:30:00.240 --> 00:30:03.650
 On n'a pas réussi
 à retrouver la mascotte,
 
-503
+501
 00:30:03.780 --> 00:30:07.550
 mais le type que tu cherchais,
 c'était bien lui ?
 
-504
+502
 00:30:08.950 --> 00:30:09.850
 Oh !
 
-505
+503
 00:30:10.790 --> 00:30:14.060
 Luffy est déjà arrivé sur l'archipel.
 
-506
+504
 00:30:18.430 --> 00:30:19.430
 J'ai hâte !
 
-507
+505
 00:30:19.700 --> 00:30:23.900
 J'ai filé un mini-escargophone à Sanji,
 quand il est passé ici.
 
-508
+506
 00:30:23.900 --> 00:30:25.400
 Il est avec Zoro, là.
 
-509
+507
 00:30:25.400 --> 00:30:28.740
 Ah, parfait.
 Il va falloir faire vite.
 
-510
+508
 00:30:28.870 --> 00:30:31.680
 La Marine approche à grands pas.
 
-511
+509
 00:30:32.140 --> 00:30:35.180
 Donc le seul injoignable pour l'instant,
 c'est Monkey ?
 
-512
+510
 00:30:35.980 --> 00:30:39.580
 Je vais vous remettre la Vivre Card.
 
-513
+511
 00:30:39.820 --> 00:30:41.820
 Il vous retrouvera grâce à elle.
 
-514
+512
 00:30:42.090 --> 00:30:45.360
 Au large du Grove 42, ça ira bien.
 
-515
+513
 00:30:45.520 --> 00:30:48.460
 Amenez le navire là-bas
 et prévenez les autres.
 
-516
+514
 00:30:49.190 --> 00:30:53.160
 Il va y avoir un peu de grabuge,
 mais vous avez progressé, ça ira.
 
-517
+515
 00:30:54.160 --> 00:30:57.030
 Le temps est venu
 de faire le grand plongeon.

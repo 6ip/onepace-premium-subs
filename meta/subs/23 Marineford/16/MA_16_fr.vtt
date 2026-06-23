@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -1391,8 +1391,7 @@ Ce serait dommage qu'il meure ici.
 
 321
 00:26:07.700 --> 00:26:12.420
-<b>Capitaine des Pirates du Heart</b>
-<b>Trafalgar Law</b>
+<b>Capitaine des Pirates du Heart Trafalgar Law</b>
 
 322
 00:26:08.250 --> 00:26:12.420

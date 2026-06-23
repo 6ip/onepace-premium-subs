@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -520,8 +520,8 @@ Sí, pero el barco se está
 
 124
 00:07:39.670 --> 00:07:43.050
-¡¿Qué rayos están haciendo?!
 ¡Luffy, resiste!
+¡¿Qué rayos están haciendo?!
 
 125
 00:07:42.140 --> 00:07:44.400
@@ -1391,6 +1391,7 @@ No, no estamos tomando fotos.
 
 330
 00:19:11.860 --> 00:19:14.990
+Puñetazo de mono.
 Mola
 Shi
 Chibukai

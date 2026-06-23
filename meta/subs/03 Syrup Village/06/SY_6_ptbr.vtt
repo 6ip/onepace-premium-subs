@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -851,12 +851,12 @@ mas sou um homem de palavra.
 Lá estão eles!
 
 198
-00:13:27.830 --> 00:13:31.790
-Lá estão eles! Lá estão eles! Parem!
-
-199
 00:13:27.830 --> 00:13:29.910
 Ai! Ai, ai, ai!
+
+199
+00:13:27.830 --> 00:13:31.790
+Lá estão eles! Lá estão eles! Parem!
 
 200
 00:13:29.910 --> 00:13:31.790
@@ -1014,7 +1014,7 @@ Meu plano não pode falhar!
 
 237
 00:16:14.160 --> 00:16:21.020
-Desde pequeno, um mapa com um tesouro a marcar
+Desde pequeno um mapa com um tesouro a marcar
 
 238
 00:16:21.220 --> 00:16:28.040

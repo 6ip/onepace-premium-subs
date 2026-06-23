@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -668,12 +668,12 @@ Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 ‫دع هذا لي يا بيدرو‬
 
 166
-00:13:37.520 --> 00:13:42.080
-‫مد تيار البحر‬
-
-167
 00:13:37.520 --> 00:13:39.560
 ‫كايريو‬
+
+167
+00:13:37.520 --> 00:13:42.080
+‫مد تيار البحر‬
 
 168
 00:13:39.560 --> 00:13:42.080
@@ -1617,8 +1617,8 @@ Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
 400
 00:33:48.200 --> 00:33:51.200
-‫أجل، سدادات الأذن‬
 ‫-سيمفـ‬
+‫أجل، سدادات الأذن‬
 
 401
 00:33:51.200 --> 00:33:52.560

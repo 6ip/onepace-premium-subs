@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -791,7 +791,7 @@ c'est vous le plus à même d'être chef,
 Capitaine Ritchy !
 
 179
-00:15:04.000 --> 00:15:08.300
+00:15:04.000 --> 00:15:17.180
 Capitaine Ritchy ! Capitaine Ritchy !
 Vive notre grand capitaine !
 
@@ -801,383 +801,373 @@ Vive notre grand capitaine !
 Pirates de Ritchy</b>
 
 181
-00:15:08.800 --> 00:15:12.760
-Capitaine Ritchy ! Capitaine Ritchy !
-Vive notre grand capitaine !
-
-182
-00:15:12.930 --> 00:15:17.180
-Capitaine Ritchy ! Capitaine Ritchy !
-Vive notre grand capitaine !
-
-183
 00:15:17.350 --> 00:15:21.560
 Capitaine Ritchy ! Capitaine Ritchy !
 Vive notre grand capitaine !
 
-184
+182
 00:15:41.370 --> 00:15:45.780
 Vous réalisez que cette île
 est le territoire de la tribu Kumate ?
 
-185
+183
 00:15:47.670 --> 00:15:48.420
 Capitaine !
 
-186
+184
 00:15:53.890 --> 00:15:55.950
 Intéressant.
 Tu cherches la bagarre ?
 
-187
+185
 00:16:15.240 --> 00:16:16.600
 Je... Je me rends.
 
-188
+186
 00:16:22.870 --> 00:16:25.180
 Tu as vu quelque chose d'intéressant ?
 
-189
+187
 00:16:25.670 --> 00:16:27.250
 Oui. Là-bas...
 
-190
+188
 00:16:27.590 --> 00:16:31.920
 C'est le bateau pirate
 de la bande de Baggy le Clown !
 
-191
+189
 00:16:32.880 --> 00:16:35.990
 Qui a osé ?
 Ça porte malheur, en plus !
 
-192
+190
 00:16:37.200 --> 00:16:40.470
 Et le pire, c'est qu'ils ont utilisé
 une vieille photo.
 
-193
+191
 00:16:40.970 --> 00:16:43.840
 Regarde,
 il y a quelqu'un par terre, là-bas.
 
-194
+192
 00:16:44.900 --> 00:16:46.140
 Ça, par exemple !
 
-195
+193
 00:16:46.650 --> 00:16:48.640
 Morge ! Cabaji !
 
-196
+194
 00:16:48.790 --> 00:16:50.600
 Eh bien, qu'avez-vous ?
 
-197
+195
 00:16:51.030 --> 00:16:53.450
 Fapitaine Faggy...
 
-198
+196
 00:16:56.530 --> 00:16:58.520
 Fomme fous nous afez manfé !
 
-199
+197
 00:16:59.740 --> 00:17:02.330
 Fous êtes fain et fauf !
 
-200
+198
 00:17:02.500 --> 00:17:04.750
 On froyait ne famais plus fous refoir !
 
-201
+199
 00:17:04.880 --> 00:17:07.290
 Oui. Moi aussi,
 je suis content de vous retrouver !
 
-202
+200
 00:17:09.000 --> 00:17:13.080
 Mais regardez-vous !
 Qu'est-ce qui vous est arrivé ?
 
-203
+201
 00:17:14.220 --> 00:17:16.000
 Qui a osé vous démolir ?
 
-204
+202
 00:17:16.180 --> 00:17:20.100
 Eh bien...
 J'ai perdu connaissance, tout à coup...
 
-205
+203
 00:17:21.150 --> 00:17:24.800
 Je me sens un peu idiot,
 mais je ne me souviens de rien.
 
-206
+204
 00:17:25.890 --> 00:17:29.850
 Ceux qui vous ont attaqués
 font partie de la tribu Kumate.
 
-207
+205
 00:17:30.480 --> 00:17:33.420
 Si vous voulez secourir vos amis,
 vous devriez faire vite.
 
-208
+206
 00:17:35.070 --> 00:17:38.250
 Cette tribu est connue
 pour ses goûts culinaires.
 
-209
+207
 00:17:51.700 --> 00:17:55.100
 Notre capitaine dit que le lion,
 ça a un goût infect !
 
-210
+208
 00:17:55.240 --> 00:17:58.740
 – On n'a pas bon goût non plus !
 – Je suis même plutôt fade !
 
-211
+209
 00:17:58.900 --> 00:18:01.470
 – Lui, il est bien meilleur que moi !
 – Faux !
 
-212
+210
 00:18:01.600 --> 00:18:03.060
 C'est lui le plus exquis !
 
-213
+211
 00:18:03.220 --> 00:18:06.390
 Quant à moi,
 je n'ai que la peau sur les os !
 
-214
+212
 00:18:09.020 --> 00:18:13.000
 Ne vous en faites pas,
 nous sommes de véritables cordons-bleus.
 
-215
+213
 00:18:13.400 --> 00:18:15.740
 On masquera votre fumet
 avec du vin et des épices.
 
-216
+214
 00:18:20.620 --> 00:18:22.490
 Que fait-on de ces victuailles ?
 
-217
+215
 00:18:22.660 --> 00:18:24.040
 Qu'est-ce que c'est ?
 
-218
+216
 00:18:24.200 --> 00:18:26.200
 Je n'avais jamais vu ça.
 
-219
+217
 00:18:26.750 --> 00:18:28.290
 On les cuit avec le reste ?
 
-220
+218
 00:18:28.960 --> 00:18:30.830
 J'espère qu'on ne tombera pas malade.
 
-221
+219
 00:18:31.020 --> 00:18:32.460
 Fragments, fragments...
 
-222
+220
 00:18:37.130 --> 00:18:38.800
 Fragments, fragments, fragments...
 
-223
+221
 00:19:06.950 --> 00:19:07.830
 Là-haut !
 
-224
+222
 00:19:10.670 --> 00:19:12.960
 Assemblez-vous en grande pompe !
 
-225
+223
 00:19:41.720 --> 00:19:44.280
 Je me sens revivre !
 
-226
+224
 00:19:42.160 --> 00:19:45.370
 <b>Capitaine pirate 
 Baggy le Clown</b>
 
-227
+225
 00:19:51.500 --> 00:19:54.080
 Désolé de vous avoir fait attendre,
 les gars !
 
-228
+226
 00:19:55.820 --> 00:19:58.960
 Et maintenant, un Spécial Baggy Ball
 en grande pompe !
 
-229
+227
 00:20:04.000 --> 00:20:05.140
 Go ! Go ! Go !
 
-230
+228
 00:20:08.920 --> 00:20:10.430
 Ritchy !
 
-231
+229
 00:20:18.910 --> 00:20:22.240
 Tour de Passe-Passe Brouillard !
 
-232
+230
 00:20:23.100 --> 00:20:25.660
 Que le spectacle de fauves commence !
 
-233
+231
 00:20:33.380 --> 00:20:37.580
 Vous pensiez peut-être pouvoir
 vous mesurer au grand Baggy le Clown ?
 
-234
+232
 00:20:40.180 --> 00:20:42.720
 Vous allez payer
 pour ce que vous avez fait subir
 
-235
+233
 00:20:42.840 --> 00:20:44.380
 aux membres de mon équipage !
 
-236
+234
 00:20:45.100 --> 00:20:47.140
 Et tout ça, en grande pompe !
 
-237
+235
 00:20:48.910 --> 00:20:50.740
 Fragment Kick !
 
-238
+236
 00:20:56.670 --> 00:20:58.690
 Fragment Punch !
 
-239
+237
 00:21:00.690 --> 00:21:02.280
 Vive notre capitaine !
 
-240
+238
 00:21:07.050 --> 00:21:10.210
 Capitaine Baggy !
 
-241
+239
 00:21:13.830 --> 00:21:15.660
 Vous êtes sain et sauf !
 
-242
+240
 00:21:16.630 --> 00:21:20.620
 Je suis vraiment désolé
 que vous ayez eu à subir ça !
 
-243
+241
 00:21:21.050 --> 00:21:24.580
 Ne vous souciez pas de nos tracas.
 Ce n'est pas important !
 
-244
+242
 00:21:30.140 --> 00:21:34.280
 Le véritable responsable
 de tous mes problèmes,
 
-245
+243
 00:21:34.420 --> 00:21:36.680
 c'est ce maudit chapeau de paille !
 
-246
+244
 00:21:38.060 --> 00:21:41.650
 Au fait,
 qui est cette magnifique jeune femme ?
 
-247
+245
 00:21:42.400 --> 00:21:45.880
 J'ai l'honneur de vous présenter
 celle qui m'a sauvé la vie...
 
-248
+246
 00:21:47.040 --> 00:21:48.100
 Euh...
 
-249
+247
 00:21:48.550 --> 00:21:50.240
 Désolé, mais...
 
-250
+248
 00:21:50.410 --> 00:21:52.540
 Comment tu t'appelles, déjà ?
 
-251
+249
 00:21:55.460 --> 00:21:56.500
 Les gars !
 
-252
+250
 00:21:56.670 --> 00:21:59.350
 L'équipage de Baggy le Pirate
 est de retour !
 
-253
+251
 00:22:02.080 --> 00:22:05.150
 Capitaine,
 quel est notre prochain objectif ?
 
-254
+252
 00:22:05.510 --> 00:22:07.220
 Retrouver Monkey D. Luffy,
 
-255
+253
 00:22:07.520 --> 00:22:09.280
 et l'envoyer en enfer !
 
-256
+254
 00:22:26.740 --> 00:22:31.490
 Quand mes sentiments débordent, sans trouver de lien,
 
-257
+255
 00:22:31.700 --> 00:22:36.330
 Je serre ta main, fort, pour m'accrocher au tien.
 
-258
+256
 00:22:36.620 --> 00:22:41.250
 Même seul, je continuerai d'avancer,
 
-259
+257
 00:22:41.500 --> 00:22:46.420
 Alors regarde-moi, sans jamais détourner.
 
-260
+258
 00:22:51.430 --> 00:22:56.180
 Ce matin encore, une pensée m'a traversé :
 
-261
+259
 00:22:56.350 --> 00:23:01.020
 Pourquoi est-ce si brûlant, ce feu qui m'habite ?
 
-262
+260
 00:23:01.100 --> 00:23:07.190
 Depuis quand, je ne sais pas, mais il reste gravé,
 
-263
+261
 00:23:07.360 --> 00:23:11.320
 Un écho constant, impossible à laisser de côté.
 
-264
+262
 00:23:12.320 --> 00:23:17.200
 Ces sentiments lancés à toute vitesse,
 
-265
+263
 00:23:17.330 --> 00:23:22.170
 Je veux les saisir, dépasser mes faiblesses.
 
-266
+264
 00:23:22.290 --> 00:23:27.010
 Un rêve bondissant que je voulais étreindre,
 
-267
+265
 00:23:27.170 --> 00:23:32.510
 Avec toi, je courrai, sans jamais craindre.

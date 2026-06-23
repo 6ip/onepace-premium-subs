@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -1091,14 +1091,14 @@ The Sand Sand Clan's secret base...
 Pell, listen!
 
 256
-00:17:21.190 --> 00:17:25.230
-The cannonball has a timing device!
-It's going to explode at any moment!
-
-257
 00:17:21.190 --> 00:17:27.900
 Back then, you always seemed
 to find new ways to cause us trouble.
+
+257
+00:17:21.190 --> 00:17:25.230
+The cannonball has a timing device!
+It's going to explode at any moment!
 
 258
 00:17:29.110 --> 00:17:31.910
@@ -1407,12 +1407,12 @@ Please...
 stop fighting!
 
 331
-00:23:31.140 --> 00:23:31.930
-Vivi...
-
-332
 00:23:31.140 --> 00:23:32.600
 Please...
+
+332
+00:23:31.140 --> 00:23:31.930
+Vivi...
 
 333
 00:23:33.140 --> 00:23:35.560
@@ -1444,8 +1444,7 @@ Please...
 
 340
 00:23:55.000 --> 00:23:56.460
-stop fighting!
-You dummy...
+stop fighting! You dummy...
 
 341
 00:23:57.040 --> 00:23:59.790

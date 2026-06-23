@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -305,7 +305,7 @@ Moi au moins, je suis là.
 
 72
 00:04:02.040 --> 00:04:04.460
-<b>Île des Fruits à la Coque  –  Peanuts Town</b>
+<b>Île des Fruits à la Coque – Peanuts Town</b>
 
 73
 00:04:04.460 --> 00:04:07.620
@@ -328,7 +328,7 @@ qui a détruit notre île...
 
 77
 00:04:16.550 --> 00:04:22.570
-<b>Île Croquante  –  Beans Town</b>
+<b>Île Croquante – Beans Town</b>
 
 78
 00:04:16.720 --> 00:04:22.350
@@ -350,7 +350,7 @@ en quelques heures à peine.
 
 82
 00:04:30.750 --> 00:04:34.370
-<b>Île Couverts  –  Table Town</b>
+<b>Île Couverts – Table Town</b>
 
 83
 00:04:30.980 --> 00:04:34.190
@@ -366,7 +366,7 @@ Préparons-nous à évacuer.
 
 86
 00:04:38.630 --> 00:04:44.130
-<b>Île Glace  –  Sorbet Town</b>
+<b>Île Glace – Sorbet Town</b>
 
 87
 00:04:41.980 --> 00:04:45.870
@@ -924,7 +924,7 @@ On bouffe bientôt, Sanji ?
 218
 00:16:40.080 --> 00:16:43.940
 <b>Centre d'opérations tactiques de Mont d'Or</b>
-<b>Sweet City  –  Whole Cake Island</b>
+<b>Sweet City – Whole Cake Island</b>
 
 219
 00:16:43.920 --> 00:16:45.820
@@ -949,7 +949,7 @@ Perospero !
 
 224
 00:16:56.220 --> 00:16:59.980
-<b>En mer  –  Du côté de Big Mom</b>
+<b>En mer – Du côté de Big Mom</b>
 
 225
 00:16:57.050 --> 00:16:59.440
@@ -1161,7 +1161,7 @@ de pondre.
 
 273
 00:19:43.210 --> 00:19:47.210
-<b>Île Moelleuse  –  Fluffy Town</b>
+<b>Île Moelleuse – Fluffy Town</b>
 
 274
 00:19:43.260 --> 00:19:47.030
@@ -1519,1235 +1519,806 @@ Que faire ?
 On se retrouve pris en tenaille.
 
 356
-00:26:01.280 --> 00:26:01.330
+00:26:01.280 --> 00:26:08.210
 <b>LE SUNNY</b>
 <b>GERMA 66</b>
 
 357
-00:26:01.330 --> 00:26:01.370
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-358
-00:26:01.370 --> 00:26:01.410
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-359
-00:26:01.410 --> 00:26:01.450
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-360
-00:26:01.450 --> 00:26:01.490
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-361
-00:26:01.490 --> 00:26:01.530
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-362
-00:26:01.530 --> 00:26:01.580
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-363
-00:26:01.580 --> 00:26:01.620
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-364
-00:26:01.620 --> 00:26:01.660
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-365
-00:26:01.660 --> 00:26:01.700
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-366
-00:26:01.700 --> 00:26:01.740
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-367
-00:26:01.740 --> 00:26:01.790
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-368
-00:26:01.790 --> 00:26:01.830
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-369
-00:26:01.830 --> 00:26:01.870
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-370
-00:26:01.870 --> 00:26:01.910
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-371
-00:26:01.910 --> 00:26:01.950
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-372
-00:26:01.950 --> 00:26:01.990
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-373
-00:26:01.990 --> 00:26:02.040
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-374
-00:26:02.040 --> 00:26:02.080
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-375
-00:26:02.080 --> 00:26:02.120
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-376
-00:26:02.120 --> 00:26:02.160
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-377
 00:26:02.140 --> 00:26:05.460
 Tous leurs navires disponibles
 ont fait le tour de l’île !
 
-378
-00:26:02.160 --> 00:26:02.200
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-379
-00:26:02.200 --> 00:26:02.240
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-380
-00:26:02.240 --> 00:26:02.290
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-381
-00:26:02.290 --> 00:26:02.330
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-382
-00:26:02.330 --> 00:26:02.370
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-383
-00:26:02.370 --> 00:26:02.410
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-384
-00:26:02.410 --> 00:26:02.450
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-385
-00:26:02.450 --> 00:26:02.490
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-386
-00:26:02.490 --> 00:26:02.540
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-387
-00:26:02.540 --> 00:26:02.580
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-388
-00:26:02.580 --> 00:26:02.620
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-389
-00:26:02.620 --> 00:26:02.660
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-390
-00:26:02.660 --> 00:26:02.700
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-391
-00:26:02.700 --> 00:26:02.740
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-392
-00:26:02.740 --> 00:26:02.790
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-393
-00:26:02.790 --> 00:26:02.830
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-394
-00:26:02.830 --> 00:26:02.870
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-395
-00:26:02.870 --> 00:26:02.910
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-396
-00:26:02.910 --> 00:26:02.950
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-397
-00:26:02.950 --> 00:26:02.990
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-398
-00:26:02.990 --> 00:26:03.040
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-399
-00:26:03.040 --> 00:26:03.080
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-400
-00:26:03.080 --> 00:26:03.120
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-401
-00:26:03.120 --> 00:26:03.160
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-402
-00:26:03.160 --> 00:26:03.200
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-403
-00:26:03.200 --> 00:26:03.240
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-404
-00:26:03.240 --> 00:26:03.290
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-405
-00:26:03.290 --> 00:26:03.330
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-406
-00:26:03.330 --> 00:26:03.370
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-407
-00:26:03.370 --> 00:26:03.410
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-408
-00:26:03.410 --> 00:26:03.450
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-409
-00:26:03.450 --> 00:26:03.500
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-410
-00:26:03.500 --> 00:26:03.540
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-411
-00:26:03.540 --> 00:26:03.580
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-412
-00:26:03.580 --> 00:26:03.620
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-413
-00:26:03.620 --> 00:26:03.660
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-414
-00:26:03.660 --> 00:26:03.700
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-415
-00:26:03.700 --> 00:26:03.750
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-416
-00:26:03.750 --> 00:26:03.790
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-417
-00:26:03.790 --> 00:26:03.830
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-418
-00:26:03.830 --> 00:26:03.870
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-419
-00:26:03.870 --> 00:26:03.910
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-420
-00:26:03.910 --> 00:26:03.950
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-421
-00:26:03.950 --> 00:26:04.000
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-422
-00:26:04.000 --> 00:26:04.040
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-423
-00:26:04.040 --> 00:26:04.080
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-424
-00:26:04.080 --> 00:26:04.120
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-425
-00:26:04.120 --> 00:26:04.160
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-426
-00:26:04.160 --> 00:26:04.200
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-427
-00:26:04.200 --> 00:26:04.250
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-428
-00:26:04.250 --> 00:26:04.290
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-429
-00:26:04.290 --> 00:26:04.330
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-430
-00:26:04.330 --> 00:26:04.370
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-431
-00:26:04.370 --> 00:26:04.410
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-432
-00:26:04.410 --> 00:26:04.450
-<b>ÎLE CACAO</b>
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-433
-00:26:04.450 --> 00:26:04.500
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-434
-00:26:04.450 --> 00:26:08.210
+358
+00:26:03.240 --> 00:26:08.210
 <b>ÎLE CACAO</b>
 
-435
-00:26:04.500 --> 00:26:04.540
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-436
-00:26:04.540 --> 00:26:04.580
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-437
-00:26:04.580 --> 00:26:04.620
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-438
-00:26:04.620 --> 00:26:08.210
-<b>LE SUNNY</b>
-<b>GERMA 66</b>
-
-439
+359
 00:26:06.420 --> 00:26:08.210
 On est cernés.
 
-440
+360
 00:26:09.070 --> 00:26:11.920
 Ils sont déjà à portée.
 
-441
+361
 00:26:12.100 --> 00:26:13.250
 Comment ça se fait ?
 
-442
+362
 00:26:14.000 --> 00:26:15.390
 Eh oui !
 
-443
+363
 00:26:15.570 --> 00:26:18.640
 L'étau se resserre autour de vous,
 fichue lapine.
 
-444
+364
 00:26:19.000 --> 00:26:19.810
 Carrot !
 
-445
+365
 00:26:19.990 --> 00:26:21.550
 Devant, la flotte.
 
-446
+366
 00:26:21.720 --> 00:26:23.500
 Derrière, le génie.
 
-447
+367
 00:26:23.680 --> 00:26:24.720
 Génie...
 
-448
+368
 00:26:25.660 --> 00:26:26.940
 Giren !
 
-449
+369
 00:26:27.900 --> 00:26:28.810
 La Jambe noire !
 
-450
+370
 00:26:29.510 --> 00:26:30.230
 Sanji !
 
-451
+371
 00:26:32.820 --> 00:26:34.440
 Il est énorme !
 
-452
+372
 00:26:37.480 --> 00:26:41.620
 Ils sont enfin à portée de mon pouvoir.
 
-453
+373
 00:26:42.120 --> 00:26:45.620
 Je trouve presque ça cruel.
 Les pauvres.
 
-454
+374
 00:26:48.150 --> 00:26:50.330
 Comment sont-ils arrivés si vite ?
 
-455
+375
 00:26:50.610 --> 00:26:53.090
 Regarde les navires, devant.
 
-456
+376
 00:26:57.300 --> 00:27:00.240
 Ils ont tous des roues à aubes !
 
-457
+377
 00:27:01.590 --> 00:27:04.470
 – Oh non...
 – On ne peut pas leur échapper !
 
-458
+378
 00:27:04.650 --> 00:27:06.110
 Ça s'annonce mal.
 
-459
+379
 00:27:06.290 --> 00:27:09.690
 Dire qu'on avait réussi
 à survivre jusqu'ici !
 
-460
+380
 00:27:10.150 --> 00:27:11.660
 Exterminez-les.
 
-461
+381
 00:27:25.250 --> 00:27:27.350
 La surface de la mer se soulève ?
 
-462
+382
 00:27:28.920 --> 00:27:34.160
 Ceux qui s'en prennent au chef,
 
-463
+383
 00:27:35.560 --> 00:27:40.600
 on les dégage !
 
-464
+384
 00:27:45.390 --> 00:27:46.600
 Hein ?
 
-465
+385
 00:27:47.140 --> 00:27:50.590
 C'est un des Hommes-Poissons
 de l'équipage d'Hody !
 
-466
+386
 00:27:51.050 --> 00:27:52.520
 Wadatsumi ?
 
-467
+387
 00:27:53.940 --> 00:27:54.680
 Hein ?
 
-468
+388
 00:27:55.150 --> 00:27:55.970
 Impossible !
 
-469
+389
 00:27:56.510 --> 00:27:57.390
 Jinbe !
 
-470
+390
 00:28:02.960 --> 00:28:04.320
 Les amis...
 
-471
+391
 00:28:09.370 --> 00:28:11.130
 On est venus vous escorter,
 
-472
+392
 00:28:11.310 --> 00:28:13.420
 capitaine Jinbe !
 
-473
+393
 00:28:13.780 --> 00:28:16.370
 Enfin, ex-capitaine.
 
-474
+394
 00:28:23.330 --> 00:28:26.160
 Jusqu'à ce que tu quittes
 le territoire de Big Mom,
 
-475
+395
 00:28:26.350 --> 00:28:28.840
 on reste tes hommes.
 
-476
+396
 00:28:30.500 --> 00:28:31.990
 Je vois.
 
-477
+397
 00:28:33.810 --> 00:28:36.130
 Du balai !
 
-478
+398
 00:28:36.310 --> 00:28:37.920
 Trop fort !
 
-479
+399
 00:28:40.700 --> 00:28:42.030
 Hein ? Quoi ?
 
-480
+400
 00:28:42.210 --> 00:28:43.810
 On prend l'eau !
 
-481
+401
 00:28:45.950 --> 00:28:48.350
 La coque est percée !
 
-482
+402
 00:28:49.450 --> 00:28:51.480
 Y a des Hommes-Poissons !
 
-483
+403
 00:28:51.750 --> 00:28:53.690
 Les fourbes !
 
-484
+404
 00:28:53.920 --> 00:28:56.480
 Montre-toi, sale poiscaille !
 
-485
+405
 00:29:03.650 --> 00:29:05.620
 Misérables !
 
-486
+406
 00:29:09.390 --> 00:29:10.250
 Comment osez-vous...
 
-487
+407
 00:29:10.430 --> 00:29:12.380
 Les pirates ne fileront pas.
 
-488
+408
 00:29:14.340 --> 00:29:16.750
 Génie...
 
-489
+409
 00:29:18.630 --> 00:29:20.050
 Courant Marin...
 
-490
+410
 00:29:20.180 --> 00:29:23.140
 Jet d'Épaule !
 
-491
+411
 00:29:43.210 --> 00:29:43.990
 Regardez !
 
-492
+412
 00:29:47.560 --> 00:29:49.660
 Un chemin se dessine dans l'eau !
 
-493
+413
 00:30:02.600 --> 00:30:05.840
 Profitez-en pour filer,
 capitaine Jinbe !
 
-494
+414
 00:30:06.020 --> 00:30:10.260
 On vous laissera pas toucher au navire
 du Chapeau de paille !
 
-495
+415
 00:30:16.200 --> 00:30:17.920
 Je leur dois une fière chandelle.
 
-496
+416
 00:30:18.780 --> 00:30:20.950
 J'aurais dû m'en douter.
 
-497
+417
 00:30:21.160 --> 00:30:24.500
 Si les limaçoradars étaient désactivés,
 
-498
+418
 00:30:24.890 --> 00:30:26.620
 c'est grâce à eux.
 
-499
+419
 00:30:27.310 --> 00:30:30.600
 Jusqu'au bout,
 ils auront veillé sur moi.
 
-500
+420
 00:30:30.960 --> 00:30:34.620
 T'as des amis en or, Jinbe.
 
-501
+421
 00:30:34.850 --> 00:30:36.090
 Oui !
 
-502
+422
 00:30:36.450 --> 00:30:37.510
 Merci,
 
-503
+423
 00:30:38.350 --> 00:30:39.500
 les gars !
 
-504
+424
 00:30:40.480 --> 00:30:44.960
 On te confie Jinbe,
 Chapeau de paille !
 
-505
+425
 00:30:45.500 --> 00:30:46.560
 Ça marche !
 
-506
+426
 00:30:50.130 --> 00:30:51.310
 Feu !
 
-507
+427
 00:30:55.740 --> 00:30:56.950
 Fusion !
 
-508
+428
 00:31:11.480 --> 00:31:12.550
 M'sieur Oven !
 
-509
+429
 00:31:12.730 --> 00:31:15.260
 Ne devriez-vous pas rester à Cacao ?
 
-510
+430
 00:31:16.460 --> 00:31:20.290
 Brûlée s'occupe du Germa.
 
-511
+431
 00:31:21.390 --> 00:31:24.670
 Ces petits bijoux transpercent
 les tenues Germa comme du beurre.
 
-512
+432
 00:31:24.850 --> 00:31:27.740
 Ces ogives sont faites d'un alliage
 extrêmement résistant.
 
-513
+433
 00:31:28.150 --> 00:31:30.500
 On va leur donner une bonne leçon !
 
-514
+434
 00:31:30.680 --> 00:31:31.590
 À vos ordres !
 
-515
+435
 00:31:44.100 --> 00:31:45.300
 Encore lui !
 
-516
+436
 00:31:48.400 --> 00:31:51.100
 Chapeau de paille !
 
-517
+437
 00:31:55.150 --> 00:31:58.500
 Tu as osé ridiculiser
 mon frère Katakuri.
 
-518
+438
 00:31:59.000 --> 00:32:00.820
 Jamais tu ne t'en sortiras vivant !
 
-519
+439
 00:32:10.500 --> 00:32:11.960
 Alors ? Ce sera quoi ?
 
-520
+440
 00:32:21.040 --> 00:32:23.830
 Ça ira.
 Ça va forcément marcher.
 
-521
+441
 00:32:24.330 --> 00:32:26.330
 L'homme derrière ce gâteau...
 
-522
+442
 00:32:26.510 --> 00:32:28.350
 C'est un professionnel de la cuisine !
 
-523
+443
 00:32:29.900 --> 00:32:33.520
 C'est de la folie !
 Il faut toute une nuit, pour faire ça.
 
-524
+444
 00:32:33.700 --> 00:32:35.430
 J'en ai besoin pour le gâteau.
 
-525
+445
 00:32:35.610 --> 00:32:37.100
 On n'a pas le temps !
 
-526
+446
 00:32:37.460 --> 00:32:40.000
 – Je vais le faire en deux heures.
 – C'est impossible !
 
-527
+447
 00:32:42.090 --> 00:32:46.180
 Pourquoi tu souris niaisement ?
 Concentre-toi un peu !
 
-528
+448
 00:32:47.380 --> 00:32:51.860
 Il y va des vies de ton équipage
 et du destin de notre pays !
 
-529
+449
 00:32:53.130 --> 00:32:54.270
 Désolé.
 
-530
+450
 00:32:55.180 --> 00:32:56.930
 C'est juste que j'imagine le bonheur
 
-531
+451
 00:32:57.110 --> 00:33:00.490
 de Big Mom, quand elle goûtera
 et qu'elle criera : « Quel délice ! »
 
-532
+452
 00:33:01.260 --> 00:33:03.830
 – Quel homme !
 –Son bonheur ?
 
-533
+453
 00:33:04.260 --> 00:33:06.760
 Je te signale qu'elle veut ta peau !
 
-534
+454
 00:33:17.110 --> 00:33:17.960
 Mama !
 
-535
+455
 00:33:22.180 --> 00:33:24.040
 Elle est empoisonnée ?
 
-536
+456
 00:33:34.980 --> 00:33:37.260
 C'est bon à en mourir...
 
-537
+457
 00:33:37.440 --> 00:33:40.200
 Quel délice sucré !
 
-538
+458
 00:33:40.560 --> 00:33:43.120
 C'est pile ce que je voulais !
 
-539
+459
 00:33:46.700 --> 00:33:50.480
 Alors ça...
 
-540
+460
 00:33:50.840 --> 00:33:55.760
 La meilleure des pièces montées !
 
-541
+461
 00:33:58.300 --> 00:33:59.730
 Elle s'est arrêtée.
 
-542
+462
 00:34:00.090 --> 00:34:01.210
 Y avait pas de poison ?
 
-543
+463
 00:34:01.390 --> 00:34:03.150
 Si, forcément !
 
-544
+464
 00:34:03.350 --> 00:34:06.440
 Mais ça ne lui a rien fait.
 Mama est invincible !
 
-545
+465
 00:34:10.610 --> 00:34:15.190
 La Jambe noire...
 Voilà le bonheur que tu voulais voir.
 
-546
+466
 00:34:16.290 --> 00:34:17.930
 C'est si doux
 
-547
+467
 00:34:18.110 --> 00:34:19.690
 C'est divin
 
-548
+468
 00:34:19.870 --> 00:34:23.230
 Je connais ce goût
 
-549
+469
 00:34:23.410 --> 00:34:28.810
 Quel délice !
 
-550
+470
 00:34:32.810 --> 00:34:35.690
 À tout Totto Land !
 
-551
+471
 00:34:36.590 --> 00:34:39.950
 C'est la fin de la destruction !
 
-552
+472
 00:34:47.450 --> 00:34:51.120
 Grâce à l'intervention de Pudding,
 la 35e fille,
 
-553
+473
 00:34:51.350 --> 00:34:54.180
 la fringale de Mama est calmée.
 
-554
+474
 00:34:54.500 --> 00:34:55.710
 Quel soulagement !
 
-555
+475
 00:34:55.890 --> 00:34:59.080
 J'ai eu peur. On était les suivants
 sur son chemin, après Cacao.
 
-556
+476
 00:34:59.260 --> 00:35:00.920
 J'ai eu peur !
 
-557
+477
 00:35:01.100 --> 00:35:02.610
 Tout va bien maintenant !
 
-558
+478
 00:35:03.100 --> 00:35:05.040
 Merci, Bege.
 
-559
+479
 00:35:16.550 --> 00:35:19.360
 Pudding a su utiliser
 cette traîtresse de Chiffon !
 
-560
+480
 00:35:19.540 --> 00:35:23.230
 Pudding est la meilleure !
 Elle a sauvé Totto Land !
 
-561
+481
 00:35:23.410 --> 00:35:24.900
 Elle est trop forte !
 
-562
+482
 00:35:25.080 --> 00:35:27.430
 Merci, Mlle Pudding !
 
-563
+483
 00:35:27.610 --> 00:35:30.370
 Je n'en attendais pas moins
 de notre Mlle Pudding !
 
-564
+484
 00:35:30.550 --> 00:35:31.600
 Non.
 
-565
+485
 00:35:32.350 --> 00:35:34.090
 Vous n'y êtes pas du tout.
 
-566
+486
 00:35:41.220 --> 00:35:42.760
 Approchez !
 
-567
+487
 00:35:51.280 --> 00:35:54.390
 Sparking Figure !
 
-568
+488
 00:36:02.680 --> 00:36:04.610
 Eaux thermales infernales.
 
-569
+489
 00:36:17.220 --> 00:36:20.210
 Réfugiez-vous dans les profondeurs !
 
-570
+490
 00:36:20.390 --> 00:36:23.590
 Chaud ! Faut que je m'éloigne !
 
-571
+491
 00:36:24.540 --> 00:36:27.080
 Personne ne vous sauvera !
 
-572
+492
 00:36:27.620 --> 00:36:29.470
 Et vous ne pourrez pas fuir non plus.
 
-573
+493
 00:36:33.650 --> 00:36:36.740
 – Purée !
 – On fait quoi, Luffy ?
 
-574
+494
 00:36:43.770 --> 00:36:45.000
 On fonce.
 
-575
+495
 00:36:46.660 --> 00:36:48.290
 Droit devant.
 
-576
+496
 00:36:51.020 --> 00:36:55.120
 Le Queen Mamma Chanteur
 arrive en vue de Cacao.
 
-577
+497
 00:36:59.380 --> 00:37:03.050
 Nickel ! Il tombe à point nommé !
 
-578
+498
 00:37:27.330 --> 00:37:28.310
 Mais
 
-579
+499
 00:37:29.210 --> 00:37:30.140
 Que voilà ?
 
-580
+500
 00:37:30.860 --> 00:37:34.800
 C'est si bon qu'on croit rêver
 
-581
+501
 00:37:34.980 --> 00:37:38.830
 Un tel délice
 On n'oserait l'espérer
 
-582
+502
 00:37:39.010 --> 00:37:42.980
 Les mots me manquent
 Pour décrire cette succulence
 
-583
+503
 00:37:43.340 --> 00:37:44.710
 Mais qu'est-ce donc
 
-584
+504
 00:37:44.890 --> 00:37:46.940
 Quel est ce goût si exquis
 
-585
+505
 00:37:47.120 --> 00:37:50.940
 Ça ressusciterait des chiots pourris
 Et ça les ferait danser la java
 
-586
+506
 00:37:51.120 --> 00:37:53.900
 C'est bon
 
-587
+507
 00:37:54.080 --> 00:37:59.490
 Comme un cimetière
 D'animaux de compagnie
 
-588
+508
 00:38:11.060 --> 00:38:12.650
 Sucré
 
-589
+509
 00:38:12.920 --> 00:38:14.550
 Lacté
 
-590
+510
 00:38:14.930 --> 00:38:19.700
 Onctueux
 
-591
+511
 00:38:22.570 --> 00:38:24.980
 Et une touche de danger
 
-592
+512
 00:38:31.060 --> 00:38:32.700
 Regardez
 
-593
+513
 00:38:32.880 --> 00:38:36.800
 Cette symphonie
 
-594
+514
 00:38:36.980 --> 00:38:40.500
 C'est comme une bombe
 
-595
+515
 00:38:41.000 --> 00:38:45.540
 Dans un parc d'attractions
 
-596
+516
 00:38:50.070 --> 00:38:52.080
 C'est la fiesta
 
-597
+517
 00:38:52.260 --> 00:38:57.300
 Dans mon estomac
 
-598
+518
 00:39:03.330 --> 00:39:06.410
 Dis, mère
 
-599
+519
 00:39:07.130 --> 00:39:08.910
 Tu le sens d'où tu es
 
-600
+520
 00:39:09.090 --> 00:39:11.990
 Tout ce bon goût sucré
 
-601
+521
 00:39:12.170 --> 00:39:16.000
 C'est le goût du bonheur
 
-602
+522
 00:39:19.000 --> 00:39:20.500
 Oh oui
 
-603
+523
 00:39:20.680 --> 00:39:23.400
 Ça a le goût du bonheur
 
-604
+524
 00:39:24.800 --> 00:39:28.800
 De ce fameux jour
 
-605
+525
 00:39:30.180 --> 00:39:32.630
 Joyeux anniversaire,
 
-606
+526
 00:39:32.810 --> 00:39:34.710
 Linlin !
 
-607
+527
 00:39:37.100 --> 00:39:40.780
 Un jour, on se retrouvera
 
-608
+528
 00:39:41.100 --> 00:39:45.010
 Et on mangera
 
-609
+529
 00:39:45.190 --> 00:39:46.890
 Sucré
 
-610
+530
 00:39:47.070 --> 00:39:48.980
 Lacté
 
-611
+531
 00:39:49.160 --> 00:39:54.510
 Onctueux
 
-612
+532
 00:39:56.720 --> 00:39:59.090
 Et une touche de danger
 
-613
+533
 00:40:13.400 --> 00:40:15.060
 Dis, mère.
 
-614
+534
 00:40:15.240 --> 00:40:19.120
 Tu crois que je peux y arriver ?
 
-615
+535
 00:40:21.050 --> 00:40:24.850
 Tous réunis, tous amis
 
-616
+536
 00:40:25.030 --> 00:40:28.930
 Dans un monde en paix
 
-617
+537
 00:40:29.110 --> 00:40:32.410
 Sans discrimination
 
-618
+538
 00:40:32.590 --> 00:40:37.140
 Sans ségrégation
 
-619
+539
 00:40:37.320 --> 00:40:38.990
 Mais c'est pour la vie
 
-620
+540
 00:40:39.170 --> 00:40:43.710
 Ceux qui veulent me quitter
 Je les liquiderai
 
-621
+541
 00:40:44.610 --> 00:40:48.630
 Grâce au contrat démoniaque
 
-622
+542
 00:40:48.810 --> 00:40:52.890
 La paix règne à Totto Land
 
-623
+543
 00:40:53.070 --> 00:40:56.820
 Nous formons une grande famille
 
-624
+544
 00:40:57.000 --> 00:41:01.160
 Tous réunis sous les jupes
 de l'impératrice bienveillante
 
-625
+545
 00:41:02.620 --> 00:41:04.000
 Big Mom !
 
-626
+546
 00:41:17.080 --> 00:41:18.880
 C'était bien bon
 
-627
+547
 00:41:19.060 --> 00:41:22.110
 Merci pour le repas

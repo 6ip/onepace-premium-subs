@@ -5,13 +5,13 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
 2
 00:00:12.900 --> 00:00:14.630
-Miras alınan irade,...
+Miras alınan irade,
 
 3
 00:00:14.630 --> 00:00:17.540
@@ -23,7 +23,7 @@ Bunların önüne geçilemez.
 
 5
 00:00:20.370 --> 00:00:23.480
-İnsanlar, özgürlüğün anlamını aradığı sürece...
+Özgürlüğe aç olan insanlar oldukça...
 
 6
 00:00:23.480 --> 00:00:26.110
@@ -108,7 +108,7 @@ Savaşçıların köyüne!
 
 26
 00:02:13.950 --> 00:02:17.500
-♪ Kocamanlar! Kocamanlar! Kocamanlar!  ♪
+♪ Kocamanlar! Kocamanlar! Kocamanlar! ♪
 
 27
 00:02:17.500 --> 00:02:19.720
@@ -1535,8 +1535,8 @@ genellikle dört mevsime sahiptir.
 
 358
 00:25:28.760 --> 00:25:40.690
-<b>Yaz       İlkbahar      Sonbahar       Kış</b>
-<b>Yaz Adası  İlkbahar Adası  Sonbahar Adası  Kış Adası</b>
+<b>Yaz Adası İlkbahar Adası Sonbahar Adası Kış Adası</b>
+<b>Yaz İlkbahar Sonbahar Kış</b>
 
 359
 00:25:30.300 --> 00:25:35.060
@@ -1607,8 +1607,8 @@ Ada! Ada! Ada! Ada!
 
 374
 00:26:31.080 --> 00:26:33.160
-Git bi' bak hadi. Ben burdayım.
 Ada! Ada!
+Git bi' bak hadi. Ben burdayım.
 
 375
 00:26:38.280 --> 00:26:40.820

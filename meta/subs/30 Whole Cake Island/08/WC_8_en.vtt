@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -836,12 +836,12 @@ Today, the Vinsmoke family will be coming to the castle,
 <b>Whole Cake Chateau</b>
 
 198
-00:24:00.160 --> 00:24:02.950
-♪ It's morning! It's morning! ♪
-
-199
 00:24:00.160 --> 00:24:02.960
 and we'll hold an engagement ceremony, Mama.
+
+199
+00:24:00.160 --> 00:24:02.950
+♪ It's morning! It's morning! ♪
 
 200
 00:24:02.950 --> 00:24:07.630

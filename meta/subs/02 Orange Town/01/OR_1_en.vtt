@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -1632,13 +1632,13 @@ but that's a pretty serious wound!
 I win!
 
 384
+00:23:30.640 --> 00:23:33.020
+You're too much, Captain!
+
+385
 00:23:30.640 --> 00:23:36.600
 – Buggy! Buggy! Buggy!
 – Buggy! Buggy! Buggy!
-
-385
-00:23:30.640 --> 00:23:33.020
-You're too much, Captain!
 
 386
 00:23:33.890 --> 00:23:36.600
@@ -1864,7 +1864,7 @@ You're a pirate!
 
 440
 00:27:27.000 --> 00:27:33.860
-As a kid, I had a dream of a dazzling treasure
+As a kid I had a dream of a dazzling treasure
 
 441
 00:27:34.060 --> 00:27:40.880
@@ -1872,11 +1872,11 @@ I had a map in my head that I knew would lead me
 
 442
 00:27:41.130 --> 00:27:47.980
-Charted a course all on my own, so nobody would beat me
+Charted a course all on my own so nobody would beat me
 
 443
 00:27:48.100 --> 00:27:55.240
-The promised land was in my hand, drew a line in the sand
+The promised land was in my hand drew a line in the sand
 
 444
 00:27:57.940 --> 00:28:00.620
@@ -1884,11 +1884,11 @@ Look where I am
 
 445
 00:28:02.850 --> 00:28:09.030
-My one ambition's slipping right through my hands
+My one ambitions slipping right through my hands
 
 446
 00:28:09.370 --> 00:28:16.300
-But if the world ever changes I'll call out your name
+But if the world ever changes Ill call out your name
 
 447
 00:28:16.460 --> 00:28:23.380
@@ -1900,4 +1900,4 @@ Take me to the place where memories remain
 
 449
 00:28:30.610 --> 00:28:36.380
-Please don't ever let them fade
+Please dont ever let them fade

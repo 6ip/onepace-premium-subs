@@ -5,7 +5,7 @@ STYLE
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
 
 1
-00:00:01.000 --> 00:00:07.000 line:5% align:middle
+00:00:01.000 --> 00:00:07.000 line:5% align:center
 <b><c.color9CD5FF>One Pace Premium</c></b>
 Keep the project alive: <c.colora8c7fa>ko-fi.com/not6ip</c>
 
@@ -705,9 +705,9 @@ J'ai compris le plan de la Marine.
 
 161
 00:16:27.790 --> 00:16:33.980
-<b>Marines</b>
 <b>Barbe Blanche</b>
 <b>Navires alliés</b>
+<b>Marines</b>
 
 162
 00:16:28.920 --> 00:16:34.000
