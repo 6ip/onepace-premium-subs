@@ -18,17 +18,7 @@ OUTPUT_JSON = "meta/subtitles.json"
 OUTPUT_SUBS_DIR = "meta/subs"
 HASHES_FILE = "hashes.json"
 
-# --- Load Central Config from GitHub ---
 CONFIG_URL = "https://raw.githubusercontent.com/6ip/onepace-streams/refs/heads/main/config.json"
-print("[?] Fetching config.json from GitHub...")
-try:
-    config_req = urllib.request.Request(CONFIG_URL, headers={'User-Agent': 'Mozilla/5.0'})
-    with urllib.request.urlopen(config_req) as response:
-        CONFIG = json.loads(response.read().decode('utf-8'))
-    ARC_MAP = CONFIG["ARC_MAP"]
-except Exception as e:
-    print(f"[-] Fatal Error: Could not load config.json from GitHub: {e}")
-    exit(1)
 
 LANG_MAP = {
     "ar": "ara", "cs": "cze", "cz": "cze", "de": "ger", "en": "eng", 
@@ -116,8 +106,8 @@ def fix_rtl_visual_typing(text: str) -> str:
             new_end_enc = end_enc
             
         # 5. Fix inline visual typos
-        # NEW FIX: Require at least one alphanumeric character ([^\W_]) inside the enclosures!
-        # This prevents the regex from aggressively matching the space/punctuation between two separate valid quotes.
+        # Require at least one alphanumeric character inside enclosures to avoid matching
+        # the space/punctuation between two separate valid quotes.
         core_text = re.sub(r'»([^«»]*[^\W_][^«»]*)«', r'«\1»', core_text) # Fixes »word«
         core_text = re.sub(r'\)([^()]*[^\W_][^()]*)\(', r'(\1)', core_text) # Fixes )word(
         core_text = re.sub(r'\]([^\[\]]*[^\W_][^\[\]]*)\[', r'[\1]', core_text) # Fixes ]word[
@@ -128,9 +118,26 @@ def fix_rtl_visual_typing(text: str) -> str:
         fixed_lines.append(f"\u202B{fixed_line}\u202C")
         
     return '\n'.join(fixed_lines)
-    
+
+def _sort_and_dedup_cluster(cluster: list, lang_code: str) -> list:
+    """Sort a cluster by x_pos (RTL-aware) and remove duplicate layers."""
+    cluster.sort(key=lambda x: x["x_pos"], reverse=(lang_code == "ara"))
+    unique_parts = []
+    seen_parts = []
+    for x in cluster:
+        is_layer_dup = False
+        for seen_text, seen_x in seen_parts:
+            if x["text"] == seen_text:
+                if abs(x["x_pos"] - seen_x) < 20.0 or len(x["text"].strip()) > 3:
+                    is_layer_dup = True
+                    break
+        if not is_layer_dup:
+            seen_parts.append((x["text"], x["x_pos"]))
+            unique_parts.append(x)
+    return unique_parts
+
 def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list:
-    # Load the ASS file directly from the downloaded string
+    ass_content = re.sub(r'(\{[^}]*\\alpha&HFF&[^}]*\})[^{]+(\{\\alpha&H00&[^}]*\})', r'\1\2', ass_content)
     subs = pysubs2.SSAFile.from_string(ass_content)
     raw_dialogues = []
     sync_ms = None
@@ -179,9 +186,6 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
 
         # --- 2. CLEAN TEXT ---
         clean_text = line.plaintext.replace(r"\h", " ").replace("\\h", " ")
-        
-        # FIX: Strip out invisible typesetter spacing tricks (like fillLLLl)
-        clean_text = re.sub(r'(?i)(fillLLLl|fillerfil|fillerf)', '', clean_text)
         
         clean_text = clean_text.replace("\\N", "\n").replace("\\n", "\n")
         clean_text = re.sub(r'[\u200e\u200f\u202a\u202b\u202c\u202d\u202e]', '', clean_text)
@@ -273,23 +277,7 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
             
     clustered_dialogues = []
     for cluster in active_clusters:
-        if lang_code == "ara":
-            cluster.sort(key=lambda x: x["x_pos"], reverse=True)
-        else:
-            cluster.sort(key=lambda x: x["x_pos"], reverse=False)
-
-        unique_parts = []
-        seen_parts = []
-        for x in cluster:
-            is_layer_dup = False
-            for seen_text, seen_x in seen_parts:
-                if x["text"] == seen_text:
-                    if abs(x["x_pos"] - seen_x) < 20.0 or len(x["text"].strip()) > 3:
-                        is_layer_dup = True
-                        break
-            if not is_layer_dup:
-                seen_parts.append((x["text"], x["x_pos"]))
-                unique_parts.append(x)
+        unique_parts = _sort_and_dedup_cluster(cluster, lang_code)
 
         parts = [x["text"] for x in unique_parts]
         valid_parts = [p for p in parts if p.strip()]
@@ -298,7 +286,7 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
             separator = "" if avg_len <= 1.5 else " "
             merged_text = separator.join(parts)
             merged_text = re.sub(r'[ \t]+', ' ', merged_text).strip()
-            
+
             clustered_dialogues.append({
                 "start_ms": min(x["start_ms"] for x in cluster),
                 "end_ms": max(x["end_ms"] for x in cluster),
@@ -330,6 +318,7 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
 
 
 def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list = None, lang_code: str = "eng") -> str:
+    ass_content = re.sub(r'(\{[^}]*\\alpha&HFF&[^}]*\})[^{]+(\{\\alpha&H00&[^}]*\})', r'\1\2', ass_content)
     subs = pysubs2.SSAFile.from_string(ass_content)
     
     op_start_ms = None  
@@ -387,9 +376,6 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
 
         text = line.plaintext.replace(r"\h", " ").replace("\\h", " ")
         
-        # FIX: Strip out invisible typesetter spacing tricks
-        text = re.sub(r'(?i)(fillLLLl|fillerfil|fillerf)', '', text)
-        
         text = text.replace("\\N", "\n").replace("\\n", "\n")
         text = re.sub(r'[\u200e\u200f\u202a\u202b\u202c\u202d\u202e]', '', text).strip('\r\n\t')
 
@@ -430,7 +416,7 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
             prev = cluster[0]
             time_match = abs(d["start_ms"] - prev["start_ms"]) < 200 and abs(d["end_ms"] - prev["end_ms"]) < 200
             
-            # FIX: Tightened Y-pos threshold to 5px so tilted lines don't merge incorrectly
+            # 5px tolerance: tilted multi-layer signs have slightly different y_pos values per layer
             if d["style"] == prev["style"] and time_match and abs(d["y_pos"] - prev["y_pos"]) < 5:
                 cluster.append(d)
                 placed = True
@@ -440,23 +426,7 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
 
     clustered_dialogues = []
     for cluster in active_clusters:
-        if lang_code == "ara":
-            cluster.sort(key=lambda x: x["x_pos"], reverse=True)
-        else:
-            cluster.sort(key=lambda x: x["x_pos"], reverse=False)
-
-        unique_parts = []
-        seen_parts = []
-        for x in cluster:
-            is_layer_dup = False
-            for seen_text, seen_x in seen_parts:
-                if x["text"] == seen_text:
-                    if abs(x["x_pos"] - seen_x) < 20.0 or len(x["text"].strip()) > 3:
-                        is_layer_dup = True
-                        break
-            if not is_layer_dup:
-                seen_parts.append((x["text"], x["x_pos"]))
-                unique_parts.append(x)
+        unique_parts = _sort_and_dedup_cluster(cluster, lang_code)
 
         parts = [x["text"] for x in unique_parts]
         valid_parts = [p for p in parts if p.strip()]
@@ -560,7 +530,7 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
 
     counter = 2
     for (start, end), items in grouped_dialogues.items():
-        # FIX: Top-Note Pushdown is now restricted to extreme top (< 150) or explicitly named notes.
+        # Push top-positioned items last so they don't bury main dialogue (< 150 = extreme top edge)
         items.sort(key=lambda x: (
             x.get("y_pos", 1000) < 150 or bool(re.search(r'(note|top)', x.get("style", "").lower())),
             x.get("y_pos", 1000)
@@ -590,7 +560,7 @@ def parse_properties_rules(prop_text: str) -> list:
         left, _, path = line.partition('=')
         if not path: continue
         
-        # Fix the dbf typo in their properties file
+        # sub.properties has a typo in the Davy Back Fight arc: '{01.06}' should be '{01..06}'
         left = left.replace('{01.06}', '{01..06}')
         
         key_part, op_ed_part = left.rsplit('.', 1)
@@ -613,15 +583,23 @@ def parse_properties_rules(prop_text: str) -> list:
 
 def match_rule(arc: str, ep: int, pattern: str) -> bool:
     """Uses Regex to match an arc and episode number against bash-style brace expansion."""
-    def expand_range(m):
-        start, end = int(m.group(1)), int(m.group(2))
-        width = len(m.group(1)) # Keep zero padding (e.g. 01)
-        return "(" + "|".join(f"{i:0{width}d}" for i in range(start, end + 1)) + ")"
-        
-    regex = re.sub(r'\{(\d+)\.\.(\d+)\}', expand_range, pattern)
-    regex = re.sub(r'\{([^}]+)\}', lambda m: "(" + m.group(1).replace(',', '|') + ")", regex)
+    def expand_brace(m):
+        parts = m.group(1).split(',')
+        expanded = []
+        for part in parts:
+            part = part.strip()
+            range_match = re.match(r'^(\d+)\.\.(\d+)$', part)
+            if range_match:
+                start, end = int(range_match.group(1)), int(range_match.group(2))
+                width = len(range_match.group(1)) # Keep zero padding (e.g. 01)
+                expanded.append("(?:" + "|".join(f"{i:0{width}d}" for i in range(start, end + 1)) + ")")
+            else:
+                expanded.append(part)
+        return "(?:" + "|".join(expanded) + ")"
+
+    regex = re.sub(r'\{([^}]+)\}', expand_brace, pattern)
     regex = regex.replace('*', '.*')
-    
+
     target = f"{arc}_{ep:02d}"
     return re.fullmatch(regex, target) is not None
 
@@ -669,6 +647,16 @@ def fetch_op_ed(path: str):
         
 # --- Main Logic ---
 def main():
+    print("[?] Fetching config.json from GitHub...")
+    try:
+        config_req = urllib.request.Request(CONFIG_URL, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(config_req) as response:
+            CONFIG = json.loads(response.read().decode('utf-8'))
+        ARC_MAP = CONFIG["ARC_MAP"]
+    except Exception as e:
+        print(f"[-] Fatal Error: Could not load config.json from GitHub: {e}")
+        return
+
     print("[?] Fetching subtitle repository tree from GitHub...")
     req = urllib.request.Request(REPO_API_URL, headers={'User-Agent': 'Mozilla/5.0'})
     
