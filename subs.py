@@ -137,7 +137,7 @@ def _sort_and_dedup_cluster(cluster: list, lang_code: str) -> list:
     return unique_parts
 
 def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list:
-    ass_content = re.sub(r'(\{[^}]*\\alpha&HFF&[^}]*\})[^{]+(\{\\alpha&H00&[^}]*\})', r'\1\2', ass_content)
+    ass_content = re.sub(r'(\{[^}]*\\(?:alpha|[1-4]a)&HFF&[^}]*\})[^{]+(\{[^}]*\\(?:alpha|[1-4]a)&H00&[^}]*\})', r'\1\2', ass_content)
     subs = pysubs2.SSAFile.from_string(ass_content)
     raw_dialogues = []
     sync_ms = None
@@ -166,10 +166,12 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
         # --- 1. FILTERS ---
         if _KARAOKE_PATTERN.search(style):
             continue
-        if r"\p1" in text_raw or r"\p2" in text_raw or r"\p4" in text_raw or r"\p0" in text_raw:
+        if re.search(r'\\p[1-9]\d*', text_raw):
             continue
 
         if not line.is_comment:
+            if 'translation' in style and len(line.plaintext.strip()) <= 1:
+                continue
             if r"\k" in text_raw.lower() or name in ["lead-in", "hi-light", "verse", "karaoke", "mask", "glow", "shape", "gradient", "dust", "petals", "border clip", "move", "circle", "cross"]:
                 continue
             if lang_code != "ara" and ("fx" in effect or "effector" in effect or "kara effector" in text_raw.lower()):
@@ -187,7 +189,8 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
         # --- 2. CLEAN TEXT ---
         clean_text = line.plaintext.replace(r"\h", " ").replace("\\h", " ")
         
-        clean_text = clean_text.replace("\\N", "\n").replace("\\n", "\n")
+        # \N in OP/ED files is Aegisub visual layout, not intentional line breaks
+        clean_text = clean_text.replace("\n", " ")
         clean_text = re.sub(r'[\u200e\u200f\u202a\u202b\u202c\u202d\u202e]', '', clean_text)
 
         test_text = re.sub(r'[\u0640\u064B-\u065F\u0670]', '', clean_text)
@@ -318,7 +321,7 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
 
 
 def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list = None, lang_code: str = "eng") -> str:
-    ass_content = re.sub(r'(\{[^}]*\\alpha&HFF&[^}]*\})[^{]+(\{\\alpha&H00&[^}]*\})', r'\1\2', ass_content)
+    ass_content = re.sub(r'(\{[^}]*\\(?:alpha|[1-4]a)&HFF&[^}]*\})[^{]+(\{[^}]*\\(?:alpha|[1-4]a)&H00&[^}]*\})', r'\1\2', ass_content)
     subs = pysubs2.SSAFile.from_string(ass_content)
     
     op_start_ms = None  
@@ -371,7 +374,7 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
     for line, x_pos, y_pos in dialogues:
         text_raw = line.text
         
-        if r"\p1" in text_raw or r"\p2" in text_raw or r"\p4" in text_raw:
+        if re.search(r'\\p[1-9]\d*', text_raw):
             continue
 
         text = line.plaintext.replace(r"\h", " ").replace("\\h", " ")
