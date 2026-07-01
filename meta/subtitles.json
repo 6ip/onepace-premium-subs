@@ -2153,6 +2153,11 @@
             "lang": "ita"
         },
         {
+            "id": "AR_4_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/04/AR_4_ja.vtt",
+            "lang": "jpn"
+        },
+        {
             "id": "AR_4_pl",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/04/AR_4_pl.vtt",
             "lang": "pol"
@@ -2238,6 +2243,16 @@
             "id": "AR_5_it",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/05/AR_5_it.vtt",
             "lang": "ita"
+        },
+        {
+            "id": "AR_5_extended_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/05/AR_5_extended_ja.vtt",
+            "lang": "jpn"
+        },
+        {
+            "id": "AR_5_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/06%20Arlong%20Park/05/AR_5_ja.vtt",
+            "lang": "jpn"
         },
         {
             "id": "AR_5_extended_pl",
