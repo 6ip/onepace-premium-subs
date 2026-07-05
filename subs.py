@@ -594,6 +594,40 @@ def parse_properties_rules(prop_text: str) -> list:
         })
     return rules
 
+def parse_folder_prefixes(prop_text: str) -> dict:
+    """Map clean_string(folder name) -> sub.properties prefix, from the '.folder=' lines.
+
+    OP/ED rules key off sub.properties' own prefix (e.g. 'wci', 'fi', 'rts',
+    'specials'), which differs from the cleaned folder name for some arcs. The
+    '.folder=' lines (e.g. 'wci_*.folder=30 Whole Cake Island') give the exact
+    mapping, so we use them to translate a folder into the right OP/ED key.
+    """
+    out = {}
+    for line in prop_text.split('\n'):
+        line = line.strip()
+        if not line or line.startswith('#') or '.folder=' not in line:
+            continue
+        left, _, folder = line.partition('=')
+        m = re.match(r'^([A-Za-z0-9]+)_\*\.folder$', left.strip())
+        if m and folder.strip():
+            out[clean_string(folder.strip())] = m.group(1)
+    return out
+
+def parse_arc_folders(prop_text: str) -> dict:
+    """Map clean_string(folder name) -> the real folder name, from the '.folder=' lines
+    (e.g. 'fishmanisland' -> '26 Fishman Island'). Used to place fallback subs in the
+    same folder the normal pass uses."""
+    out = {}
+    for line in prop_text.split('\n'):
+        line = line.strip()
+        if not line or line.startswith('#') or '.folder=' not in line:
+            continue
+        _, _, folder = line.partition('=')
+        folder = folder.strip()
+        if folder:
+            out[clean_string(folder)] = folder
+    return out
+
 def match_rule(arc: str, ep: int, pattern: str) -> bool:
     """Uses Regex to match an arc and episode number against bash-style brace expansion."""
     def expand_brace(m):
@@ -664,6 +698,10 @@ def fetch_op_ed(path: str):
         return content
     except Exception as e:
         print(f"    [-] Failed to fetch theme {path}: {e}")
+        # Cache the miss too, so a genuinely-absent file (e.g. a theme that
+        # sub.properties references but was never uploaded) isn't re-requested
+        # for every episode that uses it.
+        _OP_ED_CACHE[path] = None
         return None
         
 # --- Main Logic ---
@@ -700,10 +738,15 @@ def main():
     try:
         prop_req = urllib.request.Request(RAW_ASS_BASE_URL + "main/sub.properties", headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(prop_req) as response:
-            op_ed_rules = parse_properties_rules(response.read().decode('utf-8'))
+            prop_text = response.read().decode('utf-8')
+        op_ed_rules = parse_properties_rules(prop_text)
+        folder_prefixes = parse_folder_prefixes(prop_text)
+        arc_folders = parse_arc_folders(prop_text)
     except Exception as e:
         print(f"[-] Failed to fetch sub.properties: {e}")
         op_ed_rules = []
+        folder_prefixes = {}
+        arc_folders = {}
 
     local_hashes = {}
     if os.path.exists(HASHES_FILE):
@@ -735,6 +778,9 @@ def main():
 
         arc_key = clean_string(arc_folder)
         prefix = ARC_MAP.get(arc_key)
+        # OP/ED templates key off sub.properties' own prefix (wci/fi/rts/specials…),
+        # which differs from the cleaned folder name for some arcs.
+        op_ed_key = folder_prefixes.get(arc_key, arc_key)
 
         # Fallback for Cover Stories & Specials
         if not prefix:
@@ -804,7 +850,7 @@ def main():
         rel_path = f"{arc_folder}/{ep_folder}/{vtt_filename}"
         cdn_url = CDN_SRT_BASE_URL + urllib.parse.quote(rel_path, safe='/')
         
-        op_path, ed_path = get_op_ed_paths(arc_key, ep_num, lang_code, op_ed_rules)     
+        op_path, ed_path = get_op_ed_paths(op_ed_key, ep_num, lang_code, op_ed_rules)
         file_exists = os.path.exists(local_vtt_path)
         
         if file_exists and path not in local_hashes:
@@ -871,9 +917,116 @@ def main():
             with open(HASHES_FILE, "w", encoding="utf-8") as f:
                 json.dump(local_hashes, f, indent=4)
 
+    # ==================================================================
+    #  FALLBACK PASS — fill gaps from Release/Final Subs
+    #  The old release folder holds pre-merged .ass files with OP/ED already
+    #  baked in as clean lyric lines. Use them ONLY for (episode, language)
+    #  combos the normal pass didn't produce; the new per-episode files always
+    #  win. No OP/ED injection here — it's already inside the merged file.
+    # ==================================================================
+    # Final Subs language word -> (ISO code, short id suffix). Base (no word) = English.
+    FINAL_LANG = {
+        "": ("eng", "en"), "arabic": ("ara", "ar"), "deutsch": ("ger", "de"),
+        "italian": ("ita", "it"), "turkish": ("tur", "tr"), "portugues": ("por", "pt"),
+        "polish": ("pol", "pl"), "czech": ("cze", "cs"), "finnish": ("fin", "fi"),
+        "hebrew": ("heb", "he"), "japanese": ("jpn", "ja"), "russian": ("rus", "ru"),
+        "spanish": ("spa", "es"),
+    }
+    FINAL_NAME_RE = re.compile(r'^\[[^\]]*\]\[[^\]]*\]\s*(.+?)\s+(\d+)\s*\[[^\]]*\]\s*(.*)$')
+
+    have = {(sid, s["lang"]) for sid, subs in subtitles_dict.items() for s in subs}
+    final_files = [it for it in tree_data.get("tree", [])
+                   if it.get("path", "").endswith(".ass") and "Release/Final Subs/" in it.get("path", "")]
+    print(f"\n[+] Final Subs fallback: {len(final_files)} merged files; filling gaps only...")
+
+    # Real folder name per prefix, so arc-name aliases in the old Final Subs land in
+    # the SAME folder the normal pass uses (e.g. "Arabasta" -> AL -> "12 Alabasta",
+    # "Whiskey Peak" -> WH -> "09 Whisky Peak").
+    folder_by_prefix = {}
+    for _cf, _raw in arc_folders.items():
+        _p = ARC_MAP.get(_cf)
+        if _p:
+            folder_by_prefix.setdefault(_p, _raw)
+    # Arcs the subs repo doesn't fold into a numbered folder, given one for consistency.
+    FOLDER_OVERRIDE = {"LR": "15 Long Ring Long Land"}
+
+    filled = 0
+    for it in final_files:
+        fpath = it.get("path", "")
+        file_sha = it.get("sha", "")
+        base = fpath.split('/')[-1].rsplit('.', 1)[0]
+        m = FINAL_NAME_RE.match(base)
+        if not m:
+            continue  # no arc+number -> specials/cover stories, skip (normal pass owns them)
+        arc_name, ep_raw, lang_word = m.group(1).strip(), m.group(2), m.group(3).strip().lower()
+        # Skip extended / alternate / CC variants — per-episode files handle those.
+        if any(v in lang_word for v in ("extended", "alternate", "cc")):
+            continue
+        if lang_word not in FINAL_LANG:
+            continue
+        lang_code, short = FINAL_LANG[lang_word]
+        prefix = ARC_MAP.get(clean_string(arc_name))
+        if not prefix:
+            continue
+        try:
+            ep_num = int(ep_raw)
+        except ValueError:
+            continue
+        stremio_id = f"{prefix}_{ep_num}"
+        if (stremio_id, lang_code) in have:
+            continue  # normal pass already produced it — new always wins
+
+        arc_folder = FOLDER_OVERRIDE.get(prefix) or folder_by_prefix.get(prefix) or arc_name
+        ep_folder = str(ep_num).zfill(2)
+        unique_sub_id = f"{stremio_id}_{short}"
+        vtt_filename = f"{unique_sub_id}.vtt"
+        nested_dir = os.path.join(OUTPUT_SUBS_DIR, arc_folder, ep_folder)
+        os.makedirs(nested_dir, exist_ok=True)
+        local_vtt_path = os.path.join(nested_dir, vtt_filename)
+        rel_path = f"{arc_folder}/{ep_folder}/{vtt_filename}"
+        cdn_url = CDN_SRT_BASE_URL + urllib.parse.quote(rel_path, safe='/')
+
+        # Convert only if missing or the source changed (hash-tracked like the main pass).
+        if (not os.path.exists(local_vtt_path)) or (local_hashes.get(fpath) != file_sha):
+            ok = False
+            for attempt in range(5):
+                try:
+                    dl_req = urllib.request.Request(RAW_ASS_BASE_URL + urllib.parse.quote(fpath),
+                                                    headers={'User-Agent': 'Mozilla/5.0'})
+                    with urllib.request.urlopen(dl_req) as dl_resp:
+                        ass_text = dl_resp.read().decode('utf-8-sig', errors='ignore')
+                    vtt_text = ass_to_vtt(ass_text, None, None, lang_code)  # OP/ED already baked in
+                    with open(local_vtt_path, "w", encoding="utf-8") as f:
+                        f.write(vtt_text)
+                    local_hashes[fpath] = file_sha
+                    time.sleep(0.5)
+                    ok = True
+                    break
+                except urllib.error.HTTPError as e:
+                    if e.code in (429, 403):
+                        wait_time = 3 ** attempt
+                        print(f"    [!] Blocked by server! Cooling down for {wait_time} seconds...")
+                        time.sleep(wait_time)
+                    else:
+                        print(f"    [-] HTTP Error {e.code} on {base}")
+                        break
+                except Exception as e:
+                    print(f"    [-] Fallback error on {base}: {e}")
+                    break
+            if not ok:
+                continue
+
+        subtitles_dict.setdefault(stremio_id, []).append({
+            "id": unique_sub_id, "url": cdn_url, "lang": lang_code
+        })
+        have.add((stremio_id, lang_code))  # so duplicate Final Subs don't double-add
+        filled += 1
+
+    print(f"[+] Final Subs fallback: filled {filled} missing (episode, language) gaps.")
+
     for ep_id in subtitles_dict:
         subtitles_dict[ep_id].sort(key=lambda x: x["lang"])
-        
+
     os.makedirs(os.path.dirname(OUTPUT_JSON), exist_ok=True)
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
         json.dump(subtitles_dict, f, indent=4, ensure_ascii=False)
