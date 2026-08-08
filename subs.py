@@ -4,6 +4,7 @@ import re
 import urllib.parse
 import os
 import time
+import hashlib
 import pysubs2
 
 # --- Configuration ---
@@ -28,6 +29,123 @@ LANG_MAP = {
     "ru": "rus", "tr": "tur", "id": "ind", "nl": "dut", "vi": "vie",
     "ja": "jpn", "typesetting": "eng"
 }
+
+# Display names for the ISO 639-2/B codes LANG_MAP produces, used to build the
+# human-readable `label` on variant tracks.
+LANG_NAMES = {
+    "ara": "Arabic",  "cze": "Czech",     "dut": "Dutch",   "eng": "English",
+    "fin": "Finnish", "fre": "French",    "ger": "German",  "heb": "Hebrew",
+    "ind": "Indonesian", "ita": "Italian", "jpn": "Japanese", "pol": "Polish",
+    "por": "Portuguese", "rus": "Russian", "spa": "Spanish", "tur": "Turkish",
+    "vie": "Vietnamese",
+}
+
+# A trailing "_2", "_3"... on an id is the collision counter for a second file
+# that mapped to the same (episode, language).
+_NUMBERED_TOKEN = re.compile(r'^[a-z]{2,4}_(\d+)$')
+
+
+def build_subtitle_label(unique_sub_id: str, stremio_id: str, lang_code: str):
+    """Human-readable name for Stremio's subtitle VARIANTS list.
+
+    Stremio groups subtitles by language and then lists the variants inside that
+    language; each one shows its `label`, or the client's own localized language
+    name when there is no label (see stremio-core `Subtitles.label`).
+
+    So we label ONLY the variant tracks (extended cut, dub-synced, CC, ...).
+    A plain base track deliberately gets no label, which keeps its name
+    localized to whatever language the viewer's app is in.
+
+    Returns the label string, or None to leave the track unlabeled.
+    """
+    token = unique_sub_id[len(stremio_id):] if unique_sub_id.startswith(stremio_id) else ""
+    token = token.strip("_").lower()
+    if not token:
+        return None
+
+    notes = []
+    if "extended" in token:
+        notes.append("Extended cut")          # timed for the Extended cut of the episode
+    if "dub" in token:
+        notes.append("Dub-synced")            # matches both "_dub_es" and "_es_dub"
+    if "alternate" in token:
+        notes.append("Alternate")
+    if "typesetting" in token:
+        notes.append("Signs & Typesetting")
+    if token == "cc" or token.endswith("_cc"):
+        notes.append("CC")
+    if token == "ptbr":
+        notes.append("Brazil")                # distinguishes it from European "_pt"
+    m = _NUMBERED_TOKEN.match(token)
+    if m:
+        notes.append(m.group(1))
+
+    if not notes:
+        return None                           # plain base track -> no label
+
+    return f"{LANG_NAMES.get(lang_code, lang_code.upper())} ({', '.join(notes)})"
+
+
+def _subtitle_digest(url: str):
+    """md5 of the local .vtt behind a CDN url, or None if it can't be read.
+    Unreadable files are never treated as duplicates."""
+    if not url.startswith(CDN_SRT_BASE_URL):
+        return None
+    rel = urllib.parse.unquote(url[len(CDN_SRT_BASE_URL):])
+    path = os.path.join(OUTPUT_SUBS_DIR, rel)
+    try:
+        with open(path, "rb") as fh:
+            return hashlib.md5(fh.read()).hexdigest()
+    except OSError:
+        return None
+
+
+def dedup_and_label(subtitles_dict: dict) -> dict:
+    """Final pass over the assembled map, in place.
+
+    1. Drops an entry whose subtitle file is byte-identical to an earlier entry
+       of the same language in the same episode (the same file published twice
+       under two names). Genuinely different files are always kept.
+    2. Adds `label` to variant tracks so they are distinguishable in Stremio.
+    """
+    dropped = labeled = 0
+    for ep_id, subs in subtitles_dict.items():
+        seen, kept = {}, []
+        for s in subs:
+            s.pop("label", None)   # recompute from scratch; never carry a stale label
+            digest = _subtitle_digest(s.get("url", ""))
+            key = (s.get("lang"), digest)
+            if digest and key in seen:
+                print(f"    [dup] {ep_id}: dropped '{s.get('id')}' (identical to '{seen[key]}')")
+                dropped += 1
+                continue
+            if digest:
+                seen[key] = s.get("id")
+            label = build_subtitle_label(s.get("id", ""), ep_id, s.get("lang", ""))
+            if label:
+                s["label"] = label
+                labeled += 1
+            kept.append(s)
+
+        # Anything still sharing a language AND a label would render identically
+        # (e.g. two different Czech files that are both plain base tracks). Number
+        # the later ones so every track in the episode stays tellable apart.
+        groups = {}
+        for s in kept:
+            groups.setdefault((s.get("lang"), s.get("label")), []).append(s)
+        for (lang, label), members in groups.items():
+            if len(members) < 2:
+                continue
+            base = label or LANG_NAMES.get(lang, str(lang).upper())
+            for n, s in enumerate(members[1:], start=2):
+                s["label"] = f"{base} ({n})"
+                labeled += 1
+
+        subtitles_dict[ep_id] = kept
+
+    print(f"[+] Variant labels added: {labeled} | identical duplicates dropped: {dropped}")
+    return subtitles_dict
+
 
 # --- Regex Patterns ---
 _KARAOKE_PATTERN = re.compile(r'(karaoke|kara|romaji|rom|kanji|furigana|credits?)')
@@ -1023,6 +1141,8 @@ def main():
         filled += 1
 
     print(f"[+] Final Subs fallback: filled {filled} missing (episode, language) gaps.")
+
+    dedup_and_label(subtitles_dict)
 
     for ep_id in subtitles_dict:
         subtitles_dict[ep_id].sort(key=lambda x: x["lang"])
