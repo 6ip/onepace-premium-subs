@@ -21,6 +21,9 @@ OUTPUT_JSON = os.path.join(BASE_DIR, "meta", "subtitles.json")
 OUTPUT_SUBS_DIR = os.path.join(BASE_DIR, "meta", "subs")
 HASHES_FILE = os.path.join(BASE_DIR, "hashes.json")
 
+# Bump when ass_to_vtt logic changes: forces one full rebuild so old VTTs can't stay stale.
+CONVERTER_VERSION = 2
+
 CONFIG_URL = "https://raw.githubusercontent.com/6ip/onepace-streams/refs/heads/main/config.json"
 
 LANG_MAP = {
@@ -900,6 +903,11 @@ def main():
                 local_hashes = json.load(f)
             except json.JSONDecodeError:
                 print("[-] Could not read hashes.json, starting fresh.")
+
+    if local_hashes.pop("_converter_version", None) != CONVERTER_VERSION:
+        print("[!] Converter version changed - full rebuild.")
+        local_hashes = {}
+    local_hashes["_converter_version"] = CONVERTER_VERSION
 
     os.makedirs(OUTPUT_SUBS_DIR, exist_ok=True)
     subtitles_dict = {}
