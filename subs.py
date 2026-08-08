@@ -32,8 +32,7 @@ LANG_MAP = {
     "ja": "jpn", "typesetting": "eng"
 }
 
-# Display names for the ISO 639-2/B codes LANG_MAP produces, used to build the
-# human-readable `label` on variant tracks.
+# Display names for the ISO 639-2/B codes LANG_MAP produces.
 LANG_NAMES = {
     "ara": "Arabic",  "cze": "Czech",     "dut": "Dutch",   "eng": "English",
     "fin": "Finnish", "fre": "French",    "ger": "German",  "heb": "Hebrew",
@@ -46,43 +45,36 @@ LANG_NAMES = {
 # that mapped to the same (episode, language).
 _NUMBERED_TOKEN = re.compile(r'^[a-z]{2,4}_(\d+)$')
 
-# Order of the variants inside one language. The plain track must come first:
-# Stremio shows this list as-is, and picks the FIRST entry of a language when the
-# viewer taps the language itself rather than a specific variant.
-_VARIANT_RANK = (
-    "Extended cut",         # needed to stay in sync on the Extended release
-    "Dub-synced",
-    "Brazil",
-    "CC",
-    "Alternate",
-    "Signs & Typesetting",  # signs only, no dialogue -> least useful as a main track
-)
+_EXTENDED = "EXT"
+
+# Order of the remaining markers once the cut has been accounted for.
+_VARIANT_RANK = ("DUB", "Brazil", "CC", "ALT", "Signs")
+
+_LABEL_MARKERS = re.compile(r'\(([^)]*)\)\s*$')
 
 
 def subtitle_sort_key(entry: dict):
-    """Group by language, plain track first, then variants in a stable order."""
+    """Sort by language, then cut (normal before EXT), plain track leading each."""
     label = entry.get("label") or ""
-    if not label:
-        rank = -1                                   # the plain track leads its language
+    m = _LABEL_MARKERS.search(label)
+    markers = [part.strip() for part in m.group(1).split(",")] if m else []
+
+    is_extended = 1 if _EXTENDED in markers else 0
+    others = [mk for mk in markers if mk != _EXTENDED]
+
+    known = [_VARIANT_RANK.index(mk) for mk in others if mk in _VARIANT_RANK]
+    if known:
+        rank = min(known)
+    elif others:
+        rank = len(_VARIANT_RANK)       # unrecognised marker (e.g. "2") sorts last
     else:
-        rank = next((i for i, name in enumerate(_VARIANT_RANK) if name in label),
-                    len(_VARIANT_RANK))             # anything unrecognised (e.g. "(2)") goes last
-    return (entry.get("lang", ""), rank, label)
+        rank = -1                       # unmarked track leads its cut
+
+    return (entry.get("lang", ""), is_extended, rank, label)
 
 
 def build_subtitle_label(unique_sub_id: str, stremio_id: str, lang_code: str):
-    """Human-readable name for Stremio's subtitle VARIANTS list.
-
-    Stremio groups subtitles by language and then lists the variants inside that
-    language; each one shows its `label`, or the client's own localized language
-    name when there is no label (see stremio-core `Subtitles.label`).
-
-    So we label ONLY the variant tracks (extended cut, dub-synced, CC, ...).
-    A plain base track deliberately gets no label, which keeps its name
-    localized to whatever language the viewer's app is in.
-
-    Returns the label string, or None to leave the track unlabeled.
-    """
+    """Label for a variant track, or None for a plain one (client shows its own name)."""
     token = unique_sub_id[len(stremio_id):] if unique_sub_id.startswith(stremio_id) else ""
     token = token.strip("_").lower()
     if not token:
@@ -90,13 +82,13 @@ def build_subtitle_label(unique_sub_id: str, stremio_id: str, lang_code: str):
 
     notes = []
     if "extended" in token:
-        notes.append("Extended cut")          # timed for the Extended cut of the episode
+        notes.append(_EXTENDED)
     if "dub" in token:
-        notes.append("Dub-synced")            # matches both "_dub_es" and "_es_dub"
+        notes.append("DUB")                   # matches both "_dub_es" and "_es_dub"
     if "alternate" in token:
-        notes.append("Alternate")
+        notes.append("ALT")
     if "typesetting" in token:
-        notes.append("Signs & Typesetting")
+        notes.append("Signs")
     if token == "cc" or token.endswith("_cc"):
         notes.append("CC")
     if token == "ptbr":
@@ -106,14 +98,13 @@ def build_subtitle_label(unique_sub_id: str, stremio_id: str, lang_code: str):
         notes.append(m.group(1))
 
     if not notes:
-        return None                           # plain base track -> no label
+        return None
 
     return f"{LANG_NAMES.get(lang_code, lang_code.upper())} ({', '.join(notes)})"
 
 
 def _subtitle_digest(url: str):
-    """md5 of the local .vtt behind a CDN url, or None if it can't be read.
-    Unreadable files are never treated as duplicates."""
+    """md5 of the local .vtt behind a CDN url; None if unreadable (never deduped)."""
     if not url.startswith(CDN_SRT_BASE_URL):
         return None
     rel = urllib.parse.unquote(url[len(CDN_SRT_BASE_URL):])
@@ -126,13 +117,7 @@ def _subtitle_digest(url: str):
 
 
 def dedup_and_label(subtitles_dict: dict) -> dict:
-    """Final pass over the assembled map, in place.
-
-    1. Drops an entry whose subtitle file is byte-identical to an earlier entry
-       of the same language in the same episode (the same file published twice
-       under two names). Genuinely different files are always kept.
-    2. Adds `label` to variant tracks so they are distinguishable in Stremio.
-    """
+    """Drop byte-identical same-language duplicates, then label the variants."""
     dropped = labeled = 0
     for ep_id, subs in subtitles_dict.items():
         seen, kept = {}, []
@@ -152,9 +137,7 @@ def dedup_and_label(subtitles_dict: dict) -> dict:
                 labeled += 1
             kept.append(s)
 
-        # Anything still sharing a language AND a label would render identically
-        # (e.g. two different Czech files that are both plain base tracks). Number
-        # the later ones so every track in the episode stays tellable apart.
+        # Tracks still sharing a language and label would look identical — number them.
         groups = {}
         for s in kept:
             groups.setdefault((s.get("lang"), s.get("label")), []).append(s)
