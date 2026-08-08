@@ -158,8 +158,25 @@ def dedup_and_label(subtitles_dict: dict) -> dict:
 # --- Regex Patterns ---
 _KARAOKE_PATTERN = re.compile(r'(karaoke|kara|romaji|rom|kanji|furigana|credits?)')
 _OP_ED_STYLE_PATTERN = re.compile(r'(op\d*|ed\d*|ending|opening|song)')
+_SPA_ENGLISH_STYLE = re.compile(r'(main|flashback|thought|secondary|caption|title)')
 _X_POS_PATTERN = re.compile(r'\\(?:pos|move)\(([-+]?\d*\.?\d+)')
 _Y_POS_PATTERN = re.compile(r'\\(?:pos|move)\s*\([-+]?\d*\.?\d+\s*,\s*([-+]?\d*\.?\d+)')
+
+def _spa_styles_hold_dialogue(subs) -> bool:
+    """False when Main/Caption hold the Spanish itself (dropping them would empty the episode)."""
+    survive = blocked = 0
+    for line in subs:
+        if line.is_comment:
+            continue
+        style = line.style.lower()
+        if _KARAOKE_PATTERN.search(style) or r"\k" in line.text.lower():
+            continue
+        if _SPA_ENGLISH_STYLE.search(style):
+            blocked += 1
+        else:
+            survive += 1
+    return not (survive < 60 and blocked > 100)
+
 
 def ms_to_vtt_time(ms: int) -> str:
     """Helper to convert integer milliseconds back to WEBVTT timestamp formatting."""
@@ -460,9 +477,11 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
     ass_content = re.sub(r'(\{[^}\n]*\\(?:alpha|[1-4]a)&HFF&[^}\n]*\})[^{\n]+(\{[^}\n]*\\(?:alpha|[1-4]a)&H00&[^}\n]*\})', r'\1\2', ass_content)
     subs = pysubs2.SSAFile.from_string(ass_content)
     
-    op_start_ms = None  
-    ed_start_ms = None  
+    op_start_ms = None
+    ed_start_ms = None
     dialogues = []
+
+    skip_spa_styles = lang_code == "spa" and _spa_styles_hold_dialogue(subs)
 
     for line in subs:
         name = line.name.lower()
@@ -488,7 +507,7 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
         if lang_code != "ara" and ("fx" in effect or "effector" in effect or "kara effector" in text_raw.lower()):
             continue
             
-        if lang_code == "spa" and re.search(r'(main|flashback|thought|secondary|caption|title)', style):
+        if skip_spa_styles and _SPA_ENGLISH_STYLE.search(style):
             continue
 
         x_pos = 0.0
