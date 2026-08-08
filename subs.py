@@ -22,7 +22,7 @@ OUTPUT_SUBS_DIR = os.path.join(BASE_DIR, "meta", "subs")
 HASHES_FILE = os.path.join(BASE_DIR, "hashes.json")
 
 # Bump when ass_to_vtt logic changes: forces one full rebuild so old VTTs can't stay stale.
-CONVERTER_VERSION = 3
+CONVERTER_VERSION = 4
 
 CONFIG_URL = "https://raw.githubusercontent.com/6ip/onepace-streams/refs/heads/main/config.json"
 
@@ -176,10 +176,13 @@ def extract_credit_cues(subs):
             continue
         if re.search(r'\\p\d', line.text):   # vector drawing, not text
             continue
-        text = _TAG_BLOCK.sub("", line.text).replace("\\N", ", ").replace("\\n", ", ")
-        text = re.sub(r'\s+', ' ', text).strip(' ,')
-        if not text:
+        raw = _TAG_BLOCK.sub("", line.text)
+        parts = [re.sub(r'\s+', ' ', p).strip(' ,') for p in re.split(r'\\N|\\n', raw)]
+        parts = [p for p in parts if p]
+        if not parts:
             continue
+        # role + name stay on their own lines; longer lists are a name list
+        text = "\n".join(parts) if len(parts) <= 2 else ", ".join(parts)
         key = (line.start, line.end)
         if text not in slots.setdefault(key, []):
             slots[key].append(text)
@@ -953,7 +956,8 @@ def main():
             except json.JSONDecodeError:
                 print("[-] Could not read hashes.json, starting fresh.")
 
-    if local_hashes.pop("_converter_version", None) != CONVERTER_VERSION:
+    full_rebuild = local_hashes.pop("_converter_version", None) != CONVERTER_VERSION
+    if full_rebuild:
         print("[!] Converter version changed - full rebuild.")
         local_hashes = {}
     local_hashes["_converter_version"] = CONVERTER_VERSION
@@ -1055,11 +1059,11 @@ def main():
         op_path, ed_path = get_op_ed_paths(op_ed_key, ep_num, lang_code, op_ed_rules)
         file_exists = os.path.exists(local_vtt_path)
         
-        if file_exists and path not in local_hashes:
+        if file_exists and path not in local_hashes and not full_rebuild:
             local_hashes[path] = file_sha
             needs_download = False
         else:
-            needs_download = not file_exists or (path in local_hashes and local_hashes[path] != file_sha)
+            needs_download = not file_exists or path not in local_hashes or local_hashes[path] != file_sha
 
         if needs_download:
             download_url = RAW_ASS_BASE_URL + urllib.parse.quote(path)
