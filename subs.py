@@ -22,7 +22,7 @@ OUTPUT_SUBS_DIR = os.path.join(BASE_DIR, "meta", "subs")
 HASHES_FILE = os.path.join(BASE_DIR, "hashes.json")
 
 # Bump when ass_to_vtt logic changes: forces one full rebuild so old VTTs can't stay stale.
-CONVERTER_VERSION = 2
+CONVERTER_VERSION = 3
 
 CONFIG_URL = "https://raw.githubusercontent.com/6ip/onepace-streams/refs/heads/main/config.json"
 
@@ -156,6 +156,45 @@ def dedup_and_label(subtitles_dict: dict) -> dict:
 
     print(f"[+] Variant labels added: {labeled} | identical duplicates dropped: {dropped}")
     return subtitles_dict
+
+
+# Staff credits: kept out of the dialogue flow, re-emitted as small corner cues.
+_CREDIT_STYLE = re.compile(r'cr[eé]dit', re.I)
+_TAG_BLOCK = re.compile(r'\{[^}]*\}')
+CREDITS_WINDOW_MS = 150_000
+MAX_CREDIT_CUES = 30
+
+
+def extract_credit_cues(subs):
+    """(start, end, text) cues from the credit styles in the first 2.5 minutes."""
+    slots = {}
+    for line in subs:
+        if line.is_comment or line.start >= CREDITS_WINDOW_MS:
+            continue
+        style = line.style.lower()
+        if not _CREDIT_STYLE.search(style) or "furigana" in style:
+            continue
+        if re.search(r'\\p\d', line.text):   # vector drawing, not text
+            continue
+        text = _TAG_BLOCK.sub("", line.text).replace("\\N", ", ").replace("\\n", ", ")
+        text = re.sub(r'\s+', ' ', text).strip(' ,')
+        if not text:
+            continue
+        key = (line.start, line.end)
+        if text not in slots.setdefault(key, []):
+            slots[key].append(text)
+
+    # Merge fade-in repeats: consecutive slots where one text list contains the other.
+    cues = []
+    for (start, end) in sorted(slots):
+        lines = slots[(start, end)]
+        if cues:
+            p_start, p_end, p_lines = cues[-1]
+            if start - p_end <= 300 and (set(p_lines) <= set(lines) or set(lines) <= set(p_lines)):
+                cues[-1] = (p_start, end, lines if len(lines) >= len(p_lines) else p_lines)
+                continue
+        cues.append((start, end, lines))
+    return [(s, e, "\n".join(l)) for s, e, l in cues[:MAX_CREDIT_CUES]]
 
 
 # --- Regex Patterns ---
@@ -479,7 +518,8 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
     # text that uses fade-in animations (e.g. \1a&HFF&\t(...,\1a&H00&)).
     ass_content = re.sub(r'(\{[^}\n]*\\(?:alpha|[1-4]a)&HFF&[^}\n]*\})[^{\n]+(\{[^}\n]*\\(?:alpha|[1-4]a)&H00&[^}\n]*\})', r'\1\2', ass_content)
     subs = pysubs2.SSAFile.from_string(ass_content)
-    
+    credit_cues = extract_credit_cues(subs)
+
     op_start_ms = None
     ed_start_ms = None
     dialogues = []
@@ -672,6 +712,7 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
         "STYLE",
         "::cue(c.color9CD5FF) { color: #9CD5FF; }",
         "::cue(c.colora8c7fa) { color: #a8c7fa; }",
+        "::cue(c.credits) { color: #a8c7fa; font-size: 78%; }",
         "",
         "1",
         "00:00:01.000 --> 00:00:07.000 line:5% align:center",
@@ -698,10 +739,18 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
         ))
         
         texts = [x["text"] for x in items]
-        
+
         vtt_lines.append(str(counter))
         vtt_lines.append(f"{ms_to_vtt_time(start)} --> {ms_to_vtt_time(end)}")
         vtt_lines.append("\n".join(texts))
+        vtt_lines.append("")
+        counter += 1
+
+    # Staff credits as small dim cues in the top-left corner.
+    for start, end, text in credit_cues:
+        vtt_lines.append(str(counter))
+        vtt_lines.append(f"{ms_to_vtt_time(start)} --> {ms_to_vtt_time(end)} line:8% position:5% align:start size:45%")
+        vtt_lines.append(f"<c.credits>{text}</c>")
         vtt_lines.append("")
         counter += 1
 
