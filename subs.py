@@ -44,6 +44,29 @@ LANG_NAMES = {
 # that mapped to the same (episode, language).
 _NUMBERED_TOKEN = re.compile(r'^[a-z]{2,4}_(\d+)$')
 
+# Order of the variants inside one language. The plain track must come first:
+# Stremio shows this list as-is, and picks the FIRST entry of a language when the
+# viewer taps the language itself rather than a specific variant.
+_VARIANT_RANK = (
+    "Extended cut",         # needed to stay in sync on the Extended release
+    "Dub-synced",
+    "Brazil",
+    "CC",
+    "Alternate",
+    "Signs & Typesetting",  # signs only, no dialogue -> least useful as a main track
+)
+
+
+def subtitle_sort_key(entry: dict):
+    """Group by language, plain track first, then variants in a stable order."""
+    label = entry.get("label") or ""
+    if not label:
+        rank = -1                                   # the plain track leads its language
+    else:
+        rank = next((i for i, name in enumerate(_VARIANT_RANK) if name in label),
+                    len(_VARIANT_RANK))             # anything unrecognised (e.g. "(2)") goes last
+    return (entry.get("lang", ""), rank, label)
+
 
 def build_subtitle_label(unique_sub_id: str, stremio_id: str, lang_code: str):
     """Human-readable name for Stremio's subtitle VARIANTS list.
@@ -1145,7 +1168,7 @@ def main():
     dedup_and_label(subtitles_dict)
 
     for ep_id in subtitles_dict:
-        subtitles_dict[ep_id].sort(key=lambda x: x["lang"])
+        subtitles_dict[ep_id].sort(key=subtitle_sort_key)
 
     os.makedirs(os.path.dirname(OUTPUT_JSON), exist_ok=True)
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
