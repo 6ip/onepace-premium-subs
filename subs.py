@@ -15,9 +15,11 @@ RAW_ASS_BASE_URL = "https://raw.githubusercontent.com/one-pace/one-pace-public-s
 
 CDN_SRT_BASE_URL = "https://6ip.github.io/onepace-premium-subs/meta/subs/"
 
-OUTPUT_JSON = "meta/subtitles.json"
-OUTPUT_SUBS_DIR = "meta/subs"
-HASHES_FILE = "hashes.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+OUTPUT_JSON = os.path.join(BASE_DIR, "meta", "subtitles.json")
+OUTPUT_SUBS_DIR = os.path.join(BASE_DIR, "meta", "subs")
+HASHES_FILE = os.path.join(BASE_DIR, "hashes.json")
 
 CONFIG_URL = "https://raw.githubusercontent.com/6ip/onepace-streams/refs/heads/main/config.json"
 
