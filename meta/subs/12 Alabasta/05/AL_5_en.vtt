@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1932,3 +1933,35 @@ Now tell me...
 439
 00:32:00.510 --> 00:32:02.510
 where Crocodile is!
+
+440
+00:00:01.730 --> 00:00:04.730 line:8% position:5% align:start size:45%
+<c.credits>Video Editing, Gigglebot</c>
+
+441
+00:00:04.730 --> 00:00:07.730 line:8% position:5% align:start size:45%
+<c.credits>Timing, DraSleek, PhosCity</c>
+
+442
+00:00:07.730 --> 00:00:12.730 line:8% position:5% align:start size:45%
+<c.credits>Quality Control, Galaxy 9000, JT-421, Pepperjack</c>
+
+443
+00:00:12.730 --> 00:00:15.730 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+444
+00:00:15.730 --> 00:00:18.730 line:8% position:5% align:start size:45%
+<c.credits>Graphics, Datenshi</c>
+
+445
+00:00:18.730 --> 00:00:21.730 line:8% position:5% align:start size:45%
+<c.credits>Karaoke, KaitouYahiko</c>
+
+446
+00:00:21.730 --> 00:00:24.730 line:8% position:5% align:start size:45%
+<c.credits>Subtitle Editing, Zenef</c>
+
+447
+00:00:24.730 --> 00:00:27.730 line:8% position:5% align:start size:45%
+<c.credits>Translation, DemonRin, FUNimation</c>

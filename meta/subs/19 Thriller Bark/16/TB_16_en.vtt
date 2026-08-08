@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1652,3 +1653,27 @@ So I brought plenty of it!
 411
 00:22:57.400 --> 00:22:58.920
 Brook!
+
+412
+00:00:23.450 --> 00:00:28.990 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial syncing, Vegapunk Fansubs</c>
+
+413
+00:00:29.390 --> 00:00:34.510 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000, , Time-checking, Sewil</c>
+
+414
+00:00:35.600 --> 00:00:40.740 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Feeso</c>
+
+415
+00:00:40.940 --> 00:00:44.110 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+416
+00:00:44.270 --> 00:00:47.480 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+417
+00:00:53.010 --> 00:00:56.850 line:8% position:5% align:start size:45%
+<c.credits>Raw provider, SOFCJ-Raws</c>

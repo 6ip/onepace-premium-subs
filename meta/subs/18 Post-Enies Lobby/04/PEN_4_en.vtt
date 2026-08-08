@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1828,3 +1829,31 @@ Cheers!
 455
 00:26:50.150 --> 00:26:53.420
 Let's go! Our next step is Fish-man Island!
+
+456
+00:00:23.890 --> 00:00:29.170 line:8% position:5% align:start size:45%
+<c.credits>Translation, Cornman @ Vegapunk Fansubs</c>
+
+457
+00:00:34.070 --> 00:00:37.700 line:8% position:5% align:start size:45%
+<c.credits>Initial timing, Hedi @ Vegapunk Fansubs</c>
+
+458
+00:00:37.910 --> 00:00:41.410 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+459
+00:00:41.580 --> 00:00:44.960 line:8% position:5% align:start size:45%
+<c.credits>Quality checking, Sewil</c>
+
+460
+00:00:45.210 --> 00:00:48.840 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>
+
+461
+00:00:54.760 --> 00:00:58.680 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, MaideV and Halee</c>
+
+462
+00:01:00.090 --> 00:01:03.930 line:8% position:5% align:start size:45%
+<c.credits>Raw providing, SOFCJ-Raws</c>

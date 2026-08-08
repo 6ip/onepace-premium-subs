@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -2389,3 +2390,48 @@ Sanji!
 00:35:25.430 --> 00:35:30.560
 Think you could tell me
 where they are, Princess?
+
+543
+00:00:01.730 --> 00:00:03.730 line:8% position:5% align:start size:45%
+<c.credits>Video Editing
+Gigglebot</c>
+
+544
+00:00:03.730 --> 00:00:05.730 line:8% position:5% align:start size:45%
+<c.credits>Timing
+iconsumekidneys</c>
+
+545
+00:00:05.730 --> 00:00:09.730 line:8% position:5% align:start size:45%
+<c.credits>Quality Control
+Galaxy 9000, Pepperjack</c>
+
+546
+00:00:09.730 --> 00:00:11.730 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking
+Halee</c>
+
+547
+00:00:11.730 --> 00:00:13.730 line:8% position:5% align:start size:45%
+<c.credits>Graphics
+Datenshi</c>
+
+548
+00:00:13.730 --> 00:00:15.730 line:8% position:5% align:start size:45%
+<c.credits>Karaoke
+KaitouYahiko</c>
+
+549
+00:00:15.730 --> 00:00:17.730 line:8% position:5% align:start size:45%
+<c.credits>Subtitle Editing
+Zenef</c>
+
+550
+00:00:17.730 --> 00:00:19.730 line:8% position:5% align:start size:45%
+<c.credits>Translation
+DemonRin, Funimation</c>
+
+551
+00:00:19.730 --> 00:00:21.730 line:8% position:5% align:start size:45%
+<c.credits>Raws
+Neo-Raws</c>

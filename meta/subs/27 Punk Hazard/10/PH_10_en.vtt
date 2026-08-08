@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1634,3 +1635,35 @@ Nah.
 393
 00:27:15.300 --> 00:27:20.540
 But... it can't hurt to see it in action.
+
+394
+00:00:24.130 --> 00:00:27.390 line:8% position:5% align:start size:45%
+<c.credits>Translation, bobthemilkman @ Yibis Fansubs</c>
+
+395
+00:00:27.550 --> 00:00:30.640 line:8% position:5% align:start size:45%
+<c.credits>Translation check, Lord Starfish @ Yibis Fansubs</c>
+
+396
+00:00:31.110 --> 00:00:34.250 line:8% position:5% align:start size:45%
+<c.credits>Initial timing, FAbian101 @ Yibis Fansubs</c>
+
+397
+00:00:34.800 --> 00:00:38.380 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+398
+00:00:41.330 --> 00:00:43.610 line:8% position:5% align:start size:45%
+<c.credits>Quality checking, Sewil</c>
+
+399
+00:00:43.610 --> 00:00:45.870 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, MaideV and Halee</c>
+
+400
+00:00:45.950 --> 00:00:48.130 line:8% position:5% align:start size:45%
+<c.credits>Raw providing, OPC-Raws</c>
+
+401
+00:00:49.520 --> 00:00:52.980 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>

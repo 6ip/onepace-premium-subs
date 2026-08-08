@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1910,3 +1911,23 @@ but the Kraken appears in countless legends.
 460
 00:25:58.300 --> 00:26:01.240
 It's a mythical beast!
+
+461
+00:00:39.790 --> 00:00:43.050 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, Yibis Fansubs</c>
+
+462
+00:00:45.220 --> 00:00:48.820 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000, , Time-checking, Sewil</c>
+
+463
+00:00:50.200 --> 00:00:54.280 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Feeso</c>
+
+464
+00:00:54.590 --> 00:00:58.790 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+465
+00:01:16.420 --> 00:01:18.530 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>

@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1633,3 +1634,31 @@ So...
 405
 00:26:45.530 --> 00:26:47.160
 Forget all that!
+
+406
+00:00:23.950 --> 00:00:29.250 line:8% position:5% align:start size:45%
+<c.credits>Translation, skywalker6705 @ Vegapunk Fansubs</c>
+
+407
+00:00:34.130 --> 00:00:37.720 line:8% position:5% align:start size:45%
+<c.credits>Initial timing, Kuzan @ Vegapunk Fansubs</c>
+
+408
+00:00:37.930 --> 00:00:41.430 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+409
+00:00:41.640 --> 00:00:45.020 line:8% position:5% align:start size:45%
+<c.credits>Quality checking, Sewil</c>
+
+410
+00:00:45.270 --> 00:00:48.860 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>
+
+411
+00:00:54.790 --> 00:00:58.750 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, MaideV and Halee</c>
+
+412
+00:01:00.170 --> 00:01:03.970 line:8% position:5% align:start size:45%
+<c.credits>Raw providing, SOFCJ-Raws</c>

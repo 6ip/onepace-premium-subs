@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1748,3 +1749,15 @@ I'M...
 435
 00:32:01.640 --> 00:32:04.520
 ALL BETTER!!!
+
+436
+00:00:02.140 --> 00:00:05.480 line:8% position:5% align:start size:45%
+<c.credits>Editor, Sewil</c>
+
+437
+00:00:05.480 --> 00:00:08.920 line:8% position:5% align:start size:45%
+<c.credits>Timer, Sewil</c>
+
+438
+00:00:08.920 --> 00:00:14.940 line:8% position:5% align:start size:45%
+<c.credits>Quality checker, Grug, Feeso</c>

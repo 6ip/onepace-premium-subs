@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1685,3 +1686,15 @@ Is he serious?!
 415
 00:27:26.700 --> 00:27:28.720
 You are annoying, too!
+
+416
+00:00:31.890 --> 00:00:37.270 line:8% position:5% align:start size:45%
+<c.credits>Translation, Yibis
+Soundtracking, Halee</c>
+
+417
+00:00:37.380 --> 00:00:42.140 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil
+Infoboxes, Sewil
+Timing, Datenshi
+Edit-checking, Galaxy 9000</c>

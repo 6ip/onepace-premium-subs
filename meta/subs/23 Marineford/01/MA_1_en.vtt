@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1612,3 +1613,39 @@ Your father is...
 393
 00:30:57.680 --> 00:31:02.340
 the pirate king, Gold Roger!
+
+394
+00:00:25.340 --> 00:00:30.380 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>
+
+395
+00:00:30.380 --> 00:00:36.190 line:8% position:5% align:start size:45%
+<c.credits>Quality Control, Galaxy 9000, Grug, Pepperjack</c>
+
+396
+00:00:36.190 --> 00:00:41.160 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+397
+00:00:41.160 --> 00:00:46.900 line:8% position:5% align:start size:45%
+<c.credits>Translation, Yibis</c>
+
+398
+00:00:46.900 --> 00:00:52.330 line:8% position:5% align:start size:45%
+<c.credits>Visual Effects, Datenshi, KaitouYahiko</c>
+
+399
+00:00:52.330 --> 00:00:57.410 line:8% position:5% align:start size:45%
+<c.credits>Graphics, Datenshi</c>
+
+400
+00:00:57.410 --> 00:01:03.050 line:8% position:5% align:start size:45%
+<c.credits>Karaoke, KaitouYahiko</c>
+
+401
+00:01:03.050 --> 00:01:06.530 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+402
+00:01:06.530 --> 00:01:08.650 line:8% position:5% align:start size:45%
+<c.credits>Raws, df68</c>

@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1216,3 +1217,31 @@ Get outta my way!
 302
 00:22:09.310 --> 00:22:10.540
 Let's go!
+
+303
+00:00:24.220 --> 00:00:27.490 line:8% position:5% align:start size:45%
+<c.credits>Translation, Hattori</c>
+
+304
+00:00:27.630 --> 00:00:30.760 line:8% position:5% align:start size:45%
+<c.credits>Initial timing, Hattori</c>
+
+305
+00:00:31.190 --> 00:00:34.350 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+306
+00:00:34.860 --> 00:00:38.430 line:8% position:5% align:start size:45%
+<c.credits>Quality checking, Sewil</c>
+
+307
+00:00:41.430 --> 00:00:43.680 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, MaideV and Halee</c>
+
+308
+00:00:43.730 --> 00:00:45.960 line:8% position:5% align:start size:45%
+<c.credits>Raw providing, OPC-Raws</c>
+
+309
+00:00:46.000 --> 00:00:48.220 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>

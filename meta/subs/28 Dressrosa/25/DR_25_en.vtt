@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1415,3 +1416,31 @@ He was also...
 350
 00:21:40.470 --> 00:21:42.840
 Doflamingo's little brother!
+
+351
+00:00:00.910 --> 00:00:02.370 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, Yibis</c>
+
+352
+00:00:02.370 --> 00:00:04.180 line:8% position:5% align:start size:45%
+<c.credits>Timing and typesetting, Halee, Galaxy 9000</c>
+
+353
+00:00:04.180 --> 00:00:05.660 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Simon, Galaxy 9000</c>
+
+354
+00:00:05.660 --> 00:00:07.480 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+355
+00:00:07.480 --> 00:00:09.130 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Simon, Galaxy 9000</c>
+
+356
+00:00:09.130 --> 00:00:10.750 line:8% position:5% align:start size:45%
+<c.credits>Raw provider, GS-Raws</c>
+
+357
+00:00:10.750 --> 00:00:12.420 line:8% position:5% align:start size:45%
+<c.credits>Infoboxes & Title Cards, Simon</c>

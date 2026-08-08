@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1203,3 +1204,31 @@ Forty-three ships are here to back you up. We all owe you a huge debt.
 299
 00:28:00.860 --> 00:28:04.630
 We'd gladly lay down our lives for the Whitebeard Pirates!
+
+300
+00:00:25.920 --> 00:00:30.360 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>
+
+301
+00:00:30.830 --> 00:00:35.700 line:8% position:5% align:start size:45%
+<c.credits>QC, Galaxy 9000, Pepperjack</c>
+
+302
+00:00:36.300 --> 00:00:42.270 line:8% position:5% align:start size:45%
+<c.credits>Karaoke, KaitouYahiko</c>
+
+303
+00:00:42.340 --> 00:00:46.140 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+304
+00:00:46.940 --> 00:00:49.580 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+305
+00:00:52.450 --> 00:00:55.690 line:8% position:5% align:start size:45%
+<c.credits>Translation, Yibis</c>
+
+306
+00:00:57.520 --> 00:01:00.460 line:8% position:5% align:start size:45%
+<c.credits>Raws, Cruchyroll</c>

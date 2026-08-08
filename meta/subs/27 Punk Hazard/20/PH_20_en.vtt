@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1439,3 +1440,31 @@ I think I overslept.
 356
 00:23:31.510 --> 00:23:34.760
 Now, which way to Punk Hazard?
+
+357
+00:00:24.050 --> 00:00:27.320 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial syncing, Yibis Fansubs</c>
+
+358
+00:00:27.480 --> 00:00:30.580 line:8% position:5% align:start size:45%
+<c.credits>Syncing, Galaxy 9000, , Sync-checking, Sewil</c>
+
+359
+00:00:31.020 --> 00:00:34.180 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Feeso</c>
+
+360
+00:00:34.690 --> 00:00:38.280 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+361
+00:00:41.270 --> 00:00:43.520 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+362
+00:00:43.570 --> 00:00:45.790 line:8% position:5% align:start size:45%
+<c.credits>Raw provider, SOFCJ-Raws (Opening),, Crunchyroll</c>
+
+363
+00:00:45.840 --> 00:00:48.080 line:8% position:5% align:start size:45%
+<c.credits>"They're Enemies" artist, folkrack.deviantart.com</c>

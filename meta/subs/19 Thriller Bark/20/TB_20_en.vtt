@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1798,3 +1799,24 @@ Nothing...
 448
 00:33:52.830 --> 00:33:54.830
 at all!
+
+449
+00:00:30.340 --> 00:00:34.610 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, Vegapunk</c>
+
+450
+00:00:34.950 --> 00:00:38.580 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000, , Time-checking, Sewil</c>
+
+451
+00:00:38.780 --> 00:00:43.750 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Halee</c>
+
+452
+00:00:50.760 --> 00:00:54.160 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+453
+00:00:54.330 --> 00:00:58.030 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil
+Raw provider, SOFCJ-Raws</c>

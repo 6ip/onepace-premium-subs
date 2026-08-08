@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -2307,3 +2308,24 @@ I'm not a shipwright!
 530
 00:32:47.360 --> 00:32:49.820
 Okay! On your marks!
+
+531
+00:00:26.300 --> 00:00:31.850 line:8% position:5% align:start size:45%
+<c.credits>Translation, FUNimation</c>
+
+532
+00:00:32.550 --> 00:00:37.020 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee
+Infoboxes/Title Card, BernieCrane</c>
+
+533
+00:00:37.140 --> 00:00:41.030 line:8% position:5% align:start size:45%
+<c.credits>Editing, Feeso</c>
+
+534
+00:00:42.510 --> 00:00:47.120 line:8% position:5% align:start size:45%
+<c.credits>Quality Checking, Alasta, Galaxy 9000, Mr. Luffy</c>
+
+535
+00:01:02.500 --> 00:01:06.470 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>

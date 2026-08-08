@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1844,3 +1845,24 @@ Send me off with... My favorite song...
 456
 00:32:47.440 --> 00:32:52.780
 Going to deliver Binks' Sake...
+
+457
+00:00:30.330 --> 00:00:34.600 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, VS</c>
+
+458
+00:00:34.910 --> 00:00:38.570 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000, , Time-checking, Sewil</c>
+
+459
+00:00:38.750 --> 00:00:43.740 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Halee</c>
+
+460
+00:00:50.730 --> 00:00:54.150 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+461
+00:00:54.320 --> 00:00:58.020 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil
+Raw provider, SOFCJ-Raws</c>

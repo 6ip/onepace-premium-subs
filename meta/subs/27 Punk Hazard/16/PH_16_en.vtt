@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1344,3 +1345,23 @@ I figured I'm needed here!
 328
 00:21:31.640 --> 00:21:33.410
 Huh?!
+
+329
+00:00:24.140 --> 00:00:27.400 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial syncing, Yibis Fansubs</c>
+
+330
+00:00:27.610 --> 00:00:30.690 line:8% position:5% align:start size:45%
+<c.credits>Syncing, Galaxy 9000, , Sync-checking, Sewil</c>
+
+331
+00:00:31.160 --> 00:00:34.270 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil</c>
+
+332
+00:00:34.820 --> 00:00:38.390 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+333
+00:00:41.420 --> 00:00:43.620 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>

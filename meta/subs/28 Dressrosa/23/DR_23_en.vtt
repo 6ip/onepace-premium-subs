@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1319,3 +1320,24 @@ Everyone in this country will become hunters.
 325
 00:27:44.880 --> 00:27:52.620
 There is no way out, except for you to kill!
+
+326
+00:00:23.750 --> 00:00:28.070 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, Yibis</c>
+
+327
+00:00:28.160 --> 00:00:32.160 line:8% position:5% align:start size:45%
+<c.credits>Timing, Halee</c>
+
+328
+00:00:34.660 --> 00:00:37.600 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Halee</c>
+
+329
+00:00:39.020 --> 00:00:42.640 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+330
+00:00:45.870 --> 00:00:48.560 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil
+Raw provider, GS-Raws</c>

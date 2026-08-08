@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1618,3 +1619,23 @@ W-What should we do, boss?
 393
 00:23:58.590 --> 00:24:02.920
 Bring him here... to me.
+
+394
+00:00:39.810 --> 00:00:43.070 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, Yibis Fansubs</c>
+
+395
+00:00:45.240 --> 00:00:48.840 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000, , Time-checking, Sewil</c>
+
+396
+00:00:50.200 --> 00:00:54.260 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Feeso</c>
+
+397
+00:00:54.590 --> 00:00:58.790 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+398
+00:01:16.420 --> 00:01:18.520 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>

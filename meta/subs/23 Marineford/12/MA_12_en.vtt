@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1068,3 +1069,39 @@ Straw Hat and Brother Three are alive, too!
 256
 00:24:21.890 --> 00:24:25.380
 Ace!
+
+257
+00:00:25.370 --> 00:00:30.410 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>
+
+258
+00:00:30.410 --> 00:00:36.220 line:8% position:5% align:start size:45%
+<c.credits>Quality Control, Galaxy 9000, Pepperjack</c>
+
+259
+00:00:36.220 --> 00:00:41.190 line:8% position:5% align:start size:45%
+<c.credits>Timing, KaitouYahiko</c>
+
+260
+00:00:41.190 --> 00:00:46.930 line:8% position:5% align:start size:45%
+<c.credits>Translation, Yibis</c>
+
+261
+00:00:46.930 --> 00:00:52.360 line:8% position:5% align:start size:45%
+<c.credits>Visual Effects, Datenshi, KaitouYahiko</c>
+
+262
+00:00:52.360 --> 00:00:57.440 line:8% position:5% align:start size:45%
+<c.credits>Graphics, Datenshi</c>
+
+263
+00:00:57.440 --> 00:01:03.080 line:8% position:5% align:start size:45%
+<c.credits>Karaoke, KaitouYahiko</c>
+
+264
+00:01:03.080 --> 00:01:06.560 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+265
+00:01:06.560 --> 00:01:08.680 line:8% position:5% align:start size:45%
+<c.credits>Raws, cloaknsmoke</c>

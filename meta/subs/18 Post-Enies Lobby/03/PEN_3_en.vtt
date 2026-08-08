@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -2093,3 +2094,31 @@ I'll be leaving for a while!
 521
 00:29:32.640 --> 00:29:34.300
 Put on your pants.
+
+522
+00:00:23.940 --> 00:00:29.230 line:8% position:5% align:start size:45%
+<c.credits>Translation, Cornman @ Vegapunk Fansubs</c>
+
+523
+00:00:34.110 --> 00:00:37.700 line:8% position:5% align:start size:45%
+<c.credits>Initial timing, Hedi @ Vegapunk Fansubs</c>
+
+524
+00:00:37.910 --> 00:00:41.410 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+525
+00:00:41.620 --> 00:00:45.000 line:8% position:5% align:start size:45%
+<c.credits>Quality checking, Sewil</c>
+
+526
+00:00:45.250 --> 00:00:48.840 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>
+
+527
+00:00:54.760 --> 00:00:58.680 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, MaideV and Halee</c>
+
+528
+00:01:00.140 --> 00:01:03.930 line:8% position:5% align:start size:45%
+<c.credits>Raw providing, SOFCJ-Raws</c>

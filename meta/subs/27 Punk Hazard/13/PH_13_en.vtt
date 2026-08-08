@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1271,3 +1272,27 @@ Ah, this one's mine!
 316
 00:22:02.390 --> 00:22:09.840
 You ain't gettin' away this time, Caesar!
+
+317
+00:00:24.170 --> 00:00:27.410 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, Kousei Fansubs</c>
+
+318
+00:00:27.620 --> 00:00:30.710 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+319
+00:00:31.150 --> 00:00:34.310 line:8% position:5% align:start size:45%
+<c.credits>Quality checking, Sewil</c>
+
+320
+00:00:34.860 --> 00:00:38.440 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, MaideV and Halee</c>
+
+321
+00:00:41.420 --> 00:00:43.670 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>
+
+322
+00:00:43.730 --> 00:00:45.950 line:8% position:5% align:start size:45%
+<c.credits>Title card artist, sergiart.deviantart.com</c>

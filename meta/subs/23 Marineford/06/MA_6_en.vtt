@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1218,3 +1219,19 @@ Will the life of a promised child from the next generation... end here?
 303
 00:25:35.510 --> 00:25:40.430
 If not, how will he escape from this Black Blade?
+
+304
+00:02:11.440 --> 00:02:15.880 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>
+
+305
+00:02:16.350 --> 00:02:21.220 line:8% position:5% align:start size:45%
+<c.credits>QC, Galaxy 9000, Pepperjack</c>
+
+306
+00:02:21.820 --> 00:02:27.790 line:8% position:5% align:start size:45%
+<c.credits>Karaoke, KaitouYahiko</c>
+
+307
+00:02:27.860 --> 00:02:31.660 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>

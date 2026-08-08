@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -2034,3 +2035,23 @@ Luffy-san!
 495
 00:29:36.820 --> 00:29:39.790
 To the Sea Forest!
+
+496
+00:00:39.780 --> 00:00:43.040 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, Yibis Fansubs</c>
+
+497
+00:00:45.210 --> 00:00:48.810 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000, , Time-checking, Sewil</c>
+
+498
+00:00:50.170 --> 00:00:54.230 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000</c>
+
+499
+00:00:54.560 --> 00:00:58.750 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+500
+00:01:16.390 --> 00:01:18.490 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>

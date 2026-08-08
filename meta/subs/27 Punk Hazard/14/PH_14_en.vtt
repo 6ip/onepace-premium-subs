@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1145,3 +1146,27 @@ Then he turned into a little dragon.
 284
 00:19:04.990 --> 00:19:07.390
 That boy Momonosuke did.
+
+285
+00:00:24.220 --> 00:00:27.460 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial syncing, Kousei Fansubs</c>
+
+286
+00:00:27.620 --> 00:00:30.710 line:8% position:5% align:start size:45%
+<c.credits>Syncing, Galaxy 9000, , Sync-checking, Sewil</c>
+
+287
+00:00:31.190 --> 00:00:34.320 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil</c>
+
+288
+00:00:34.860 --> 00:00:38.440 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+289
+00:00:41.410 --> 00:00:43.680 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+290
+00:00:43.730 --> 00:00:45.960 line:8% position:5% align:start size:45%
+<c.credits>Title card artist, lucas2265</c>

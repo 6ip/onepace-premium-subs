@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1616,3 +1617,31 @@ Ring, ring, ring...
 379
 00:24:33.230 --> 00:24:34.650
 clank.
+
+380
+00:00:24.220 --> 00:00:27.470 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, CrunchyRoll</c>
+
+381
+00:00:27.660 --> 00:00:30.740 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000, , Time-checking, Sewil</c>
+
+382
+00:00:31.190 --> 00:00:34.380 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Feeso</c>
+
+383
+00:00:34.860 --> 00:00:38.460 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+384
+00:00:41.440 --> 00:00:43.690 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+385
+00:00:43.740 --> 00:00:45.960 line:8% position:5% align:start size:45%
+<c.credits>Raw provider, OPC-Raws (Opening), Crunchyroll (Episode)</c>
+
+386
+00:00:46.010 --> 00:00:48.240 line:8% position:5% align:start size:45%
+<c.credits>Title card artist, someone</c>

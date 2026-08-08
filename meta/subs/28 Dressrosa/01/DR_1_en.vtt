@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -2096,3 +2097,31 @@ It's not too bad being blind.
 00:29:35.050 --> 00:29:43.090
 I know there are many hideous things
 that are better unseen.
+
+504
+00:00:23.750 --> 00:00:28.070 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, Crunchyroll</c>
+
+505
+00:00:28.150 --> 00:00:32.160 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000, , Time-checking, Sewil</c>
+
+506
+00:00:34.660 --> 00:00:37.600 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Feeso</c>
+
+507
+00:00:39.030 --> 00:00:42.630 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+508
+00:00:45.500 --> 00:00:48.170 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+509
+00:01:00.420 --> 00:01:04.520 line:8% position:5% align:start size:45%
+<c.credits>Raw provider, Crunchyroll</c>
+
+510
+00:01:05.290 --> 00:01:10.750 line:8% position:5% align:start size:45%
+<c.credits>Scroll infobox artist, sergiart.deviantart.com</c>

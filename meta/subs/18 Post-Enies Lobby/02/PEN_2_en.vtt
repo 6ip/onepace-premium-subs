@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -2586,3 +2587,31 @@ Even if it is against his own will, take Brother out to the sea!
 643
 00:39:12.660 --> 00:39:15.360
 That man was the child of a pirate to begin with!
+
+644
+00:00:23.890 --> 00:00:29.190 line:8% position:5% align:start size:45%
+<c.credits>Translation, skywalker6705 @ Vegapunk Fansubs</c>
+
+645
+00:00:34.070 --> 00:00:37.660 line:8% position:5% align:start size:45%
+<c.credits>Initial timing, Kuzan @ Vegapunk Fansubs</c>
+
+646
+00:00:37.870 --> 00:00:41.370 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+647
+00:00:41.580 --> 00:00:44.960 line:8% position:5% align:start size:45%
+<c.credits>Quality checking, Sewil</c>
+
+648
+00:00:45.210 --> 00:00:48.790 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>
+
+649
+00:00:54.720 --> 00:00:58.680 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, MaideV and Halee</c>
+
+650
+00:01:00.100 --> 00:01:03.890 line:8% position:5% align:start size:45%
+<c.credits>Raw providing, SOFCJ-Raws</c>

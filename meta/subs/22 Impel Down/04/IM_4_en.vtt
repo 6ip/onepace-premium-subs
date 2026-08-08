@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1552,3 +1553,15 @@ M-Magellan!
 383
 00:26:42.190 --> 00:26:46.310
 This is the end for you, persistent vermin!
+
+384
+00:00:02.410 --> 00:00:04.200 line:8% position:5% align:start size:45%
+<c.credits>Editor, Sewil</c>
+
+385
+00:00:04.200 --> 00:00:06.180 line:8% position:5% align:start size:45%
+<c.credits>Timer, Sewil</c>
+
+386
+00:00:06.180 --> 00:00:08.520 line:8% position:5% align:start size:45%
+<c.credits>Quality checker, Grug, Pepperjack</c>

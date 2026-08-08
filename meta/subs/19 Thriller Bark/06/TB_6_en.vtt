@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1611,3 +1612,23 @@ Three-Pace Hum:
 399
 00:21:36.520 --> 00:21:37.920
 Notch Slash!
+
+400
+00:00:23.440 --> 00:00:28.960 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial syncing, Vegapunk Fansubs</c>
+
+401
+00:00:29.360 --> 00:00:34.530 line:8% position:5% align:start size:45%
+<c.credits>Syncing, Galaxy 9000, , Sync-checking, Sewil</c>
+
+402
+00:00:35.570 --> 00:00:40.680 line:8% position:5% align:start size:45%
+<c.credits>Quality checking, Sewil</c>
+
+403
+00:00:40.910 --> 00:00:44.080 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+404
+00:00:44.250 --> 00:00:47.460 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>

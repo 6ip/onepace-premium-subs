@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1360,3 +1361,31 @@ No matter who the winner is... no matter who the loser is...
 338
 00:33:53.350 --> 00:33:54.880
 the era will change.
+
+339
+00:01:45.870 --> 00:01:50.300 line:8% position:5% align:start size:45%
+<c.credits>Editing/Title Card, Sewil</c>
+
+340
+00:01:50.780 --> 00:01:55.640 line:8% position:5% align:start size:45%
+<c.credits>Quality Assurance, Galaxy 9000, Pepperjack</c>
+
+341
+00:01:56.260 --> 00:02:02.210 line:8% position:5% align:start size:45%
+<c.credits>Karaoke & Attack Effects, KaitouYahiko</c>
+
+342
+00:02:02.300 --> 00:02:06.100 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+343
+00:02:06.910 --> 00:02:09.530 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+344
+00:02:12.410 --> 00:02:15.630 line:8% position:5% align:start size:45%
+<c.credits>Translation, Yibis</c>
+
+345
+00:02:17.480 --> 00:02:20.400 line:8% position:5% align:start size:45%
+<c.credits>Raw Provider, Cloaknsmoke</c>

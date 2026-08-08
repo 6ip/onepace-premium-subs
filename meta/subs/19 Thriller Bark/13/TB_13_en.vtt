@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1135,3 +1136,27 @@ won't move.
 280
 00:18:54.130 --> 00:18:55.780
 C-Cindry!
+
+281
+00:00:23.480 --> 00:00:28.960 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial syncing, Vegapunk Fansubs</c>
+
+282
+00:00:29.360 --> 00:00:34.510 line:8% position:5% align:start size:45%
+<c.credits>Syncing, Galaxy 9000, , Sync-checking, Sewil</c>
+
+283
+00:00:35.570 --> 00:00:40.740 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Feeso</c>
+
+284
+00:00:40.890 --> 00:00:44.120 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+285
+00:00:44.290 --> 00:00:47.500 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+286
+00:00:53.010 --> 00:00:56.840 line:8% position:5% align:start size:45%
+<c.credits>Raw provider, SOFCJ-Raws</c>

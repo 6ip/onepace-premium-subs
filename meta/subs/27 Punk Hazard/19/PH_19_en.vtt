@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1339,3 +1340,27 @@ A robot?!
 327
 00:21:30.100 --> 00:21:33.500
 What kind of bird is that?
+
+328
+00:00:24.190 --> 00:00:27.470 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial syncing, Yibis Fansubs</c>
+
+329
+00:00:27.620 --> 00:00:30.740 line:8% position:5% align:start size:45%
+<c.credits>Syncing, Galaxy 9000, , Sync-checking, Sewil</c>
+
+330
+00:00:31.190 --> 00:00:34.310 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Feeso</c>
+
+331
+00:00:34.860 --> 00:00:38.420 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+332
+00:00:41.440 --> 00:00:43.690 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+333
+00:00:43.740 --> 00:00:45.920 line:8% position:5% align:start size:45%
+<c.credits>Raw provider, SOFCJ-Raws</c>

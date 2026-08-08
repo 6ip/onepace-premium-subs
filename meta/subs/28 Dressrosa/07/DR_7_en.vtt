@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1634,3 +1635,27 @@ Usoland!
 403
 00:27:28.460 --> 00:27:37.550
 Usoland!
+
+404
+00:00:23.780 --> 00:00:28.100 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial timing, Tsuki, Yibis (Opening)</c>
+
+405
+00:00:28.180 --> 00:00:32.190 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000, , Time-checking, Sewil</c>
+
+406
+00:00:34.690 --> 00:00:37.630 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Halee</c>
+
+407
+00:00:39.060 --> 00:00:42.660 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+408
+00:00:45.530 --> 00:00:48.200 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+409
+00:01:00.450 --> 00:01:04.550 line:8% position:5% align:start size:45%
+<c.credits>Raw provider, Crunchyroll</c>

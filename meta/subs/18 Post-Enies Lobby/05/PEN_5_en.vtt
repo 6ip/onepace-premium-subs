@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1402,3 +1403,31 @@ The fight between those two pirates,
 347
 00:22:58.880 --> 00:23:06.600
 Will be remembered as the trigger for a big event that has yet to come.
+
+348
+00:00:23.890 --> 00:00:29.170 line:8% position:5% align:start size:45%
+<c.credits>Translation, Cornman @ Vegapunk Fansubs</c>
+
+349
+00:00:34.070 --> 00:00:37.660 line:8% position:5% align:start size:45%
+<c.credits>Initial timing, Hedi @ Vegapunk Fansubs</c>
+
+350
+00:00:37.870 --> 00:00:41.410 line:8% position:5% align:start size:45%
+<c.credits>Timing, Galaxy 9000</c>
+
+351
+00:00:41.580 --> 00:00:44.960 line:8% position:5% align:start size:45%
+<c.credits>Quality checking, Sewil</c>
+
+352
+00:00:45.210 --> 00:00:48.840 line:8% position:5% align:start size:45%
+<c.credits>Editing, Sewil</c>
+
+353
+00:00:54.720 --> 00:00:58.680 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, MaideV and Halee</c>
+
+354
+00:01:00.100 --> 00:01:03.890 line:8% position:5% align:start size:45%
+<c.credits>Raw providing, SOFCJ-Raws</c>

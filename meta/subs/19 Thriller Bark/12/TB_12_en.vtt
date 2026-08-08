@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1448,3 +1449,31 @@ A-A thrust!
 360
 00:20:42.450 --> 00:20:45.470
 Nothing like that ever happened when I used that technique!
+
+361
+00:00:23.480 --> 00:00:29.000 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial syncing, Vegapunk Fansubs</c>
+
+362
+00:00:29.400 --> 00:00:34.550 line:8% position:5% align:start size:45%
+<c.credits>Syncing, Galaxy 9000, , Sync-checking, Sewil</c>
+
+363
+00:00:35.610 --> 00:00:40.790 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Feeso</c>
+
+364
+00:00:40.950 --> 00:00:44.120 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+365
+00:00:44.290 --> 00:00:47.500 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+366
+00:00:53.050 --> 00:00:56.890 line:8% position:5% align:start size:45%
+<c.credits>Raw provider, SOFCJ-Raws</c>
+
+367
+00:00:57.260 --> 00:01:01.560 line:8% position:5% align:start size:45%
+<c.credits>Title card artist, thegamejc.deviantart.com</c>

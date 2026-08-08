@@ -3,6 +3,7 @@ WEBVTT
 STYLE
 ::cue(c.color9CD5FF) { color: #9CD5FF; }
 ::cue(c.colora8c7fa) { color: #a8c7fa; }
+::cue(c.credits) { color: #a8c7fa; font-size: 78%; }
 
 1
 00:00:01.000 --> 00:00:07.000 line:5% align:center
@@ -1249,3 +1250,27 @@ I am Moriah-sama's servant...
 310
 00:19:05.790 --> 00:19:08.730
 Oars!
+
+311
+00:00:23.480 --> 00:00:29.020 line:8% position:5% align:start size:45%
+<c.credits>Translation & initial syncing, Vegapunk Fansubs</c>
+
+312
+00:00:29.390 --> 00:00:34.560 line:8% position:5% align:start size:45%
+<c.credits>Syncing, Galaxy 9000, , Sync-checking, Sewil</c>
+
+313
+00:00:35.630 --> 00:00:40.790 line:8% position:5% align:start size:45%
+<c.credits>Quality-checking, Sewil, Galaxy 9000, Feeso</c>
+
+314
+00:00:40.970 --> 00:00:44.120 line:8% position:5% align:start size:45%
+<c.credits>Video editing, Sewil</c>
+
+315
+00:00:44.290 --> 00:00:47.500 line:8% position:5% align:start size:45%
+<c.credits>Soundtracking, Halee</c>
+
+316
+00:00:53.050 --> 00:00:56.890 line:8% position:5% align:start size:45%
+<c.credits>Raw provider, SOFCJ-Raws</c>
