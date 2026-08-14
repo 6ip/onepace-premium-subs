@@ -34,9 +34,19 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          
+
           # Add all changes (JSONs, VTTs, and Hash memory)
           git add .
-          
-          # Commit, pull the newest changes, and push!
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-updated One Pace subtitles" && git pull --rebase origin main && git push)
+
+          if git diff --staged --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+
+          # A failed report must never block the commit.
+          python -u report.py > /tmp/commit_msg.txt || echo "[auto] subtitles refreshed" > /tmp/commit_msg.txt
+          cat /tmp/commit_msg.txt
+
+          git commit -F /tmp/commit_msg.txt
+          git pull --rebase origin main
+          git push
