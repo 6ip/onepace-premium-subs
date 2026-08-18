@@ -2365,7 +2365,7 @@
     "main/33 Egghead/02/egghead 02 es.ass": "3f04fda78b54e12f57e8debe116c344e059c1877",
     "main/14 Skypiea/17/skypiea 17 it.ass": "2d84929f9267e13e4b6f4b3eee002c4738e7eef6",
     "main/14 Skypiea/17/skypiea 17 ja.ass": "782b8ec24426b1aa5c3044f54a124cbbde179cfa",
-    "main/16 Water Seven/04/waterseven 04 de.ass": "bf992df885da50291ffc5c62701f61762e4553ff",
+    "main/16 Water Seven/04/waterseven 04 de.ass": "8a3a88849fd9e2d1f5430732ff67543b26e85a74",
     "main/14 Skypiea/18/skypiea 18 it.ass": "be7d30ad1d0e6c687354b96460a83d56bc89c1b7",
     "main/14 Skypiea/18/skypiea 18 ja.ass": "4e13ff0b70744620924fe6d2b216d3b2f94fef14",
     "main/14 Skypiea/19/skypiea 19 it.ass": "cd6a830ac22a00c5264bd10c4d2a5b6d1109bbee",
@@ -2381,7 +2381,7 @@
     "main/14 Skypiea/23/skypiea 23 ja.ass": "ea1d8748613e43be1dea2d24492aab096f124393",
     "main/14 Skypiea/24/skypiea 24 it.ass": "00d9aa4c1953a193a8f8a64dfeeff7226fd6dc7c",
     "main/14 Skypiea/24/skypiea 24 ja.ass": "7f8b8768092f4e617c7bab371f1dccab499d2ad9",
-    "main/16 Water Seven/05/waterseven 05 de.ass": "13eb33c92fb2b37bb41785ed2fd079542c2dbc59",
+    "main/16 Water Seven/05/waterseven 05 de.ass": "723d667f10c03f30f8a5a044da744bdee1692d8d",
     "main/14 Skypiea/25/skypiea 25 alternate it.ass": "f11d82a84860156c0f27af6dc92659640669bb4c",
     "main/14 Skypiea/25/skypiea 25 alternate ja.ass": "43c8dc14957614b5d2769f5b0fe62b34cdd3f042",
     "main/14 Skypiea/25/skypiea 25 it.ass": "5fd2a8dc616e34eb75d4424b2348d3cd0c4e0794",
@@ -2405,5 +2405,6 @@
     "main/26 Fishman Island/01/fi 01 ja.ass": "b021d37e500f5f4d27226c5171cd22888644edab",
     "main/26 Fishman Island/01/fi 01 de.ass": "62be64fb344157c68e42c34cc0a1f04c7576633e",
     "main/26 Fishman Island/01/fi 01 fr.ass": "fa8629e94498c070e45d8e3f4ea0af3ecd091e49",
-    "_converter_version": 2
+    "_converter_version": 2,
+    "main/16 Water Seven/06/waterseven 06 de.ass": "db9b6f41c02e5929def08ca31e80bfbb9feba67d"
 }
