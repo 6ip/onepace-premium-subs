@@ -6509,6 +6509,16 @@
             "lang": "ger"
         },
         {
+            "id": "EN_5_it",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/17%20Enies%20Lobby/05/EN_5_it.vtt",
+            "lang": "ita"
+        },
+        {
+            "id": "EN_5_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/17%20Enies%20Lobby/05/EN_5_ja.vtt",
+            "lang": "jpn"
+        },
+        {
             "id": "EN_5_ru",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/17%20Enies%20Lobby/05/EN_5_ru.vtt",
             "lang": "rus"
@@ -7731,6 +7741,11 @@
             "id": "FI_1_ja",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/01/FI_1_ja.vtt",
             "lang": "jpn"
+        },
+        {
+            "id": "FI_1_ru",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/01/FI_1_ru.vtt",
+            "lang": "rus"
         },
         {
             "id": "FI_1_es",
