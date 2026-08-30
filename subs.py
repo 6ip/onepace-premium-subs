@@ -29,7 +29,7 @@ CONFIG_URL = "https://raw.githubusercontent.com/6ip/onepace-streams/refs/heads/m
 LANG_MAP = {
     "ar": "ara", "cs": "cze", "cz": "cze", "de": "ger", "en": "eng", 
     "en cc": "eng", "en-cc": "eng", "en_cc": "eng",
-    "es": "spa", "fi": "fin", "fr": "fre", "he": "heb", "it": "ita", "pl": "pol",
+    "es": "spa", "fi": "fin", "fr": "fre", "he": "heb", "iw": "heb", "it": "ita", "pl": "pol",
     "pt": "por", "ptbr": "por", "pt-br": "por", "pt_br": "por",
     "ru": "rus", "tr": "tur", "id": "ind", "nl": "dut", "vi": "vie",
     "ja": "jpn", "typesetting": "eng"
@@ -43,6 +43,15 @@ LANG_NAMES = {
     "por": "Portuguese", "rus": "Russian", "spa": "Spanish", "tur": "Turkish",
     "vie": "Vietnamese",
 }
+
+# Right-to-left scripts. Presentation forms (U+FB50.., U+FE70..) are left out on
+# purpose - those are pre-shaped artefacts we drop, not text to show.
+HEBREW_SCRIPT_RE = re.compile(r'[\u0590-\u05FF]')
+ARABIC_SCRIPT_RE = re.compile(r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]')
+RTL_SCRIPT_RE = re.compile(r'[\u0590-\u05FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]')
+SCRIPT_RE_FOR_LANG = {"ara": ARABIC_SCRIPT_RE, "heb": HEBREW_SCRIPT_RE}
+RTL_LANGS = frozenset(SCRIPT_RE_FOR_LANG)
+BIDI_MARKS_RE = re.compile(r'[\u200e\u200f\u202a\u202b\u202c\u202d\u202e]')
 
 # A trailing "_2", "_3"... on an id is the collision counter for a second file
 # that mapped to the same (episode, language).
@@ -191,10 +200,19 @@ def ms_to_vtt_time(ms: int) -> str:
     ms %= 1000
     return f"{h:02d}:{m:02d}:{s:02d}.{ms:03d}"
 
+def wrap_rtl(text: str) -> str:
+    """Force an RTL base direction, one line at a time."""
+    lines = []
+    for line in text.split('\n'):
+        line = BIDI_MARKS_RE.sub('', line)
+        lines.append(line if not line.strip() else "\u202B%s\u202C" % line)
+    return '\n'.join(lines)
+
 def fix_rtl_visual_typing(text: str) -> str:
     """
-    Fixes Arabic punctuation typed visually and enforces RTL per line.
-    Correctly maps Aegisub's visual left (index 0) to Arabic's logical end.
+    Fixes RTL punctuation typed visually and enforces RTL per line.
+    Correctly maps Aegisub's visual left (index 0) to the script's logical end.
+    Arabic and Hebrew One Pace subs are both typed this way.
     """
     flip_map = str.maketrans('«»()[]{}', '»«)(][}{')
     enclosing_chars = r'"\'«»()[]{}'
@@ -203,7 +221,7 @@ def fix_rtl_visual_typing(text: str) -> str:
     fixed_lines = []
     for line in text.split('\n'):
         # 1. Clean existing BiDi markers
-        line = re.sub(r'[\u200e\u200f\u202a\u202b\u202c\u202d\u202e]', '', line)
+        line = BIDI_MARKS_RE.sub('', line)
         
         if not line.strip():
             fixed_lines.append(line)
@@ -267,7 +285,7 @@ def fix_rtl_visual_typing(text: str) -> str:
 
 def _sort_and_dedup_cluster(cluster: list, lang_code: str) -> list:
     """Sort a cluster by x_pos (RTL-aware) and remove duplicate layers."""
-    cluster.sort(key=lambda x: x["x_pos"], reverse=(lang_code == "ara"))
+    cluster.sort(key=lambda x: x["x_pos"], reverse=(lang_code in RTL_LANGS))
     unique_parts = []
     seen_parts = []
     for x in cluster:
@@ -410,7 +428,7 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
         # Sort by x (RTL-aware) and drop ONLY true overlapping layers (same glyph at
         # near-identical x, e.g. border+fill). The 4px threshold is deliberately tight so
         # legitimate adjacent repeats ("ll", "ss") survive — a 20px threshold would eat them.
-        cluster.sort(key=lambda z: z["x_pos"], reverse=(lang_code == "ara"))
+        cluster.sort(key=lambda z: z["x_pos"], reverse=(lang_code in RTL_LANGS))
         unique_parts = []
         seen_parts = []
         for x in cluster:
@@ -438,10 +456,11 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
         merged_text = re.sub(r'[ \t]+', ' ', merged_text).strip()
         if not merged_text or _is_op_ed_garbage(merged_text):
             continue
-        # Arabic tracks keep only lines containing standard Arabic letters — this drops the
+        # RTL tracks keep only lines written in their own script — this drops the
         # English/romaji reference lyrics and presentation-form (pre-shaped) artefacts that
-        # the Arabic subtitle should not display.
-        if lang_code == "ara" and not re.search(r'[؀-ۿ]', merged_text):
+        # the subtitle should not display.
+        own_script = SCRIPT_RE_FOR_LANG.get(lang_code)
+        if own_script and not own_script.search(merged_text):
             continue
         clustered_dialogues.append({
             "start_ms": min(x["start_ms"] for x in cluster),
@@ -463,12 +482,12 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
                 f["start_ms"] = min(f["start_ms"], d["start_ms"])
                 break
         if not is_dup:
-            if re.search(r'[؀-ۿ]', d["text"]):
-                clean_d_text = d["text"].replace("‫", "").replace("‬", "").strip()
-                if lang_code == "ara":
+            if RTL_SCRIPT_RE.search(d["text"]):
+                clean_d_text = BIDI_MARKS_RE.sub('', d["text"]).strip()
+                if lang_code in RTL_LANGS:
                     d["text"] = fix_rtl_visual_typing(clean_d_text)
                 else:
-                    d["text"] = f"‫{clean_d_text}‬"
+                    d["text"] = wrap_rtl(clean_d_text)
             final_dialogues.append(d)
 
     return final_dialogues
@@ -538,7 +557,7 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
         text = line.plaintext.replace(r"\h", " ").replace("\\h", " ")
         
         text = text.replace("\\N", "\n").replace("\\n", "\n")
-        text = re.sub(r'[\u200e\u200f\u202a\u202b\u202c\u202d\u202e]', '', text).strip('\r\n\t')
+        text = BIDI_MARKS_RE.sub('', text).strip('\r\n\t')
 
         if text == "" or "mpv.io" in text.lower() or "mpvio" in text.lower():
             continue
@@ -610,8 +629,8 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
             if clean_no_marks.isdigit() and ("fx" in effect or "kara" in style or "title" in style or "sign" in style):
                 continue
                 
-        if lang_code == "ara":
-            if re.search(r'[\u0600-\u06FF]', merged_text):
+        if lang_code in RTL_LANGS:
+            if RTL_SCRIPT_RE.search(merged_text):
                 merged_text = fix_rtl_visual_typing(merged_text)
 
         style = cluster[0]["style"]
