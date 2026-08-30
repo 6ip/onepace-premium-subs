@@ -21,6 +21,15 @@ OUTPUT_JSON = os.path.join(BASE_DIR, "meta", "subtitles.json")
 OUTPUT_SUBS_DIR = os.path.join(BASE_DIR, "meta", "subs")
 HASHES_FILE = os.path.join(BASE_DIR, "hashes.json")
 
+# Locally kept .ass files, listed in external/index.json. They already contain
+# OP + episode + ED, and only fill gaps the subs repo does not cover.
+EXTERNAL_DIR = os.path.join(BASE_DIR, "external")
+EXTERNAL_INDEX = os.path.join(EXTERNAL_DIR, "index.json")
+# The .ass sources are not in the repo, so what they produced is recorded here
+# and replayed on every run, including the bot's.
+EXTERNAL_STATE = os.path.join(BASE_DIR, "meta", "external.json")
+EXTERNAL_TAGS = {}
+
 # Bump when ass_to_vtt logic changes: forces one full rebuild so old VTTs can't stay stale.
 CONVERTER_VERSION = 2
 
@@ -52,6 +61,14 @@ RTL_SCRIPT_RE = re.compile(r'[\u0590-\u05FF\u0600-\u06FF\u0750-\u077F\u08A0-\u08
 SCRIPT_RE_FOR_LANG = {"ara": ARABIC_SCRIPT_RE, "heb": HEBREW_SCRIPT_RE}
 RTL_LANGS = frozenset(SCRIPT_RE_FOR_LANG)
 BIDI_MARKS_RE = re.compile(r'[\u200e\u200f\u202a\u202b\u202c\u202d\u202e]')
+
+# Short suffix used in a track id, e.g. RO_1_ar.
+LANG_SHORT = {
+    "ara": "ar", "cze": "cs", "dut": "nl", "eng": "en", "fin": "fi",
+    "fre": "fr", "ger": "de", "heb": "he", "ind": "id", "ita": "it",
+    "jpn": "ja", "pol": "pl", "por": "pt", "rus": "ru", "spa": "es",
+    "tur": "tr", "vie": "vi",
+}
 
 # A trailing "_2", "_3"... on an id is the collision counter for a second file
 # that mapped to the same (episode, language).
@@ -105,6 +122,10 @@ def build_subtitle_label(unique_sub_id: str, stremio_id: str, lang_code: str):
         notes.append("CC")
     if token == "ptbr":
         notes.append("Brazil")                # distinguishes it from European "_pt"
+    parts = set(token.split("_"))          # whole words, so "ext" cannot hit "extended"
+    for tag in sorted(EXTERNAL_TAGS):
+        if tag in parts:
+            notes.append(EXTERNAL_TAGS[tag])
     m = _NUMBERED_TOKEN.match(token)
     if m:
         notes.append(m.group(1))
@@ -127,6 +148,172 @@ def _subtitle_digest(url: str):
     except OSError:
         return None
 
+
+def load_external_index() -> list:
+    """Read external/index.json and remember each tag for labelling."""
+    if not os.path.exists(EXTERNAL_INDEX):
+        return []
+    try:
+        with open(EXTERNAL_INDEX, encoding="utf-8") as fh:
+            entries = json.load(fh)
+    except Exception as e:
+        print(f"[-] Could not read external/index.json: {e}")
+        return []
+    for entry in entries:
+        remember_tag(entry.get("tag"), entry.get("label"))
+    return entries
+
+
+def remember_tag(tag, label):
+    """An explicit label wins; a bare tag only fills in a default."""
+    tag = str(tag or "").strip().lower()
+    if not tag:
+        return
+    if label:
+        EXTERNAL_TAGS[tag] = label
+    else:
+        EXTERNAL_TAGS.setdefault(tag, tag.title())
+
+
+def load_external_state() -> dict:
+    """What earlier runs built, keyed by track id. Also restores the labels."""
+    if not os.path.exists(EXTERNAL_STATE):
+        return {}
+    try:
+        with open(EXTERNAL_STATE, encoding="utf-8") as fh:
+            state = json.load(fh)
+    except Exception as e:
+        print(f"[-] Could not read meta/external.json: {e}")
+        return {}
+    for record in state.values():
+        remember_tag(record.get("tag"), record.get("label"))
+    return state
+
+
+def save_external_state(state: dict):
+    os.makedirs(os.path.dirname(EXTERNAL_STATE), exist_ok=True)
+    with open(EXTERNAL_STATE, "w", encoding="utf-8") as fh:
+        json.dump(state, fh, indent=4, ensure_ascii=False, sort_keys=True)
+
+
+def file_digest(path: str) -> str:
+    with open(path, "rb") as fh:
+        return hashlib.sha1(fh.read()).hexdigest()
+
+
+def external_output_dir(stremio_id, subtitles_dict, folder_by_prefix, overrides):
+    """Sit beside the tracks already written for that episode."""
+    for s in subtitles_dict.get(stremio_id, []):
+        url = s.get("url", "")
+        if url.startswith(CDN_SRT_BASE_URL):
+            return os.path.dirname(
+                urllib.parse.unquote(url[len(CDN_SRT_BASE_URL):]))
+    prefix, _, num = stremio_id.rpartition("_")
+    folder = overrides.get(prefix) or folder_by_prefix.get(prefix)
+    if folder and num.isdigit():
+        return "%s/%s" % (folder, num.zfill(2))
+    return None
+
+
+def run_external_pass(subtitles_dict, have, local_hashes, folder_by_prefix, overrides):
+    """
+    Fill (episode, language) gaps from our own complete .ass files.
+
+    The .ass sources live outside the repo, so a run that has them converts and
+    records what it built; every run then replays that record. Anything the subs
+    repo provides still wins, and a record is never dropped on its own.
+    """
+    state = load_external_state()
+
+    # --- with the sources present: convert what is still a gap ---
+    for entry in load_external_index():
+        stremio_id = str(entry.get("id", "")).strip()
+        lang_code = str(entry.get("lang", "")).strip()
+        filename = str(entry.get("file", "")).strip()
+        if not (stremio_id and lang_code and filename):
+            print(f"    [-] external: entry missing id/lang/file: {entry}")
+            continue
+        source = os.path.join(EXTERNAL_DIR, filename)
+        if not os.path.exists(source):
+            print(f"    [-] external: no such file: {filename}")
+            continue
+        if (stremio_id, lang_code) in have:
+            continue                      # the repo covers it; nothing to build
+
+        # "dir" in the index wins, for an arc the folder map does not know.
+        rel_dir = str(entry.get("dir", "")).strip().replace("\\", "/").strip("/")
+        if ".." in rel_dir.split("/"):
+            print(f"    [-] external: bad dir {rel_dir!r}, skipping {filename}")
+            continue
+        if not rel_dir:
+            rel_dir = external_output_dir(stremio_id, subtitles_dict,
+                                          folder_by_prefix, overrides)
+        if not rel_dir:
+            print(f"    [-] external: cannot place {stremio_id} - add a \"dir\" to "
+                  f"index.json, skipping {filename}")
+            continue
+
+        tag = str(entry.get("tag", "")).strip().lower()
+        short = LANG_SHORT.get(lang_code, lang_code)
+        sub_id = f"{stremio_id}_{tag}_{short}" if tag else f"{stremio_id}_{short}"
+        nested_dir = os.path.join(OUTPUT_SUBS_DIR, *rel_dir.split("/"))
+        os.makedirs(nested_dir, exist_ok=True)
+        local_vtt_path = os.path.join(nested_dir, f"{sub_id}.vtt")
+
+        hash_key = f"external/{filename}"
+        file_sha = file_digest(source)
+        if (not os.path.exists(local_vtt_path)) or local_hashes.get(hash_key) != file_sha:
+            try:
+                with open(source, encoding="utf-8-sig", errors="ignore") as fh:
+                    ass_text = fh.read()
+                vtt_text = ass_to_vtt(ass_text, None, None, lang_code)
+                with open(local_vtt_path, "w", encoding="utf-8") as f:
+                    f.write(vtt_text)
+                local_hashes[hash_key] = file_sha
+                print(f"    [+] external: built {sub_id}")
+            except Exception as e:
+                print(f"    [-] external: failed on {filename}: {e}")
+                continue
+
+        record = {"id": stremio_id, "lang": lang_code, "dir": rel_dir}
+        if tag:
+            record["tag"] = tag
+        if entry.get("label"):
+            record["label"] = entry["label"]
+        state[sub_id] = record             # merge: records are never dropped here
+
+    # --- every run: replay the record ---
+    added = covered = missing = 0
+    for sub_id in sorted(state):
+        record = state[sub_id]
+        stremio_id = record.get("id", "")
+        lang_code = record.get("lang", "")
+        rel_dir = record.get("dir", "")
+        if not (stremio_id and lang_code and rel_dir):
+            print(f"    [-] external: incomplete record for {sub_id}")
+            continue
+        rel_path = f"{rel_dir}/{sub_id}.vtt"
+        if not os.path.exists(os.path.join(OUTPUT_SUBS_DIR, *rel_path.split("/"))):
+            print(f"    [-] external: {sub_id}.vtt is missing, keeping the record")
+            missing += 1
+            continue
+        if (stremio_id, lang_code) in have:
+            covered += 1                   # the repo has it now; the record stays
+            continue
+        subtitles_dict.setdefault(stremio_id, []).append({
+            "id": sub_id,
+            "url": CDN_SRT_BASE_URL + urllib.parse.quote(rel_path, safe='/'),
+            "lang": lang_code,
+        })
+        have.add((stremio_id, lang_code))
+        added += 1
+
+    if state or added or missing:
+        print(f"[+] External subs: {added} added, {covered} now covered by the repo, "
+              f"{missing} missing on disk ({len(state)} recorded).")
+    if state or os.path.exists(EXTERNAL_STATE):
+        save_external_state(state)
+    return added, covered
 
 def dedup_and_label(subtitles_dict: dict) -> dict:
     """Drop byte-identical same-language duplicates, then label the variants."""
@@ -1196,6 +1383,9 @@ def main():
         filled += 1
 
     print(f"[+] Final Subs fallback: filled {filled} missing (episode, language) gaps.")
+
+    run_external_pass(subtitles_dict, have, local_hashes,
+                      folder_by_prefix, FOLDER_OVERRIDE)
 
     dedup_and_label(subtitles_dict)
 
