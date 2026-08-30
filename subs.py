@@ -224,6 +224,9 @@ def run_external_pass(subtitles_dict, have, local_hashes, folder_by_prefix, over
     repo provides still wins, and a record is never dropped on its own.
     """
     state = load_external_state()
+    # Gaps are measured against the subs repo only. Two external tracks may share
+    # a language on purpose - a full one and a signs-and-songs one.
+    repo_has = set(have)
 
     # --- with the sources present: convert what is still a gap ---
     for entry in load_external_index():
@@ -237,7 +240,7 @@ def run_external_pass(subtitles_dict, have, local_hashes, folder_by_prefix, over
         if not os.path.exists(source):
             print(f"    [-] external: no such file: {filename}")
             continue
-        if (stremio_id, lang_code) in have:
+        if (stremio_id, lang_code) in repo_has:
             continue                      # the repo covers it; nothing to build
 
         # "dir" in the index wins, for an arc the folder map does not know.
@@ -266,7 +269,8 @@ def run_external_pass(subtitles_dict, have, local_hashes, folder_by_prefix, over
             try:
                 with open(source, encoding="utf-8-sig", errors="ignore") as fh:
                     ass_text = fh.read()
-                vtt_text = ass_to_vtt(ass_text, None, None, lang_code)
+                vtt_text = ass_to_vtt(ass_text, None, None, lang_code,
+                                      spa_style_filter=False)
                 with open(local_vtt_path, "w", encoding="utf-8") as f:
                     f.write(vtt_text)
                 local_hashes[hash_key] = file_sha
@@ -297,7 +301,7 @@ def run_external_pass(subtitles_dict, have, local_hashes, folder_by_prefix, over
             print(f"    [-] external: {sub_id}.vtt is missing, keeping the record")
             missing += 1
             continue
-        if (stremio_id, lang_code) in have:
+        if (stremio_id, lang_code) in repo_has:
             covered += 1                   # the repo has it now; the record stays
             continue
         subtitles_dict.setdefault(stremio_id, []).append({
@@ -679,7 +683,8 @@ def process_op_ed_file(ass_content: str, offset_ms: int, lang_code: str) -> list
 
     return final_dialogues
 
-def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list = None, lang_code: str = "eng") -> str:
+def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list = None,
+               lang_code: str = "eng", spa_style_filter: bool = True) -> str:
     # Strip invisible typesetter spacers ({...alphaFF...}word{...alpha00...}) on a SINGLE line.
     # The \n exclusions keep this from crossing line boundaries and eating real title-card
     # text that uses fade-in animations (e.g. \1a&HFF&\t(...,\1a&H00&)).
@@ -690,7 +695,10 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
     ed_start_ms = None
     dialogues = []
 
-    skip_spa_styles = lang_code == "spa" and _spa_styles_hold_dialogue(subs)
+    # Only the subs repo hides English in Main/Caption on a Spanish track; our own
+    # files are a different production, so they are converted as they are.
+    skip_spa_styles = (spa_style_filter and lang_code == "spa"
+                       and _spa_styles_hold_dialogue(subs))
 
     for line in subs:
         name = line.name.lower()

@@ -13164,5 +13164,335 @@
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/21%20Amazon%20Lily/05/AM_5_en.vtt",
             "lang": "eng"
         }
+    ],
+    "KUMA_SHAVED_10": [
+        {
+            "id": "KUMA_SHAVED_10_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/10/KUMA_SHAVED_10_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_10_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/10/KUMA_SHAVED_10_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_10_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/10/KUMA_SHAVED_10_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_11": [
+        {
+            "id": "KUMA_SHAVED_11_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/11/KUMA_SHAVED_11_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_11_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/11/KUMA_SHAVED_11_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_11_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/11/KUMA_SHAVED_11_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_12": [
+        {
+            "id": "KUMA_SHAVED_12_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/12/KUMA_SHAVED_12_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_12_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/12/KUMA_SHAVED_12_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_13": [
+        {
+            "id": "KUMA_SHAVED_13_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/13/KUMA_SHAVED_13_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_13_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/13/KUMA_SHAVED_13_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_14": [
+        {
+            "id": "KUMA_SHAVED_14_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/14/KUMA_SHAVED_14_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_14_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/14/KUMA_SHAVED_14_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_15": [
+        {
+            "id": "KUMA_SHAVED_15_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/15/KUMA_SHAVED_15_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_15_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/15/KUMA_SHAVED_15_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_16": [
+        {
+            "id": "KUMA_SHAVED_16_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/16/KUMA_SHAVED_16_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_16_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/16/KUMA_SHAVED_16_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_17": [
+        {
+            "id": "KUMA_SHAVED_17_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/17/KUMA_SHAVED_17_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_17_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/17/KUMA_SHAVED_17_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_18": [
+        {
+            "id": "KUMA_SHAVED_18_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/18/KUMA_SHAVED_18_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_18_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/18/KUMA_SHAVED_18_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_19": [
+        {
+            "id": "KUMA_SHAVED_19_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/19/KUMA_SHAVED_19_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_19_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/19/KUMA_SHAVED_19_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_1": [
+        {
+            "id": "KUMA_SHAVED_1_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/01/KUMA_SHAVED_1_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_1_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/01/KUMA_SHAVED_1_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_1_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/01/KUMA_SHAVED_1_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_20": [
+        {
+            "id": "KUMA_SHAVED_20_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/20/KUMA_SHAVED_20_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_20_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/20/KUMA_SHAVED_20_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_21": [
+        {
+            "id": "KUMA_SHAVED_21_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/21/KUMA_SHAVED_21_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_21_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/21/KUMA_SHAVED_21_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_22": [
+        {
+            "id": "KUMA_SHAVED_22_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/22/KUMA_SHAVED_22_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_22_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/22/KUMA_SHAVED_22_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_2": [
+        {
+            "id": "KUMA_SHAVED_2_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/02/KUMA_SHAVED_2_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_2_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/02/KUMA_SHAVED_2_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_2_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/02/KUMA_SHAVED_2_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_3": [
+        {
+            "id": "KUMA_SHAVED_3_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/03/KUMA_SHAVED_3_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_3_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/03/KUMA_SHAVED_3_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_3_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/03/KUMA_SHAVED_3_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_4": [
+        {
+            "id": "KUMA_SHAVED_4_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/04/KUMA_SHAVED_4_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_4_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/04/KUMA_SHAVED_4_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_4_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/04/KUMA_SHAVED_4_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_5": [
+        {
+            "id": "KUMA_SHAVED_5_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/05/KUMA_SHAVED_5_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_5_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/05/KUMA_SHAVED_5_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_5_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/05/KUMA_SHAVED_5_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_6": [
+        {
+            "id": "KUMA_SHAVED_6_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/06/KUMA_SHAVED_6_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_6_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/06/KUMA_SHAVED_6_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_6_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/06/KUMA_SHAVED_6_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_7": [
+        {
+            "id": "KUMA_SHAVED_7_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/07/KUMA_SHAVED_7_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_7_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/07/KUMA_SHAVED_7_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_7_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/07/KUMA_SHAVED_7_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_8": [
+        {
+            "id": "KUMA_SHAVED_8_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/08/KUMA_SHAVED_8_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_8_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/08/KUMA_SHAVED_8_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_8_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/08/KUMA_SHAVED_8_es.vtt",
+            "lang": "spa"
+        }
+    ],
+    "KUMA_SHAVED_9": [
+        {
+            "id": "KUMA_SHAVED_9_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/09/KUMA_SHAVED_9_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "KUMA_SHAVED_9_signs_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/09/KUMA_SHAVED_9_signs_en.vtt",
+            "lang": "eng",
+            "label": "English (Signs & Songs)"
+        },
+        {
+            "id": "KUMA_SHAVED_9_es",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/Shaved%20Egghead%20and%20Kuma%20Cut/09/KUMA_SHAVED_9_es.vtt",
+            "lang": "spa"
+        }
     ]
 }
