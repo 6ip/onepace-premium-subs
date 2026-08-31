@@ -133,35 +133,35 @@
             "label": "Spanish (DUB)"
         }
     ],
-    "fan_1": [
+    "special_fan_1": [
         {
-            "id": "fan_1_ar",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/fan_1_ar.vtt",
+            "id": "special_fan_1_ar",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/special_fan_1_ar.vtt",
             "lang": "ara"
         },
         {
-            "id": "fan_1_en",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/fan_1_en.vtt",
+            "id": "special_fan_1_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/special_fan_1_en.vtt",
             "lang": "eng"
         },
         {
-            "id": "fan_1_fi",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/fan_1_fi.vtt",
+            "id": "special_fan_1_fi",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/special_fan_1_fi.vtt",
             "lang": "fin"
         },
         {
-            "id": "fan_1_fr",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/fan_1_fr.vtt",
+            "id": "special_fan_1_fr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/special_fan_1_fr.vtt",
             "lang": "fre"
         },
         {
-            "id": "fan_1_de",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/fan_1_de.vtt",
+            "id": "special_fan_1_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/special_fan_1_de.vtt",
             "lang": "ger"
         },
         {
-            "id": "fan_1_ru",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/fan_1_ru.vtt",
+            "id": "special_fan_1_ru",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/04/special_fan_1_ru.vtt",
             "lang": "rus"
         }
     ],
@@ -6633,6 +6633,16 @@
             "id": "EN_8_de",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/17%20Enies%20Lobby/08/EN_8_de.vtt",
             "lang": "ger"
+        },
+        {
+            "id": "EN_8_it",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/17%20Enies%20Lobby/08/EN_8_it.vtt",
+            "lang": "ita"
+        },
+        {
+            "id": "EN_8_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/17%20Enies%20Lobby/08/EN_8_ja.vtt",
+            "lang": "jpn"
         },
         {
             "id": "EN_8_ru",
