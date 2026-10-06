@@ -578,7 +578,7 @@
     "main/12 Alabasta/02/alabasta 02 en.ass": "292074b6ed05924afbe7533f7736b92bd6fbdd5d",
     "main/12 Alabasta/02/alabasta 02 es.ass": "e3e6698cae0d9a22424754f975490f408e60f084",
     "main/12 Alabasta/02/alabasta 02 fr.ass": "f55ea122968bdda60fecde25b7fa2655956911ba",
-    "main/12 Alabasta/02/alabasta 02 it.ass": "c563198fdc7ed463bed1e4d98077af22d6b63707",
+    "main/12 Alabasta/02/alabasta 02 it.ass": "285c58399b452dc3c063c456f5e22eb04b566e23",
     "main/12 Alabasta/02/alabasta 02 ru.ass": "c1e209eb2d932ee712d33d9f59e73d439385d1d1",
     "main/12 Alabasta/02/alabasta 02 tr.ass": "23cfa9587d2b7a0c839cb955a47c07bac4f68e73",
     "main/12 Alabasta/03/alabasta 03 de.ass": "288b2c6ddd26c6bb1b499e06f9f94d8e29a13d5f",
@@ -1974,7 +1974,7 @@
     "main/12 Alabasta/19/alabasta 19 it.ass": "dabfad0598f9383f121a9bf9663e9626ac763825",
     "main/12 Alabasta/20/alabasta 20 it.ass": "130e492ceec4673a59fc65d16c887444e2347380",
     "main/12 Alabasta/21/alabasta 21 it.ass": "541fd92c9937e12c0cee48f6f3dc42887d543364",
-    "main/13 Jaya/07/jaya 07 it.ass": "123195efb1df0c8a973b76a207b8e74aa3a5effb",
+    "main/13 Jaya/07/jaya 07 it.ass": "b759a46461d07636545dde968f6fc8710e055bfa",
     "main/13 Jaya/06/jaya 06 it.ass": "ffc2819e03c0aa24991e014cef238aded1111e49",
     "main/13 Jaya/08/jaya 08 it.ass": "0c4711aa1ac7333283cc3208777f7be650be8f89",
     "main/14 Skypiea/09/skypiea 09 it.ass": "a4a94296ae0b81c7afb6cc2b504a55b5faca594b",
@@ -2487,6 +2487,6 @@
     "main/26 Fishman Island/02/fi 02 ja.ass": "a84a597d33fdb2eff6eb4cd44a9ed2c7ca4a0ab6",
     "main/17 Enies Lobby/10/enieslobby 10 it.ass": "991a78c82342f7b07ad340a928bea0dee6bc538b",
     "main/17 Enies Lobby/10/enieslobby 10 ja.ass": "51525e58e4290e6583b997b9eec853b931067bb7",
-    "_converter_version": 2,
-    "main/26 Fishman Island/02/fi 02 fi.ass": "b73834450a2f1257e72517838d1f362c215d8b0b"
+    "main/26 Fishman Island/02/fi 02 fi.ass": "b73834450a2f1257e72517838d1f362c215d8b0b",
+    "_converter_version": 2
 }
