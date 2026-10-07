@@ -2488,7 +2488,6 @@
     "main/17 Enies Lobby/10/enieslobby 10 it.ass": "991a78c82342f7b07ad340a928bea0dee6bc538b",
     "main/17 Enies Lobby/10/enieslobby 10 ja.ass": "51525e58e4290e6583b997b9eec853b931067bb7",
     "main/26 Fishman Island/02/fi 02 fi.ass": "b73834450a2f1257e72517838d1f362c215d8b0b",
-    "_converter_version": 2,
     "main/00 Cover Stories and Specials/01/The Adventures of Buggy's Crew dub es-419.ass": "8b31dddd16bcb86255786069c337692cf40449e2",
     "main/00 Cover Stories and Specials/01/The Adventures of Buggy's Crew es-419.ass": "36eb728a0bf87f99c26164553bae2caec6348568",
     "main/00 Cover Stories and Specials/01/The Adventures of Buggy's Crew he.ass": "9ce31a8d47caff956fd52525b785f6576b3470b6",
@@ -2871,5 +2870,6 @@
     "main/33 Egghead/01/egghead 01 es-419.ass": "e29a9044648583bd13dedac04a3a8254452ca419",
     "main/33 Egghead/02/egghead 02 es-419.ass": "3f04fda78b54e12f57e8debe116c344e059c1877",
     "main/33 Egghead/03/egghead 03 es-419.ass": "8b8af58580f677b9efc6695a9196f754feed0565",
-    "main/33 Egghead/04/egghead 04 es-419.ass": "c3869b5c8c54f18bb4c37c6ea64d5a144ef12d1f"
+    "main/33 Egghead/04/egghead 04 es-419.ass": "c3869b5c8c54f18bb4c37c6ea64d5a144ef12d1f",
+    "_converter_version": 2
 }
