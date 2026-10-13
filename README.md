@@ -2,7 +2,7 @@
 
 Automated subtitle pipeline for [One Pace](https://onepace.net) — fetches `.ass` files from the community subtitles repo, converts them to WebVTT, injects opening/ending translations, and publishes a ready-to-consume index for Stremio and compatible players.
 
-This repo is the subtitle backend for the **[One Pace](https://stremio-addons.net/addons/one-pace-rd) Stremio addon** — a community-built addon that streams One Pace directly through your Debrid account with no buffering, no dead torrents, and native multi-language subtitle support out of the box.
+This repo is the subtitle backend for the **[One Pace](https://stremio-addons.net/addons/one-pace-rd) Stremio addon** — a community-built addon that streams One Pace through your Debrid account, or peer-to-peer if you prefer, with native multi-language subtitle support out of the box.
 
 ---
 
