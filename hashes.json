@@ -57,7 +57,7 @@
     "main/01 Romance Dawn/02/romancedawn 02 es.ass": "048958c9cbd74021068bf3248fd2289bcfe28fc5",
     "main/01 Romance Dawn/02/romancedawn 02 fi.ass": "0c3b53e68d534861afa59c6bae39f8466e7d9436",
     "main/01 Romance Dawn/02/romancedawn 02 fr.ass": "4495237bba86933edfaa0d315241fb7d1d9fb77a",
-    "main/01 Romance Dawn/02/romancedawn 02 he.ass": "5a1eccc3dfe922d56087ed51c90fcd46902e9516",
+    "main/01 Romance Dawn/02/romancedawn 02 he.ass": "4b8294b62c1bfa4c391c68c1e8051408ad2a6d2c",
     "main/01 Romance Dawn/02/romancedawn 02 it.ass": "456fe957e8f54904cbf8573bf2402d6adfb3f50c",
     "main/01 Romance Dawn/02/romancedawn 02 pl.ass": "6c97ef56f32368caa0540e2e62c2800cd4894319",
     "main/01 Romance Dawn/02/romancedawn 02 pt.ass": "b0964871f5fbe0a22e0c11d0ea4952f1ed0e5cf4",
@@ -696,7 +696,7 @@
     "main/13 Jaya/05/jaya 05 en.ass": "21c36059541af2f24352282ce70dd8e525229b57",
     "main/13 Jaya/05/jaya 05 es.ass": "d369e8069afb2bfaecb8ea816a2e500ea38f1074",
     "main/13 Jaya/05/jaya 05 fr.ass": "ed30c9ceb60164428667d5aab4193d10547048f8",
-    "main/13 Jaya/05/jaya 05 it.ass": "75d07ca16e3dc3e0a5161ec5a2c35b575a7f50e1",
+    "main/13 Jaya/05/jaya 05 it.ass": "3066bbba68b77d8a781aac456a543627bbe0cb89",
     "main/13 Jaya/05/jaya 05 ru.ass": "e56c7828db6d0e701c77ac965d064e1ccf160c2b",
     "main/13 Jaya/05/jaya 05 tr.ass": "28fd201fb8e89ee77d1ae32de725d2050a9fab08",
     "main/13 Jaya/06/jaya 06 ar.ass": "7e8233c32751ff29e9ecab95bd864eb4b1d41d53",
@@ -2873,6 +2873,6 @@
     "main/33 Egghead/04/egghead 04 es-419.ass": "c3869b5c8c54f18bb4c37c6ea64d5a144ef12d1f",
     "main/26 Fishman Island/02/fi 02 fr.ass": "dc842ec2b3fe24b3c831bb00723139800029e98c",
     "main/00 Cover Stories and Specials/02/The Trials of KobyMeppo de.ass": "d9c71c95ffaa50f7e8b48974ba29f0dd89f3e016",
-    "_converter_version": 2,
-    "main/26 Fishman Island/02/fi 02 ru.ass": "40781a152b0574946865c42cdf4453b8121f6c13"
+    "main/26 Fishman Island/02/fi 02 ru.ass": "40781a152b0574946865c42cdf4453b8121f6c13",
+    "_converter_version": 2
 }
