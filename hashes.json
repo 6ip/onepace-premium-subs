@@ -571,7 +571,7 @@
     "main/12 Alabasta/01/alabasta 01 en.ass": "6ea5e93538d9a20febb6e8c7f941cca595432001",
     "main/12 Alabasta/01/alabasta 01 es.ass": "647a77e9c4a3c0fcec568d2a65fae0d4c9fed7a1",
     "main/12 Alabasta/01/alabasta 01 fr.ass": "1ef042323874081d6569a8cbe4a2fd67d2b51957",
-    "main/12 Alabasta/01/alabasta 01 it.ass": "10f4802dd1bb2d7ca40e8c4c2e5b73e64ba1c5d5",
+    "main/12 Alabasta/01/alabasta 01 it.ass": "b3f48bb0c1db27653ca02ad937357668c592b7f1",
     "main/12 Alabasta/01/alabasta 01 ru.ass": "7d59d50da28c85c180ad47a90da78d7b05feccbc",
     "main/12 Alabasta/01/alabasta 01 tr.ass": "115bedfc7b90e5c7679140a77bb805f7bf755304",
     "main/12 Alabasta/02/alabasta 02 de.ass": "7597d4302315c44f6146ec4a735cbd31db0381af",
@@ -2874,5 +2874,6 @@
     "main/26 Fishman Island/02/fi 02 fr.ass": "dc842ec2b3fe24b3c831bb00723139800029e98c",
     "main/00 Cover Stories and Specials/02/The Trials of KobyMeppo de.ass": "d9c71c95ffaa50f7e8b48974ba29f0dd89f3e016",
     "main/26 Fishman Island/02/fi 02 ru.ass": "40781a152b0574946865c42cdf4453b8121f6c13",
-    "_converter_version": 2
+    "_converter_version": 2,
+    "main/12 Alabasta/01/alabasta 01 ja.ass": "21b421c7e80ee37ed5b7accd1b96bf0d2015198f"
 }
