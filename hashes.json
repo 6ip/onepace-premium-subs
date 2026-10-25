@@ -707,7 +707,7 @@
     "main/13 Jaya/06/jaya 06 ru.ass": "ef3444166a19bd111f2eb45d6bd73357ad734bcd",
     "main/13 Jaya/06/jaya 06 tr.ass": "bbfd965d01549e585689219b4b6f4eb79aeab343",
     "main/13 Jaya/07/jaya 07 ar.ass": "b990960671cd9c17d830398e4b6b924b00b09c31",
-    "main/13 Jaya/07/jaya 07 de.ass": "5d78fddfe19cd64ee661ec3508ba29c65780700c",
+    "main/13 Jaya/07/jaya 07 de.ass": "cacb54c26731956d1bd8b182ae22405ec15e2075",
     "main/13 Jaya/07/jaya 07 en.ass": "69202609b1780dc80c4117dda5f58aea8ea5b563",
     "main/13 Jaya/07/jaya 07 es.ass": "a1015c7dcbfe842e281ca42cd49fded003cad1a5",
     "main/13 Jaya/07/jaya 07 fr.ass": "831fb52c8166ef3cb918876e1a6ac0d0c8114c7d",
@@ -2368,7 +2368,7 @@
     "main/16 Water Seven/04/waterseven 04 de.ass": "8a3a88849fd9e2d1f5430732ff67543b26e85a74",
     "main/14 Skypiea/18/skypiea 18 it.ass": "568800d454e0aadf7fe2be96e6e90e5472747e17",
     "main/14 Skypiea/18/skypiea 18 ja.ass": "4e13ff0b70744620924fe6d2b216d3b2f94fef14",
-    "main/14 Skypiea/19/skypiea 19 it.ass": "cd6a830ac22a00c5264bd10c4d2a5b6d1109bbee",
+    "main/14 Skypiea/19/skypiea 19 it.ass": "34b104ab21f4612e60a6a033f03aa36eae0310fc",
     "main/14 Skypiea/19/skypiea 19 ja.ass": "8a285c69a4edd2dd9d0ec3afebc059f67a772db1",
     "main/14 Skypiea/20/skypiea 20 it.ass": "45da3c9d6837fc977d0be346021ad452ab397cc1",
     "main/14 Skypiea/20/skypiea 20 ja.ass": "a0112ad65930ff7cc3de8a4e88c8e724e89391a9",
@@ -2876,7 +2876,8 @@
     "main/26 Fishman Island/02/fi 02 ru.ass": "40781a152b0574946865c42cdf4453b8121f6c13",
     "main/12 Alabasta/01/alabasta 01 ja.ass": "21b421c7e80ee37ed5b7accd1b96bf0d2015198f",
     "main/12 Alabasta/01/alabasta 01 en dub.ass": "c972486825679b459658d3473386d741ec682dc9",
-    "_converter_version": 2,
     "main/12 Alabasta/02/alabasta 02 en dub.ass": "6a392623a5f91138ca0a8c2cbbf2c056444583d6",
-    "main/12 Alabasta/02/alabasta 02 ja.ass": "d606b8a806a20a56ec5d8a807c87b1b255ec8d49"
+    "main/12 Alabasta/02/alabasta 02 ja.ass": "d606b8a806a20a56ec5d8a807c87b1b255ec8d49",
+    "_converter_version": 2,
+    "main/32 Wano/13/wano 13 de.ass": "7985c1a2301e2008009e91da0949c21cad47e891"
 }
