@@ -3945,6 +3945,12 @@
             "lang": "eng"
         },
         {
+            "id": "AL_2_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/02/AL_2_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
             "id": "AL_2_es-419",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/02/AL_2_es-419.vtt",
             "lang": "eng",
@@ -3964,6 +3970,11 @@
             "id": "AL_2_it",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/02/AL_2_it.vtt",
             "lang": "ita"
+        },
+        {
+            "id": "AL_2_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/02/AL_2_ja.vtt",
+            "lang": "jpn"
         },
         {
             "id": "AL_2_ru",
