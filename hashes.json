@@ -2372,7 +2372,7 @@
     "main/14 Skypiea/19/skypiea 19 ja.ass": "8a285c69a4edd2dd9d0ec3afebc059f67a772db1",
     "main/14 Skypiea/20/skypiea 20 it.ass": "6f70a4320430929b0b93d325120000c7232a33cd",
     "main/14 Skypiea/20/skypiea 20 ja.ass": "a0112ad65930ff7cc3de8a4e88c8e724e89391a9",
-    "main/14 Skypiea/21/skypiea 21 it.ass": "1cb39d4ed1989e719cfa304b8ddb48733decbd29",
+    "main/14 Skypiea/21/skypiea 21 it.ass": "fff76cfedaa0f5498e6560cf6b3b5ed826e12a4f",
     "main/14 Skypiea/21/skypiea 21 ja.ass": "1644081e09aa3f82e3ad42e9ae00feec33ce8051",
     "main/14 Skypiea/22/skypiea 22 it.ass": "00e20332123181ac0c096c011de79f1f9b87748f",
     "main/14 Skypiea/22/skypiea 22 ja.ass": "a9d53cd9ab4f9679bbce1620a4c454098f1bb474",
@@ -2879,7 +2879,6 @@
     "main/12 Alabasta/02/alabasta 02 en dub.ass": "6a392623a5f91138ca0a8c2cbbf2c056444583d6",
     "main/12 Alabasta/02/alabasta 02 ja.ass": "d606b8a806a20a56ec5d8a807c87b1b255ec8d49",
     "main/32 Wano/13/wano 13 de.ass": "7985c1a2301e2008009e91da0949c21cad47e891",
-    "_converter_version": 2,
     "main/02 Orange Town/01/Orange Town 01 en dub cc.ass": "964a4163e41cd39c55526b332c7c0cfeada4561f",
     "main/02 Orange Town/01/Orange Town 01 en dub.ass": "f7e226383f0bd4c27a00ccd7955408737b6fb4fc",
     "main/02 Orange Town/02/Orange Town 02 en dub cc.ass": "d695c22f1f1baa5c9a36b97dc42f3435a800a4e7",
@@ -2937,5 +2936,6 @@
     "main/06 Arlong Park/09/arlongpark 09 en dub cc.ass": "de493c2d5736dd91e574468253167895d86fbf11",
     "main/06 Arlong Park/09/arlongpark 09 en dub.ass": "0367880a801b2e923efbe96c74dfc6bae364e708",
     "main/06 Arlong Park/10/arlongpark 10 en dub cc.ass": "825ceccaa73897f272c19a02ff40d4a5490a951b",
-    "main/06 Arlong Park/10/arlongpark 10 en dub.ass": "d1f3248c9f6b031724c45aa344b6d0f0e6b9831c"
+    "main/06 Arlong Park/10/arlongpark 10 en dub.ass": "d1f3248c9f6b031724c45aa344b6d0f0e6b9831c",
+    "_converter_version": 2
 }
