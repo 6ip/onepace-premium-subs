@@ -1235,7 +1235,8 @@ def main():
         rel_path = f"{arc_folder}/{ep_folder}/{vtt_filename}"
         cdn_url = CDN_SRT_BASE_URL + urllib.parse.quote(rel_path, safe='/')
         
-        op_path, ed_path = get_op_ed_paths(op_ed_key, ep_num, lang_code, op_ed_rules)
+        # OP/ED rules are keyed by whole numbers; a .5 shares its neighbour's era.
+        op_path, ed_path = get_op_ed_paths(op_ed_key, int(float(ep_num)), lang_code, op_ed_rules)
         file_exists = os.path.exists(local_vtt_path)
         
         if file_exists and path not in local_hashes and not full_rebuild:
