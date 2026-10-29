@@ -4245,6 +4245,12 @@
             "label": "English (DUB)"
         },
         {
+            "id": "AL_1_en_dub_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/01/AL_1_en_dub_cc.vtt",
+            "lang": "eng",
+            "label": "English (DUB, CC)"
+        },
+        {
             "id": "AL_1_es-419",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/01/AL_1_es-419.vtt",
             "lang": "eng",
@@ -4297,6 +4303,12 @@
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/02/AL_2_en_dub.vtt",
             "lang": "eng",
             "label": "English (DUB)"
+        },
+        {
+            "id": "AL_2_en_dub_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/02/AL_2_en_dub_cc.vtt",
+            "lang": "eng",
+            "label": "English (DUB, CC)"
         },
         {
             "id": "AL_2_es-419",
