@@ -919,6 +919,22 @@ def ass_to_vtt(ass_content: str, op_dialogues: list = None, ed_dialogues: list =
 
     return "\n".join(vtt_lines)
 
+EP_NUMBER = re.compile(r'^\d+(?:\.\d+)?$')
+
+
+def episode_token(value):
+    """'01' -> '1', '01.5' -> '1.5'. A half episode keeps it: LO_1.5, never LO_5."""
+    number = float(value)
+    return str(int(number)) if number.is_integer() else str(number)
+
+
+def pad_episode(token):
+    """'1' -> '01', '1.5' -> '01.5'. Only the whole part is padded."""
+    whole, _, frac = str(token).partition(".")
+    return whole.zfill(2) + ("." + frac if frac else "")
+
+
+
 def clean_string(s):
     return re.sub(r'[\d\s\-]', '', s).lower()
 
@@ -1159,10 +1175,13 @@ def main():
 
         if not prefix: continue
 
-        try:
-            ep_num = int(ep_folder)
-        except ValueError:
+        if not EP_NUMBER.match(ep_folder.strip()):
+            # A folder with digits that still will not parse is worth saying out
+            # loud; 'Fonts' and friends are not.
+            if any(c.isdigit() for c in ep_folder):
+                print(f"[!] Skipped '{arc_folder}/{ep_folder}': cannot read an episode number")
             continue
+        ep_num = episode_token(ep_folder)
 
         if "Cover Stories" in arc_folder or prefix in ["BUGGYS_CREW", "COVER_KOBYMEPPO", "COVER_SHSS"]:
             stremio_id = f"{prefix}_1"
@@ -1170,7 +1189,7 @@ def main():
             stremio_id = f"{prefix}_{ep_num}"
 
         name_without_ext = filename.rsplit('.', 1)[0]
-        ep_str = str(ep_num).zfill(2)
+        ep_str = pad_episode(ep_num)
         idx = name_without_ext.rfind(ep_str)
         
         # Smarter Language Extraction
@@ -1298,7 +1317,7 @@ def main():
         "hebrew": ("heb", "he"), "japanese": ("jpn", "ja"), "russian": ("rus", "ru"),
         "spanish": ("spa", "es"),
     }
-    FINAL_NAME_RE = re.compile(r'^\[[^\]]*\]\[[^\]]*\]\s*(.+?)\s+(\d+)\s*\[[^\]]*\]\s*(.*)$')
+    FINAL_NAME_RE = re.compile(r'^\[[^\]]*\]\[[^\]]*\]\s*(.+?)\s+(\d+(?:\.\d+)?)\s*\[[^\]]*\]\s*(.*)$')
 
     have = {(sid, s["lang"]) for sid, subs in subtitles_dict.items() for s in subs}
     final_files = [it for it in tree_data.get("tree", [])
@@ -1334,16 +1353,15 @@ def main():
         prefix = ARC_MAP.get(clean_string(arc_name))
         if not prefix:
             continue
-        try:
-            ep_num = int(ep_raw)
-        except ValueError:
+        if not EP_NUMBER.match(ep_raw.strip()):
             continue
+        ep_num = episode_token(ep_raw)
         stremio_id = f"{prefix}_{ep_num}"
         if (stremio_id, lang_code) in have:
             continue  # normal pass already produced it — new always wins
 
         arc_folder = FOLDER_OVERRIDE.get(prefix) or folder_by_prefix.get(prefix) or arc_name
-        ep_folder = str(ep_num).zfill(2)
+        ep_folder = pad_episode(ep_num)
         unique_sub_id = f"{stremio_id}_{short}"
         vtt_filename = f"{unique_sub_id}.vtt"
         nested_dir = os.path.join(OUTPUT_SUBS_DIR, arc_folder, ep_folder)
