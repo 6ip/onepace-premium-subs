@@ -39,12 +39,8 @@ META_URL_BASE = "https://raw.githubusercontent.com/6ip/onepace-streams/refs/head
 META_FILES = ("pp_onepacee.json", "pp_muhnpace.json", "pp_onipace.json",
               "pp_KUMA_SHAVED.json")
 
-# Upstream keeps a cut under the episode it was cut from, which is not always
-# the episode we publish it as. {derived id: {marker in the language words:
-# the id it really belongs to}}. Romance Dawn V2 is filed as an "alternate" of
-# Romance Dawn 01; we ship it as its own special. Skypiea's "alternate" is the
-# G-8 cut, which really is an extra stream on SK_25, so it is not listed here.
-VARIANT_ID = {"RO_1": {"alternate": "special_RO"}}
+# {derived id: {marker in the language words: the id it really belongs to}}
+# VARIANT_ID = {"RO_1": {"alternate": "special_RO"}}
 
 
 LANG_MAP = {
@@ -1094,12 +1090,7 @@ def fetch_op_ed(path: str):
         
 # --- Main Logic ---
 def published_episode_ids():
-    """Every id the four catalogs present, with and without the pp_ prefix.
-
-    The addon strips pp_ before looking a subtitle up, so both spellings count.
-    Returns None when the metas cannot be read, so the caller stays quiet
-    rather than reporting every episode as an orphan.
-    """
+    """Every id the four catalogs present, with and without pp_. None if unreadable."""
     ids = set()
     for name in META_FILES:
         try:
@@ -1121,12 +1112,7 @@ def published_episode_ids():
 
 
 def report_orphan_ids(subtitles_dict):
-    """Subtitles published for an episode no catalog presents any more.
-
-    Catches an episode that was collapsed upstream (its subtitles outlive it)
-    and a folder name that parsed into the wrong number - both of which are
-    otherwise silent, because nothing ever requests the id.
-    """
+    """Subtitles published for an episode no catalog presents any more."""
     ids = published_episode_ids()
     if not ids:
         return
@@ -1242,8 +1228,7 @@ def main():
         if not prefix: continue
 
         if not EP_NUMBER.match(ep_folder.strip()):
-            # A folder with digits that still will not parse is worth saying out
-            # loud; 'Fonts' and friends are not.
+            # Only numbered-looking folders are worth a warning.
             if any(c.isdigit() for c in ep_folder):
                 print(f"[!] Skipped '{arc_folder}/{ep_folder}': cannot read an episode number")
             continue
