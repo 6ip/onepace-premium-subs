@@ -40,7 +40,7 @@ META_FILES = ("pp_onepacee.json", "pp_muhnpace.json", "pp_onipace.json",
               "pp_KUMA_SHAVED.json")
 
 # {derived id: {marker in the language words: the id it really belongs to}}
-# VARIANT_ID = {"RO_1": {"alternate": "special_RO"}}
+VARIANT_ID = {}   # e.g. {"RO_1": {"alternate": "special_RO"}}
 
 
 LANG_MAP = {
