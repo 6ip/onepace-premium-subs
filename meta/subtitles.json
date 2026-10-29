@@ -200,17 +200,48 @@
             "lang": "rus"
         }
     ],
+    "special_RO": [
+        {
+            "id": "special_RO_ar",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/special_RO_ar.vtt",
+            "lang": "ara"
+        },
+        {
+            "id": "special_RO_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/special_RO_en.vtt",
+            "lang": "eng"
+        },
+        {
+            "id": "special_RO_fi",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/special_RO_fi.vtt",
+            "lang": "fin"
+        },
+        {
+            "id": "special_RO_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/special_RO_de.vtt",
+            "lang": "ger"
+        },
+        {
+            "id": "special_RO_it",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/special_RO_it.vtt",
+            "lang": "ita"
+        },
+        {
+            "id": "special_RO_ru",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/special_RO_ru.vtt",
+            "lang": "rus"
+        },
+        {
+            "id": "special_RO_tr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/special_RO_tr.vtt",
+            "lang": "tur"
+        }
+    ],
     "RO_1": [
         {
             "id": "RO_1_ar",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_ar.vtt",
             "lang": "ara"
-        },
-        {
-            "id": "RO_1_alternate_ar",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_alternate_ar.vtt",
-            "lang": "ara",
-            "label": "Arabic (ALT)"
         },
         {
             "id": "RO_1_cs",
@@ -235,12 +266,6 @@
             "label": "English (CC)"
         },
         {
-            "id": "RO_1_alternate_en",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_alternate_en.vtt",
-            "lang": "eng",
-            "label": "English (ALT)"
-        },
-        {
             "id": "RO_1_es-419",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_es-419.vtt",
             "lang": "eng",
@@ -258,12 +283,6 @@
             "lang": "fin"
         },
         {
-            "id": "RO_1_alternate_fi",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_alternate_fi.vtt",
-            "lang": "fin",
-            "label": "Finnish (ALT)"
-        },
-        {
             "id": "RO_1_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_fr.vtt",
             "lang": "fre"
@@ -274,12 +293,6 @@
             "lang": "ger"
         },
         {
-            "id": "RO_1_alternate_de",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_alternate_de.vtt",
-            "lang": "ger",
-            "label": "German (ALT)"
-        },
-        {
             "id": "RO_1_he",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_he.vtt",
             "lang": "heb"
@@ -288,12 +301,6 @@
             "id": "RO_1_it",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_it.vtt",
             "lang": "ita"
-        },
-        {
-            "id": "RO_1_alternate_it",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_alternate_it.vtt",
-            "lang": "ita",
-            "label": "Italian (ALT)"
         },
         {
             "id": "RO_1_ja",
@@ -322,12 +329,6 @@
             "lang": "rus"
         },
         {
-            "id": "RO_1_alternate_ru",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_alternate_ru.vtt",
-            "lang": "rus",
-            "label": "Russian (ALT)"
-        },
-        {
             "id": "RO_1_es",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_es.vtt",
             "lang": "spa"
@@ -342,12 +343,6 @@
             "id": "RO_1_tr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_tr.vtt",
             "lang": "tur"
-        },
-        {
-            "id": "RO_1_alternate_tr",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_alternate_tr.vtt",
-            "lang": "tur",
-            "label": "Turkish (ALT)"
         }
     ],
     "RO_2": [

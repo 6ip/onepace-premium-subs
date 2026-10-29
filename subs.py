@@ -35,6 +35,18 @@ CONVERTER_VERSION = 2
 
 CONFIG_URL = "https://raw.githubusercontent.com/6ip/onepace-streams/refs/heads/main/config.json"
 
+META_URL_BASE = "https://raw.githubusercontent.com/6ip/onepace-streams/refs/heads/main/meta/"
+META_FILES = ("pp_onepacee.json", "pp_muhnpace.json", "pp_onipace.json",
+              "pp_KUMA_SHAVED.json")
+
+# Upstream keeps a cut under the episode it was cut from, which is not always
+# the episode we publish it as. {derived id: {marker in the language words:
+# the id it really belongs to}}. Romance Dawn V2 is filed as an "alternate" of
+# Romance Dawn 01; we ship it as its own special. Skypiea's "alternate" is the
+# G-8 cut, which really is an extra stream on SK_25, so it is not listed here.
+VARIANT_ID = {"RO_1": {"alternate": "special_RO"}}
+
+
 LANG_MAP = {
     "ar": "ara", "cs": "cze", "cz": "cze", "de": "ger", "en": "eng", 
     "en cc": "eng", "en-cc": "eng", "en_cc": "eng",
@@ -1081,6 +1093,60 @@ def fetch_op_ed(path: str):
         return None
         
 # --- Main Logic ---
+def published_episode_ids():
+    """Every id the four catalogs present, with and without the pp_ prefix.
+
+    The addon strips pp_ before looking a subtitle up, so both spellings count.
+    Returns None when the metas cannot be read, so the caller stays quiet
+    rather than reporting every episode as an orphan.
+    """
+    ids = set()
+    for name in META_FILES:
+        try:
+            req = urllib.request.Request(META_URL_BASE + name,
+                                         headers={'User-Agent': 'Mozilla/5.0'})
+            with urllib.request.urlopen(req, timeout=20) as response:
+                meta = json.loads(response.read().decode('utf-8'))
+        except Exception as e:
+            print(f"[-] Could not read {name} for the orphan check: {e}")
+            return None
+        for video in meta.get("meta", {}).get("videos", []):
+            vid = str(video.get("id", ""))
+            if not vid:
+                continue
+            ids.add(vid)
+            if vid.startswith("pp_"):
+                ids.add(vid[3:])
+    return ids
+
+
+def report_orphan_ids(subtitles_dict):
+    """Subtitles published for an episode no catalog presents any more.
+
+    Catches an episode that was collapsed upstream (its subtitles outlive it)
+    and a folder name that parsed into the wrong number - both of which are
+    otherwise silent, because nothing ever requests the id.
+    """
+    ids = published_episode_ids()
+    if not ids:
+        return
+
+    orphans = sorted(k for k in subtitles_dict if k not in ids)
+    if not orphans:
+        print(f"[+] Every one of the {len(subtitles_dict)} episodes is published.")
+        return
+
+    tracks = sum(len(subtitles_dict[k]) for k in orphans)
+    print(f"\n[!] {len(orphans)} id(s) with subtitles but no published episode "
+          f"({tracks} track(s)):")
+    for key in orphans:
+        print(f"      {key:22} {len(subtitles_dict[key])} track(s)")
+    print("      Either the episode was collapsed upstream, or a folder name "
+          "read as the wrong number.")
+    print("      Nothing requests these, so they are dead weight rather than "
+          "a fault.\n")
+
+
 def main():
     print("[?] Fetching config.json from GitHub...")
     try:
@@ -1205,6 +1271,13 @@ def main():
                 else:
                     break 
             raw_lang_str = " ".join(lang_parts)
+
+        for marker, target in VARIANT_ID.get(stremio_id, {}).items():
+            if marker in raw_lang_str.lower():
+                stremio_id = target
+                raw_lang_str = re.sub(rf'\b{marker}\b', '', raw_lang_str,
+                                      flags=re.I).strip()
+                break
 
         lang_code = "eng" 
         for word in raw_lang_str.lower().split():
@@ -1428,6 +1501,8 @@ def main():
     print("[+] Subtitle files saved to meta/subs/")
     print("[+] hashes.json finalized!")
     print("[+] subtitles.json created successfully!")
+
+    report_orphan_ids(subtitles_dict)
 
 if __name__ == "__main__":
     main()
