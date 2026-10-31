@@ -4878,12 +4878,6 @@
             "lang": "eng"
         },
         {
-            "id": "AL_19_eng",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/19/AL_19_eng.vtt",
-            "lang": "eng",
-            "label": "English (2)"
-        },
-        {
             "id": "AL_19_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/19/AL_19_fr.vtt",
             "lang": "fre"
@@ -4910,9 +4904,10 @@
             "lang": "rus"
         },
         {
-            "id": "AL_19_es",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/19/AL_19_es.vtt",
-            "lang": "spa"
+            "id": "AL_19_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/19/AL_19_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         },
         {
             "id": "AL_19_tr",
@@ -6344,12 +6339,6 @@
             "lang": "eng"
         },
         {
-            "id": "SK_19_eng",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/14%20Skypiea/19/SK_19_eng.vtt",
-            "lang": "eng",
-            "label": "English (2)"
-        },
-        {
             "id": "SK_19_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/14%20Skypiea/19/SK_19_fr.vtt",
             "lang": "fre"
@@ -6375,9 +6364,10 @@
             "lang": "rus"
         },
         {
-            "id": "SK_19_es",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/14%20Skypiea/19/SK_19_es.vtt",
-            "lang": "spa"
+            "id": "SK_19_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/14%20Skypiea/19/SK_19_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         },
         {
             "id": "SK_19_tr",
@@ -8342,14 +8332,15 @@
     ],
     "TB_19": [
         {
-            "id": "TB_19_eng",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/19%20Thriller%20Bark/19/TB_19_eng.vtt",
+            "id": "TB_19_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/19%20Thriller%20Bark/19/TB_19_en.vtt",
             "lang": "eng"
         },
         {
-            "id": "TB_19_es",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/19%20Thriller%20Bark/19/TB_19_es.vtt",
-            "lang": "spa"
+            "id": "TB_19_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/19%20Thriller%20Bark/19/TB_19_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         }
     ],
     "TB_20": [
@@ -9523,14 +9514,15 @@
     ],
     "FI_19": [
         {
-            "id": "FI_19_eng",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/19/FI_19_eng.vtt",
+            "id": "FI_19_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/19/FI_19_en.vtt",
             "lang": "eng"
         },
         {
-            "id": "FI_19_es",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/19/FI_19_es.vtt",
-            "lang": "spa"
+            "id": "FI_19_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/19/FI_19_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         }
     ],
     "FI_20": [
@@ -9879,14 +9871,15 @@
     ],
     "PH_19": [
         {
-            "id": "PH_19_eng",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/27%20Punk%20Hazard/19/PH_19_eng.vtt",
+            "id": "PH_19_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/27%20Punk%20Hazard/19/PH_19_en.vtt",
             "lang": "eng"
         },
         {
-            "id": "PH_19_es",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/27%20Punk%20Hazard/19/PH_19_es.vtt",
-            "lang": "spa"
+            "id": "PH_19_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/27%20Punk%20Hazard/19/PH_19_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         }
     ],
     "PH_20": [
@@ -10434,8 +10427,8 @@
             "lang": "ara"
         },
         {
-            "id": "DR_19_eng",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/28%20Dressrosa/19/DR_19_eng.vtt",
+            "id": "DR_19_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/28%20Dressrosa/19/DR_19_en.vtt",
             "lang": "eng"
         },
         {
@@ -10444,9 +10437,10 @@
             "lang": "fre"
         },
         {
-            "id": "DR_19_es",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/28%20Dressrosa/19/DR_19_es.vtt",
-            "lang": "spa"
+            "id": "DR_19_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/28%20Dressrosa/19/DR_19_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         }
     ],
     "DR_20": [
@@ -11044,8 +11038,8 @@
             "lang": "ara"
         },
         {
-            "id": "DR_41_9",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/28%20Dressrosa/41/DR_41_9.vtt",
+            "id": "DR_41_en",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/28%20Dressrosa/41/DR_41_en.vtt",
             "lang": "eng"
         },
         {
@@ -11054,9 +11048,10 @@
             "lang": "fre"
         },
         {
-            "id": "DR_41_es",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/28%20Dressrosa/41/DR_41_es.vtt",
-            "lang": "spa"
+            "id": "DR_41_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/28%20Dressrosa/41/DR_41_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         }
     ],
     "DR_42": [
@@ -11973,20 +11968,15 @@
             "lang": "eng"
         },
         {
-            "id": "WC_19_eng",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/30%20Whole%20Cake%20Island/19/WC_19_eng.vtt",
-            "lang": "eng",
-            "label": "English (2)"
-        },
-        {
             "id": "WC_19_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/30%20Whole%20Cake%20Island/19/WC_19_fr.vtt",
             "lang": "fre"
         },
         {
-            "id": "WC_19_es",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/30%20Whole%20Cake%20Island/19/WC_19_es.vtt",
-            "lang": "spa"
+            "id": "WC_19_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/30%20Whole%20Cake%20Island/19/WC_19_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         }
     ],
     "WC_20": [
@@ -13366,20 +13356,15 @@
             "lang": "eng"
         },
         {
-            "id": "WA_19_eng",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/19/WA_19_eng.vtt",
-            "lang": "eng",
-            "label": "English (2)"
-        },
-        {
             "id": "WA_19_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/19/WA_19_fr.vtt",
             "lang": "fre"
         },
         {
-            "id": "WA_19_es",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/19/WA_19_es.vtt",
-            "lang": "spa"
+            "id": "WA_19_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/19/WA_19_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         },
         {
             "id": "WA_19_tr",
@@ -14102,20 +14087,15 @@
             "lang": "eng"
         },
         {
-            "id": "WA_41_9",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/41/WA_41_9.vtt",
-            "lang": "eng",
-            "label": "English (2)"
-        },
-        {
             "id": "WA_41_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/41/WA_41_fr.vtt",
             "lang": "fre"
         },
         {
-            "id": "WA_41_es",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/41/WA_41_es.vtt",
-            "lang": "spa"
+            "id": "WA_41_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/41/WA_41_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         },
         {
             "id": "WA_41_tr",

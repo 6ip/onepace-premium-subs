@@ -1256,11 +1256,12 @@ def main():
 
         name_without_ext = filename.rsplit('.', 1)[0]
         ep_str = pad_episode(ep_num)
-        idx = name_without_ext.rfind(ep_str)
-        
+        # Anchored on digits: a plain find matches the "19" inside "es-419".
+        found = re.search(r'(?<!\d)' + re.escape(ep_str) + r'(?!\d)', name_without_ext)
+
         # Smarter Language Extraction
-        if idx != -1:
-            raw_lang_str = name_without_ext[idx + len(ep_str):].strip()
+        if found:
+            raw_lang_str = name_without_ext[found.end():].strip()
         else:
             words = name_without_ext.split()
             lang_parts = []
