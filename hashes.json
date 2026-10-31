@@ -2382,9 +2382,9 @@
     "main/14 Skypiea/24/skypiea 24 it.ass": "ad9f56cd7748926b3af8d9ed587a19a0cb140b8f",
     "main/14 Skypiea/24/skypiea 24 ja.ass": "7f8b8768092f4e617c7bab371f1dccab499d2ad9",
     "main/16 Water Seven/05/waterseven 05 de.ass": "cccfe0830a1f69516951c171c43f2f05b9d9d660",
-    "main/14 Skypiea/25/skypiea 25 alternate it.ass": "f11d82a84860156c0f27af6dc92659640669bb4c",
+    "main/14 Skypiea/25/skypiea 25 alternate it.ass": "9ff1e6737c821b3bcb9cf36927269abd5b9bf69b",
     "main/14 Skypiea/25/skypiea 25 alternate ja.ass": "43c8dc14957614b5d2769f5b0fe62b34cdd3f042",
-    "main/14 Skypiea/25/skypiea 25 it.ass": "5fd2a8dc616e34eb75d4424b2348d3cd0c4e0794",
+    "main/14 Skypiea/25/skypiea 25 it.ass": "ca4809fb2013bfeb8427b4a79eedbe36c4fea0fb",
     "main/14 Skypiea/25/skypiea 25 ja.ass": "42fa309353c0fa853e3cde08d7f0d917d2bd18d2",
     "main/17 Enies Lobby/01/enieslobby 01 it.ass": "70848b479e08c1732b9a30c23735ac8bfd0d9bb2",
     "main/17 Enies Lobby/01/enieslobby 01 ja.ass": "2624f3f311d9df481aa4420b45f5e612936a5461",
@@ -2945,5 +2945,6 @@
     "main/26 Fishman Island/01/fi 01 en dub.ass": "6108db94e45d7cb9e131479f1515a9728e5c85f3",
     "main/26 Fishman Island/02/fi 02 en cc.ass": "79ba2ad60b9275321435033674e9161034efe84a",
     "main/26 Fishman Island/02/fi 02 en dub.ass": "374b266bd30c910cde8ce4675809f632e11d2734",
-    "_converter_version": 2
+    "_converter_version": 2,
+    "main/12 Alabasta/02/alabasta 02 pt-BR.ass": "e5fc03866e265cf07e8828eb12465b2c358e26ac"
 }
