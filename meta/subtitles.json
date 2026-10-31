@@ -4283,6 +4283,11 @@
             "lang": "jpn"
         },
         {
+            "id": "AL_1_pt-br",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/01/AL_1_pt-br.vtt",
+            "lang": "por"
+        },
+        {
             "id": "AL_1_ru",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/01/AL_1_ru.vtt",
             "lang": "rus"
@@ -9034,6 +9039,18 @@
             "lang": "eng"
         },
         {
+            "id": "FI_1_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/01/FI_1_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "FI_1_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/01/FI_1_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
+        },
+        {
             "id": "FI_1_es-419",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/01/FI_1_es-419.vtt",
             "lang": "eng",
@@ -9085,6 +9102,18 @@
             "id": "FI_2_en",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/02/FI_2_en.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "FI_2_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/02/FI_2_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "FI_2_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/02/FI_2_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
         },
         {
             "id": "FI_2_es-419",
