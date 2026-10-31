@@ -48,13 +48,16 @@ LANG_MAP = {
     "en cc": "eng", "en-cc": "eng", "en_cc": "eng",
     "es": "spa", "fi": "fin", "fr": "fre", "he": "heb", "iw": "heb", "it": "ita", "pl": "pol",
     "pt": "por", "ptbr": "por", "pt-br": "por", "pt_br": "por",
+    "es-419": "spa", "es419": "spa", "es_419": "spa",
+    "zh": "chi", "zh-hans": "chi", "zhhans": "chi", "zh_hans": "chi",
     "ru": "rus", "tr": "tur", "id": "ind", "nl": "dut", "vi": "vie",
     "ja": "jpn", "typesetting": "eng"
 }
 
 # Display names for the ISO 639-2/B codes LANG_MAP produces.
 LANG_NAMES = {
-    "ara": "Arabic",  "cze": "Czech",     "dut": "Dutch",   "eng": "English",
+    "ara": "Arabic",  "chi": "Chinese",   "cze": "Czech",   "dut": "Dutch",
+    "eng": "English",
     "fin": "Finnish", "fre": "French",    "ger": "German",  "heb": "Hebrew",
     "ind": "Indonesian", "ita": "Italian", "jpn": "Japanese", "pol": "Polish",
     "por": "Portuguese", "rus": "Russian", "spa": "Spanish", "tur": "Turkish",
@@ -72,7 +75,7 @@ BIDI_MARKS_RE = re.compile(r'[\u200e\u200f\u202a\u202b\u202c\u202d\u202e]')
 
 # Short suffix used in a track id, e.g. RO_1_ar.
 LANG_SHORT = {
-    "ara": "ar", "cze": "cs", "dut": "nl", "eng": "en", "fin": "fi",
+    "ara": "ar", "chi": "zh", "cze": "cs", "dut": "nl", "eng": "en", "fin": "fi",
     "fre": "fr", "ger": "de", "heb": "he", "ind": "id", "ita": "it",
     "jpn": "ja", "pol": "pl", "por": "pt", "rus": "ru", "spa": "es",
     "tur": "tr", "vie": "vi",
@@ -85,7 +88,17 @@ _NUMBERED_TOKEN = re.compile(r'^[a-z]{2,4}_(\d+)$')
 _EXTENDED = "EXT"
 
 # Order of the remaining markers once the cut has been accounted for.
-_VARIANT_RANK = ("DUB", "Brazil", "CC", "ALT", "Signs")
+_VARIANT_RANK = ("DUB", "Brazil", "Latin America", "Simplified",
+                 "CC", "ALT", "Signs")
+
+# A regional variant shares its language's code, so it needs a note to tell it
+# apart. The id spells them with a hyphen, which is why testing token == "ptbr"
+# never fired.
+_REGION_NOTES = {
+    "ptbr": "Brazil", "pt-br": "Brazil",
+    "es419": "Latin America", "es-419": "Latin America",
+    "zhhans": "Simplified", "zh-hans": "Simplified",
+}
 
 _LABEL_MARKERS = re.compile(r'\(([^)]*)\)\s*$')
 
@@ -128,8 +141,10 @@ def build_subtitle_label(unique_sub_id: str, stremio_id: str, lang_code: str):
         notes.append("Signs")
     if token == "cc" or token.endswith("_cc"):
         notes.append("CC")
-    if token == "ptbr":
-        notes.append("Brazil")                # distinguishes it from European "_pt"
+    for part in token.split("_"):
+        if part in _REGION_NOTES:
+            notes.append(_REGION_NOTES[part])
+            break
     parts = set(token.split("_"))          # whole words, so "ext" cannot hit "extended"
     for tag in sorted(EXTERNAL_TAGS):
         if tag in parts:

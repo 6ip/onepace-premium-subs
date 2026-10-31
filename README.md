@@ -1,114 +1,61 @@
 # One Pace Addon Subs
 
-Automated subtitle pipeline for [One Pace](https://onepace.net) — fetches `.ass` files from the community subtitles repo, converts them to WebVTT, injects opening/ending translations, and publishes a ready-to-consume index for Stremio and compatible players.
+The subtitle backend for the **One Pace Addon**: it converts the One Pace team's `.ass` subtitles into WebVTT and publishes an index the addon can serve.
 
-This repo is the subtitle backend for the **[One Pace](https://stremio-addons.net/addons/one-pace-rd) Stremio addon** — a community-built addon that streams One Pace through your Debrid account, or peer-to-peer if you prefer, with native multi-language subtitle support out of the box.
-
----
+**[Install the addon](https://onepace.e6ip.com)**, or find it on [Stremio Addons](https://stremio-addons.net/addons/one-pace-rd).
 
 ## How it works
 
-A GitHub Actions workflow runs `subs.py` on a schedule. The script:
+A GitHub Action runs `subs.py` every six hours. It reads the file tree of [one-pace/one-pace-public-subtitles](https://github.com/one-pace/one-pace-public-subtitles), downloads only the `.ass` files whose blob SHA changed since the last run, converts them to WebVTT, merges the opening and ending lyrics into the right timestamps, and writes the result to `meta/subs/` with an index at `meta/subtitles.json`.
 
-1. Pulls the full file tree from [`one-pace/one-pace-public-subtitles`](https://github.com/one-pace/one-pace-public-subtitles) via the GitHub API
-2. Reads `sub.properties` to resolve which OP/ED template belongs to each episode and language
-3. Downloads only changed `.ass` files (SHA-based diffing via `hashes.json`)
-4. Converts each file to `.vtt` — cleaning karaoke layers, typesetting artifacts, drawing commands, and invisible spacing tricks
-5. Merges OP/ED lyrics into the correct timestamp window of the episode
-6. Writes all subtitles to `meta/subs/` and updates `meta/subtitles.json`
+The converter drops karaoke layers, typesetting and drawing commands, and invisible spacer text, so what ships is the dialogue a viewer needs rather than everything the source file carries. Lines tagged `title`, `caption` or `sign` are kept and wrapped in `<b>`.
 
-The JSON index maps Stremio episode IDs (e.g. `ARLONG_PARK_3`) to an array of subtitle entries with language codes and CDN URLs.
-
----
-
-## Output structure
+## What's in here
 
 ```
 meta/
-├── subtitles.json          # Master index: episode ID → [{id, url, lang}]
-└── subs/
-    └── <Arc Name>/
-        └── <episode number>/
-            └── <episode_id>_<lang>.vtt
+    subtitles.json     episode id -> [{ id, url, lang, label }]
+    subs/              <Arc>/<episode>/<episode_id>_<lang>.vtt
+    external.json      what the hand-added subtitles produced
+hashes.json            blob SHA per .ass file, so unchanged files are skipped
+subs.py                the pipeline
 ```
 
----
+Episode ids are the short prefixes from [`config.json`](https://github.com/6ip/onepace-streams/blob/main/config.json) — `AR_3`, `RO_1`, `special_fan_1` — not full arc names.
 
-## Language support
+`external/` holds complete `.ass` files for episodes the One Pace repo doesn't cover. They are gap-fill only and can never override a repo track; see [`external/README.md`](external/README.md) for how the sources stay out of git while their output doesn't.
 
-| Code  | Language     |
-|-------|--------------|
-| eng   | English      |
-| ara   | Arabic (RTL) |
-| ger   | German       |
-| spa   | Spanish      |
-| fre   | French       |
-| por   | Portuguese   |
-| rus   | Russian      |
-| ita   | Italian      |
-| pol   | Polish       |
-| tur   | Turkish      |
-| jpn   | Japanese     |
-| +more | ...          |
+## Languages
 
-Arabic subtitles go through an additional RTL normalisation pass that fixes punctuation visually typed in Aegisub (flipped brackets, misplaced terminals) and wraps each line in proper BiDi markers.
+Fourteen so far: Arabic, Czech, English, Finnish, French, German, Hebrew, Italian, Japanese, Polish, Portuguese, Russian, Spanish and Turkish. Coverage varies a lot — English is close to complete, and some languages only cover a few arcs.
 
----
+These come from the One Pace team's own repository, so this pipeline can only publish what has already been translated. **If your language is missing or thin, One Pace is [looking for translators](https://onepace.net/en/recruitment)** — that's the way to change it.
 
-## Skipped content
+## Arabic and RTL
 
-The converter intentionally drops:
+Arabic goes through an extra pass that fixes punctuation typed visually in Aegisub — flipped brackets, terminals on the wrong end — and wraps each line in BiDi markers so players render it correctly.
 
-- Karaoke / romaji / furigana layers
-- Drawing commands (`\p1`, `\p2`, …)
-- Typesetter-only lines (effects: `code`, `template`, `fxgroup`)
-- Invisible spacer text (`fillLLLl`, `fillerfil`, …)
-- Single-character noise that isn't a meaningful syllable
+## Generated, not hand-edited
 
-Lines tagged as `title`, `caption`, or `sign` are wrapped in `<b>` in the output.
+A GitHub Action rebuilds `meta/subs/` and `meta/subtitles.json` every six hours. Anything edited there by hand is overwritten on the next run. Send pull requests for `subs.py`, and open an issue for the data.
 
----
+**Wrong or missing text inside a subtitle comes from the source `.ass` file**, so it belongs upstream in the [One Pace subtitles repo](https://github.com/one-pace/one-pace-public-subtitles), not here.
 
-## Local usage
+## Running it locally
 
 ```bash
 pip install pysubs2
 python subs.py
 ```
 
-The script reads `config.json` from [`6ip/onepace-streams`](https://github.com/6ip/onepace-streams) at runtime for the arc→prefix mapping, so no local config is needed.
-
-Output lands in `meta/` relative to wherever you run the script.
-
----
-
-## Hashing / incremental updates
-
-`hashes.json` stores the GitHub blob SHA for every processed `.ass` file. On subsequent runs, a file is only re-downloaded and re-converted if its SHA has changed. This keeps CI runs fast and avoids hammering GitHub's rate limits.
-
-Progress is autosaved to `hashes.json` every 50 files so a partial run doesn't lose work.
-
----
-
-## Contributing
-
-`meta/subs/` and `meta/subtitles.json` are regenerated by a GitHub Action every 6 hours. Pull requests against those files will be overwritten on the next run — open an issue instead, or send a PR for `subs.py`.
-
-Wrong or missing text inside a subtitle comes from the source `.ass` file, so it belongs upstream in the [One Pace subtitles repo](https://github.com/one-pace/one-pace-public-subtitles), not here.
-
----
-
-## License
-
-The MIT license covers `subs.py` and the rest of the tooling in this repository.
-
-It does **not** cover the subtitles themselves. Files under `meta/subs/` are converted from the [One Pace public subtitles](https://github.com/one-pace/one-pace-public-subtitles) and remain the work of the One Pace team and their translators — they are mirrored here only so the addon can serve them. All credit for the subtitles goes to them.
-
----
+It reads `config.json` from [6ip/onepace-streams](https://github.com/6ip/onepace-streams) at runtime for the arc-to-prefix mapping, so there's nothing to configure. Output lands in `meta/` relative to where you run it.
 
 ## Credits
 
-Subtitles sourced from the [One Pace public subtitles repository](https://github.com/one-pace/one-pace-public-subtitles).  
-One Pace is a fan project — support the translators and the original editors who made the files this pipeline builds on.
+Subtitles come from the [One Pace public subtitles repository](https://github.com/one-pace/one-pace-public-subtitles) — the work of the One Pace team and their translators. This pipeline only converts and republishes them so the addon can serve them.
 
-If the addon saved you the headache of manually managing torrents, consider [supporting server costs on Ko-fi](https://ko-fi.com/not6ip).
+## License
+
+MIT covers `subs.py` and the rest of the tooling here.
+
+It does **not** cover the subtitles. Files under `meta/subs/` are converted from the One Pace public subtitles and remain the work of the One Pace team and their translators; they are mirrored here only so the addon can serve them.
