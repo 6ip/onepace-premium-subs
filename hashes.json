@@ -3365,7 +3365,6 @@
     "main/33 Egghead/20/egghead 20 en dub.ass": "9ec3187b2098558faef24e60b79d68af88b797cf",
     "main/33 Egghead/21/egghead 21 en cc.ass": "77c4803797ca56c154c24674fc941fe17afba132",
     "main/33 Egghead/21/egghead 21 en dub.ass": "d5bc0b708d34037cf9c055fcc840385547d7d043",
-    "_converter_version": 2,
     "main/01 Romance Dawn/01/romancedawn 01 en dub.ass": "1e71e60c48d5a5db7febcc467b478a1fb46be36c",
     "main/01 Romance Dawn/02/romancedawn 02 en dub.ass": "b68098e9289a11d62500ebbe9d4bbdc40a6e8630",
     "main/01 Romance Dawn/03/romancedawn 03 en dub.ass": "0c23506a0531533a6d37fb248e0dde1de19e34e3",
@@ -3400,5 +3399,6 @@
     "main/12 Alabasta/21/alabasta 21 en dub.ass": "a167485589702e880c857c13da3e11fb5a43479d",
     "main/26 Fishman Island/03/fi 03 en cc.ass": "f978362951378b1d636b354ec8cd2c40d728cee7",
     "main/26 Fishman Island/03/fi 03 en dub.ass": "74fe741abdd21b995bdce2d5712a09aed0fba2b1",
-    "main/32 Wano/14/wano 14 de.ass": "e08f2535e4b6cd61b534a0541dc7445a13b14fcf"
+    "main/32 Wano/14/wano 14 de.ass": "e08f2535e4b6cd61b534a0541dc7445a13b14fcf",
+    "_converter_version": 2
 }

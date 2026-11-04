@@ -139,7 +139,11 @@ def build_subtitle_label(unique_sub_id: str, stremio_id: str, lang_code: str):
         notes.append("ALT")
     if "typesetting" in token:
         notes.append("Signs")
-    if token == "cc" or token.endswith("_cc"):
+    # Upstream ships "en cc" and "en SDH" byte-identical, so they are one track
+    # under two names and share a label. Without this, "sdh" matched nothing,
+    # returned None, and took the plain English slot off the real subtitle.
+    # Whole parts, so a collision suffix like "en_cc_2" still matches.
+    if {"cc", "sdh"} & set(token.split("_")):
         notes.append("CC")
     for part in token.split("_"):
         if part in _REGION_NOTES:
@@ -154,7 +158,18 @@ def build_subtitle_label(unique_sub_id: str, stremio_id: str, lang_code: str):
         notes.append(m.group(1))
 
     if not notes:
-        return None
+        # A token is normally just the language suffix, which needs no label. If
+        # anything else is left over it is a variant nobody taught us yet, and
+        # returning None would hand it the plain track's slot -- which is how
+        # "sdh" displaced the real English subtitle on 101 episodes. Name it
+        # instead, so a new upstream variant shows up as itself.
+        # LANG_MAP holds the filename suffixes; LANG_NAMES the 639-2 codes it
+        # produces, which is what a file with no language word is named after.
+        unknown = [p for p in token.split("_")
+                   if p and p not in LANG_MAP and p not in LANG_NAMES]
+        if not unknown:
+            return None
+        notes = [p.upper() for p in unknown]
 
     return f"{LANG_NAMES.get(lang_code, lang_code.upper())} ({', '.join(notes)})"
 
@@ -1267,7 +1282,7 @@ def main():
             lang_parts = []
             for w in reversed(words):
                 w_lower = w.lower()
-                if w_lower in LANG_MAP or w_lower in ['alternate', 'dub', 'cc', 'typesetting']:
+                if w_lower in LANG_MAP or w_lower in ['alternate', 'dub', 'cc', 'sdh', 'typesetting']:
                     lang_parts.insert(0, w_lower)
                 else:
                     break 
