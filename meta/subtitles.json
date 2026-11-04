@@ -238,6 +238,12 @@
             "lang": "eng"
         },
         {
+            "id": "RO_1_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
             "id": "RO_1_en_cc",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_en_cc.vtt",
             "lang": "eng",
@@ -382,6 +388,12 @@
             "lang": "eng"
         },
         {
+            "id": "RO_2_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/02/RO_2_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
             "id": "RO_2_en_cc",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/02/RO_2_en_cc.vtt",
             "lang": "eng",
@@ -490,6 +502,12 @@
             "lang": "eng"
         },
         {
+            "id": "RO_3_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/03/RO_3_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
             "id": "RO_3_en_cc",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/03/RO_3_en_cc.vtt",
             "lang": "eng",
@@ -590,6 +608,12 @@
             "id": "RO_4_en",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/04/RO_4_en.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "RO_4_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/04/RO_4_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
         },
         {
             "id": "RO_4_en_cc",
@@ -4489,6 +4513,18 @@
             "lang": "eng"
         },
         {
+            "id": "AL_3_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/03/AL_3_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_3_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/03/AL_3_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
+        },
+        {
             "id": "AL_3_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/03/AL_3_fr.vtt",
             "lang": "fre"
@@ -4532,6 +4568,18 @@
             "lang": "eng"
         },
         {
+            "id": "AL_4_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/04/AL_4_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_4_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/04/AL_4_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
+        },
+        {
             "id": "AL_4_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/04/AL_4_fr.vtt",
             "lang": "fre"
@@ -4573,6 +4621,18 @@
             "id": "AL_10_en",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/10/AL_10_en.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "AL_10_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/10/AL_10_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_10_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/10/AL_10_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
         },
         {
             "id": "AL_10_fr",
@@ -4624,6 +4684,18 @@
             "lang": "eng"
         },
         {
+            "id": "AL_11_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/11/AL_11_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_11_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/11/AL_11_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
+        },
+        {
             "id": "AL_11_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/11/AL_11_fr.vtt",
             "lang": "fre"
@@ -4671,6 +4743,18 @@
             "id": "AL_12_en",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/12/AL_12_en.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "AL_12_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/12/AL_12_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_12_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/12/AL_12_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
         },
         {
             "id": "AL_12_fr",
@@ -4722,6 +4806,18 @@
             "lang": "eng"
         },
         {
+            "id": "AL_13_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/13/AL_13_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_13_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/13/AL_13_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
+        },
+        {
             "id": "AL_13_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/13/AL_13_fr.vtt",
             "lang": "fre"
@@ -4769,6 +4865,18 @@
             "id": "AL_14_en",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/14/AL_14_en.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "AL_14_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/14/AL_14_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_14_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/14/AL_14_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
         },
         {
             "id": "AL_14_fr",
@@ -4820,6 +4928,18 @@
             "lang": "eng"
         },
         {
+            "id": "AL_15_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/15/AL_15_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_15_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/15/AL_15_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
+        },
+        {
             "id": "AL_15_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/15/AL_15_fr.vtt",
             "lang": "fre"
@@ -4867,6 +4987,18 @@
             "id": "AL_16_en",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/16/AL_16_en.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "AL_16_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/16/AL_16_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_16_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/16/AL_16_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
         },
         {
             "id": "AL_16_fr",
@@ -4918,6 +5050,18 @@
             "lang": "eng"
         },
         {
+            "id": "AL_17_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/17/AL_17_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_17_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/17/AL_17_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
+        },
+        {
             "id": "AL_17_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/17/AL_17_fr.vtt",
             "lang": "fre"
@@ -4965,6 +5109,18 @@
             "id": "AL_18_en",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/18/AL_18_en.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "AL_18_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/18/AL_18_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_18_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/18/AL_18_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
         },
         {
             "id": "AL_18_fr",
@@ -5016,6 +5172,18 @@
             "lang": "eng"
         },
         {
+            "id": "AL_19_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/19/AL_19_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_19_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/19/AL_19_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
+        },
+        {
             "id": "AL_19_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/19/AL_19_fr.vtt",
             "lang": "fre"
@@ -5058,6 +5226,18 @@
             "id": "AL_20_en",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/20/AL_20_en.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "AL_20_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/20/AL_20_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_20_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/20/AL_20_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
         },
         {
             "id": "AL_20_fr",
@@ -5107,6 +5287,18 @@
             "id": "AL_21_en",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/21/AL_21_en.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "AL_21_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/21/AL_21_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "AL_21_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/21/AL_21_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
         },
         {
             "id": "AL_21_fr",
@@ -10267,9 +10459,16 @@
     ],
     "FI_3": [
         {
-            "id": "FI_3_en",
-            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/03/FI_3_en.vtt",
-            "lang": "eng"
+            "id": "FI_3_en_dub",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/03/FI_3_en_dub.vtt",
+            "lang": "eng",
+            "label": "English (DUB)"
+        },
+        {
+            "id": "FI_3_en_cc",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/03/FI_3_en_cc.vtt",
+            "lang": "eng",
+            "label": "English (CC)"
         },
         {
             "id": "FI_3_es",
@@ -14292,6 +14491,11 @@
             "id": "WA_14_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/14/WA_14_fr.vtt",
             "lang": "fre"
+        },
+        {
+            "id": "WA_14_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/14/WA_14_de.vtt",
+            "lang": "ger"
         },
         {
             "id": "WA_14_es",
