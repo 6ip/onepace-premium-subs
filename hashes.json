@@ -2418,7 +2418,7 @@
     "main/17 Enies Lobby/06/enieslobby 06 it.ass": "1f8f58fdc156d9d407e4eb2adb851127f06439dd",
     "main/17 Enies Lobby/06/enieslobby 06 ja.ass": "f774a195b07490681a3cf445ef265a1776d583be",
     "main/26 Fishman Island/01/fi 01 ptbr.ass": "0d95d695fae1bf5531d01e562ab94d7fec8cf8d2",
-    "main/17 Enies Lobby/07/enieslobby 07 it.ass": "4c9cc2bf29d7708c85ee1f78395a40e614ea5223",
+    "main/17 Enies Lobby/07/enieslobby 07 it.ass": "1a8cea7a05195eac23885836e8a15878536e496a",
     "main/17 Enies Lobby/07/enieslobby 07 ja.ass": "2d1e6a1ae422cf89ac4b5d3715d0b43057f015e0",
     "external/Shaved Egghead and Kuma Cut Subtitles/[Kuma & Shaved] 01 - Shaved Egghead (1127+8)/[Kuma & Shaved] 01 - Shaved Egghead (1127+8)_eng_1.ass": "545776c90ca3a4d462602209fd7dfe2fe46aeb59",
     "external/Shaved Egghead and Kuma Cut Subtitles/[Kuma & Shaved] 01 - Shaved Egghead (1127+8)/[Kuma & Shaved] 01 - Shaved Egghead (1127+8)_eng_2.ass": "1a4d61c115f47f80e2ee701bd6c10445aa4dc8bc",
@@ -3400,6 +3400,7 @@
     "main/26 Fishman Island/03/fi 03 en cc.ass": "f978362951378b1d636b354ec8cd2c40d728cee7",
     "main/26 Fishman Island/03/fi 03 en dub.ass": "74fe741abdd21b995bdce2d5712a09aed0fba2b1",
     "main/32 Wano/14/wano 14 de.ass": "0035402d6961fb5392c48c6690c4dfeda895885e",
-    "main/26 Fishman Island/03/fi 03 en.ass": "9520bd71f03cee0cce5679abdd3c0c8e6b03d698",
-    "_converter_version": 2
+    "main/26 Fishman Island/03/fi 03 en.ass": "f738349acdeb3ef93f896d8f5abf829d5aae7963",
+    "_converter_version": 2,
+    "main/26 Fishman Island/03/fi 03 de.ass": "eb450ea1b80056fdff6f62c77d35235673c82633"
 }
