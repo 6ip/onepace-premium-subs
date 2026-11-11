@@ -309,6 +309,18 @@
             "lang": "pol"
         },
         {
+            "id": "RO_1_alternate_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_alternate_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (ALT)"
+        },
+        {
+            "id": "RO_1_alternate_pl",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_alternate_pl.vtt",
+            "lang": "pol",
+            "label": "Polish (ALT) (2)"
+        },
+        {
             "id": "RO_1_pt",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/01/RO_1_pt.vtt",
             "lang": "por"
@@ -435,6 +447,12 @@
             "lang": "pol"
         },
         {
+            "id": "RO_2_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/02/RO_2_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
+        },
+        {
             "id": "RO_2_pt",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/02/RO_2_pt.vtt",
             "lang": "por"
@@ -549,6 +567,12 @@
             "lang": "pol"
         },
         {
+            "id": "RO_3_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/03/RO_3_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
+        },
+        {
             "id": "RO_3_pt",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/03/RO_3_pt.vtt",
             "lang": "por"
@@ -655,6 +679,12 @@
             "id": "RO_4_pl",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/04/RO_4_pl.vtt",
             "lang": "pol"
+        },
+        {
+            "id": "RO_4_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/01%20Romance%20Dawn/04/RO_4_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
         },
         {
             "id": "RO_4_pt",
