@@ -10517,6 +10517,11 @@
             "lang": "ger"
         },
         {
+            "id": "FI_3_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/03/FI_3_ja.vtt",
+            "lang": "jpn"
+        },
+        {
             "id": "FI_3_pt-br",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/03/FI_3_pt-br.vtt",
             "lang": "por",
@@ -10532,6 +10537,11 @@
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/03/FI_3_es-419.vtt",
             "lang": "spa",
             "label": "Spanish (Latin America)"
+        },
+        {
+            "id": "FI_3_tr",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/03/FI_3_tr.vtt",
+            "lang": "tur"
         }
     ],
     "FI_4": [
