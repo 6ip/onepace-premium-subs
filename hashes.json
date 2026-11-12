@@ -2478,7 +2478,7 @@
     "main/26 Fishman Island/01/fi 01 tr.ass": "7a934cd22f851c2f7b9beee6a9dcfb7f2997ceba",
     "main/17 Enies Lobby/08/enieslobby 08 it.ass": "33316baabe53f9faecc96a5a1177cd616fb15986",
     "main/17 Enies Lobby/08/enieslobby 08 ja.ass": "1213f4c8e93bf39636c2105676d37c3134b8eea1",
-    "main/17 Enies Lobby/09/enieslobby 09 it.ass": "14426f052028fc5563442854cc68caa72adaee8f",
+    "main/17 Enies Lobby/09/enieslobby 09 it.ass": "d33ddb69dd91ca0bdac79ba592db95dd139e9a44",
     "main/17 Enies Lobby/09/enieslobby 09 ja.ass": "4fba6b225355cdbb13afc5a0075bf13d2f0cdea2",
     "main/26 Fishman Island/02/fi 02 en.ass": "d29837e25601cd3d526b3fe5c047faf5c24315a7",
     "main/16 Water Seven/07/waterseven 07 de.ass": "43849cc6acc2efecb504e479a128e6d358b0f6ef",
@@ -3403,10 +3403,11 @@
     "main/26 Fishman Island/03/fi 03 en.ass": "d0b88e4e649897ae662e0978272037f18b49b55a",
     "main/26 Fishman Island/03/fi 03 de.ass": "846085f2ce06c58dde41382c7f25c5e953809b6c",
     "main/26 Fishman Island/03/fi 03 pt-BR.ass": "d3edc3faf9c3a8aa357e1b9b0b642839acaa490b",
-    "_converter_version": 2,
     "main/01 Romance Dawn/01/romancedawn 01 alternate pl vo.ass": "947a275cfff3d01090d8a2917eec916083ffccb4",
     "main/01 Romance Dawn/01/romancedawn 01 alternate pl.ass": "e7279295a3a00a52972d1e2c271c698ce9be772f",
     "main/01 Romance Dawn/02/romancedawn 02 pl vo.ass": "798da5a69d10a6f003a0050b3adddcfea6c6a0da",
     "main/01 Romance Dawn/03/romancedawn 03 pl vo.ass": "c42513f070bc9add5ec545c88c36d92019ef62cf",
-    "main/01 Romance Dawn/04/romancedawn 04 pl vo.ass": "871f70c97d1e58760cbec69594793e1309f30251"
+    "main/01 Romance Dawn/04/romancedawn 04 pl vo.ass": "871f70c97d1e58760cbec69594793e1309f30251",
+    "_converter_version": 2,
+    "main/26 Fishman Island/02/fi 02 pt-BR.ass": "02f1270f34aa502ee23cd63a1f14252945626ef3"
 }
