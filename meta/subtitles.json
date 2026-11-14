@@ -3592,6 +3592,11 @@
             "lang": "ita"
         },
         {
+            "id": "RM_1_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/01/RM_1_ja.vtt",
+            "lang": "jpn"
+        },
+        {
             "id": "RM_1_ru",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/01/RM_1_ru.vtt",
             "lang": "rus"
@@ -3697,6 +3702,17 @@
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_extended_it.vtt",
             "lang": "ita",
             "label": "Italian (EXT)"
+        },
+        {
+            "id": "RM_2_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_ja.vtt",
+            "lang": "jpn"
+        },
+        {
+            "id": "RM_2_extended_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/08%20Reverse%20Mountain/02/RM_2_extended_ja.vtt",
+            "lang": "jpn",
+            "label": "Japanese (EXT)"
         },
         {
             "id": "RM_2_ru",
