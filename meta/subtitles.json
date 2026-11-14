@@ -10517,6 +10517,11 @@
             "label": "English (CC)"
         },
         {
+            "id": "FI_3_fi",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/03/FI_3_fi.vtt",
+            "lang": "fin"
+        },
+        {
             "id": "FI_3_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/03/FI_3_fr.vtt",
             "lang": "fre"
@@ -10721,6 +10726,12 @@
             "id": "FI_13_eng",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/13/FI_13_eng.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "FI_13_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/13/FI_13_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         }
     ],
     "FI_14": [
@@ -10746,6 +10757,12 @@
             "id": "FI_15_eng",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/15/FI_15_eng.vtt",
             "lang": "eng"
+        },
+        {
+            "id": "FI_15_es-419",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/26%20Fishman%20Island/15/FI_15_es-419.vtt",
+            "lang": "spa",
+            "label": "Spanish (Latin America)"
         }
     ],
     "FI_16": [
