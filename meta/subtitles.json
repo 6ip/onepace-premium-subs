@@ -23,6 +23,12 @@
             "label": "English (CC)"
         },
         {
+            "id": "BUGGYS_CREW_1_eng",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/01/BUGGYS_CREW_1_eng.vtt",
+            "lang": "eng",
+            "label": "English (2)"
+        },
+        {
             "id": "BUGGYS_CREW_1_fi",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/00%20Cover%20Stories%20and%20Specials/01/BUGGYS_CREW_1_fi.vtt",
             "lang": "fin"
@@ -812,6 +818,12 @@
             "lang": "pol"
         },
         {
+            "id": "OR_1_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/02%20Orange%20Town/01/OR_1_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
+        },
+        {
             "id": "OR_1_pt",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/02%20Orange%20Town/01/OR_1_pt.vtt",
             "lang": "por"
@@ -920,6 +932,12 @@
             "lang": "pol"
         },
         {
+            "id": "OR_2_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/02%20Orange%20Town/02/OR_2_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
+        },
+        {
             "id": "OR_2_pt",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/02%20Orange%20Town/02/OR_2_pt.vtt",
             "lang": "por"
@@ -1026,6 +1044,12 @@
             "id": "OR_3_pl",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/02%20Orange%20Town/03/OR_3_pl.vtt",
             "lang": "pol"
+        },
+        {
+            "id": "OR_3_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/02%20Orange%20Town/03/OR_3_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
         },
         {
             "id": "OR_3_pt",
@@ -2309,6 +2333,11 @@
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/05%20Baratie/06/BA_6_en_cc.vtt",
             "lang": "eng",
             "label": "English (CC)"
+        },
+        {
+            "id": "BA_6_fi",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/05%20Baratie/06/BA_6_fi.vtt",
+            "lang": "fin"
         },
         {
             "id": "BA_6_fr",
@@ -14749,6 +14778,11 @@
             "id": "WA_18_fr",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/18/WA_18_fr.vtt",
             "lang": "fre"
+        },
+        {
+            "id": "WA_18_de",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/32%20Wano/18/WA_18_de.vtt",
+            "lang": "ger"
         },
         {
             "id": "WA_18_es",
