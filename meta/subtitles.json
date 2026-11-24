@@ -1160,6 +1160,12 @@
             "lang": "pol"
         },
         {
+            "id": "SY_1_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/01/SY_1_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
+        },
+        {
             "id": "SY_1_pt-br",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/01/SY_1_pt-br.vtt",
             "lang": "por",
@@ -1263,6 +1269,12 @@
             "lang": "pol"
         },
         {
+            "id": "SY_2_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/02/SY_2_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
+        },
+        {
             "id": "SY_2_ru",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/02/SY_2_ru.vtt",
             "lang": "rus"
@@ -1358,6 +1370,12 @@
             "id": "SY_3_pl",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/03/SY_3_pl.vtt",
             "lang": "pol"
+        },
+        {
+            "id": "SY_3_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/03/SY_3_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
         },
         {
             "id": "SY_3_pt-br",
@@ -1463,6 +1481,12 @@
             "lang": "pol"
         },
         {
+            "id": "SY_4_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/04/SY_4_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
+        },
+        {
             "id": "SY_4_pt-br",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/04/SY_4_pt-br.vtt",
             "lang": "por",
@@ -1566,6 +1590,12 @@
             "lang": "pol"
         },
         {
+            "id": "SY_5_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/05/SY_5_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
+        },
+        {
             "id": "SY_5_pt-br",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/05/SY_5_pt-br.vtt",
             "lang": "por",
@@ -1662,6 +1692,12 @@
             "id": "SY_6_pl",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/06/SY_6_pl.vtt",
             "lang": "pol"
+        },
+        {
+            "id": "SY_6_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/06/SY_6_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
         },
         {
             "id": "SY_6_pt-br",
@@ -1762,6 +1798,12 @@
             "lang": "pol"
         },
         {
+            "id": "SY_7_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/07/SY_7_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
+        },
+        {
             "id": "SY_7_pt-br",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/03%20Syrup%20Village/07/SY_7_pt-br.vtt",
             "lang": "por",
@@ -1858,6 +1900,12 @@
             "id": "GA_1_pl",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/04%20Gaimon/01/GA_1_pl.vtt",
             "lang": "pol"
+        },
+        {
+            "id": "GA_1_pl_vo",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/04%20Gaimon/01/GA_1_pl_vo.vtt",
+            "lang": "pol",
+            "label": "Polish (VO)"
         },
         {
             "id": "GA_1_pt-br",
@@ -4618,6 +4666,11 @@
             "id": "AL_3_it",
             "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/03/AL_3_it.vtt",
             "lang": "ita"
+        },
+        {
+            "id": "AL_3_ja",
+            "url": "https://6ip.github.io/onepace-premium-subs/meta/subs/12%20Alabasta/03/AL_3_ja.vtt",
+            "lang": "jpn"
         },
         {
             "id": "AL_3_ru",
