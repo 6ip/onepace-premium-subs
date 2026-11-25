@@ -3438,7 +3438,6 @@
     "main/03 Syrup Village/07/syrupvillage 07 pl vo.ass": "e689483e93bf6a4a37566ab9c5f65fdb5d3eb020",
     "main/04 Gaimon/01/gaimon 01 pl vo.ass": "e0f54de7f236b96f4a7d35d950d3fda384fd61ec",
     "main/12 Alabasta/03/alabasta 03 ja.ass": "230517659cbd1a527660517c56fb32856b9e8402",
-    "_converter_version": 2,
     "main/06 Arlong Park/05/arlongpark 05 extended en cc.ass": "d0d370f16d436aece3ed1da67e51823a187d3e20",
     "main/06 Arlong Park/05/arlongpark 05 extended en dub.ass": "fa3aa0e3d340dea7f94493cbea51bab8058a6e8d",
     "main/06 Arlong Park/10/arlongpark 10 extended en cc.ass": "3c737397d5fbe04d6ffcf730b50046bd8adff62b",
@@ -3458,5 +3457,6 @@
     "main/33 Egghead/19/egghead 19 extended en cc.ass": "1afe8b4e234458ef12de6d4b037e5e1ee679898b",
     "main/33 Egghead/19/egghead 19 extended en dub.ass": "ad6c7e3a172fd49a26467f3f4b4ee67d3de9fe4a",
     "main/33 Egghead/21/egghead 21 extended en cc.ass": "9e8f08cc73303082f01319c38aa3e2b284ef77e9",
-    "main/33 Egghead/21/egghead 21 extended en dub.ass": "873c0b467b011bf1eaec61fe8d621cad80378c53"
+    "main/33 Egghead/21/egghead 21 extended en dub.ass": "873c0b467b011bf1eaec61fe8d621cad80378c53",
+    "_converter_version": 2
 }
